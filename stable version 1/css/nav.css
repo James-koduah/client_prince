@@ -1,0 +1,88 @@
+/*Navbar*/
+.nav{
+    position: fixed;
+    top:0px;
+    left: 0px;
+    width: 100vw;
+    height: 8vh;
+    background-color: rgb(223, 219, 219);
+    display:flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 1.5vw 1vw 1.5vw 1vw;
+    font-size: 8px;
+    letter-spacing: 0.2em;
+    border-radius: 3px;
+    border-bottom: 1px rgba(121, 114, 114, 0.2) solid;
+}
+    /*Nav anchor element*/
+    nav a{
+        color:rgb(29, 28, 28);
+        font-size: 1.3em;
+        text-decoration: none;
+        margin-right:4vw;
+        padding: 2vh 0 2vh 0;
+    }
+        nav a:hover{
+        color: salmon;
+        text-decoration: none;
+        }
+.logo{
+    position: absolute;
+    left: 0;
+    margin-left: 4vw;
+    font-size: 2.7em;
+    font-weight: 400;
+    color:rgb(29, 28, 28);
+}
+#nav1 {
+    z-index: 22;
+}
+#nav2{
+    z-index: 1;
+}
+#nav_menu_button{
+    width: 10vw;
+    max-width: 50px;
+    height: 10vw;
+    max-height: 50px;
+    background:url('images/menulight.png') no-repeat;
+    background-size: 100% 100%;
+    margin-right: 5vw;
+    z-index: 38;
+}
+#menu_bar{
+    position: fixed;
+    top: 8vh;
+    left: 0;
+    width: 100vw;
+    height: 92vh;
+    display: grid;
+    grid-template-rows: 30vh 70vh;
+    z-index: -3;
+}
+#main_menu {
+    background-color: aliceblue;
+}
+#close_menu {
+    background-color: transparent;
+}
+
+
+@media (max-width: 450px) {
+    .logo{
+        font-size: 2.3em;
+        font-weight: 600;
+    }
+    #nav2 {
+        z-index: 40;
+    }
+    #nav_menu_button {
+        width: 5vw;
+        height: 5vw;
+    }
+}
+@media (max-width: 300px) {
+    
+}
