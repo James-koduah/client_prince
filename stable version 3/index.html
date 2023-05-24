@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/nav.css">
+    <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="css/display_pictures.css">
+    <title>Portfolio</title>
+</head>
+<body>
+    <!-- nav.css -->
+    <div id="menu_bar">
+        <div id="main_menu"></div>
+        <div id="close_menu" onclick="nav_toogle()"></div>
+    </div>
+    <div id="nav1" class="nav">
+        <div class="logo"></div>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Services</a>
+            <a href="#">Works</a>
+            <a href="#">Contact</a>
+        </nav>
+    </div>
+    <div id="nav2" class="nav">
+        <div class="logo"></div>
+        <div id="nav_menu_button" onclick="nav_toogle()"></div>
+    </div>
+    <!-- nav.css -->
+
+    <!-- home.css -->
+    <section id="home">
+        <div id="quote">
+            <h2>CLEAN HANDS PAINTING & ART WORKS COMPANY</h2>
+        </div>
+        <div id="featured_work" class="slide_display">
+            <div class="slide_display_title">
+               <h5>Featured Work</h5>
+               <p>See more <span>↠</span></p>
+            </div>
+            <div class="slide_display_pictures">
+                <div class="slide_display_pictures_boxes pic_1" onclick="full_display('pic_1')"></div>
+                <div class="slide_display_pictures_boxes pic_2" onclick="full_display('pic_2', 'flat')"></div>
+                <div class="slide_display_pictures_boxes pic_3" onclick="full_display('pic_3')"></div>
+                <div class="slide_display_pictures_boxes pic_4" onclick="full_display('pic_4')"></div>
+                <div class="slide_display_pictures_boxes pic_5" onclick="full_display('pic_5')"></div>
+                <div class="slide_display_pictures_boxes pic_6" onclick="full_display('pic_6')"></div>
+                <div class="slide_display_pictures_boxes pic_7" onclick="full_display('pic_7')"></div>
+            </div>
+        </div>
+        <div id="Recent_work" class="slide_display">
+            <div class="slide_display_title">
+               <h5>Recent Work</h5>
+               <p>See more <span>↠</span></p>
+            </div>
+
+            <!-- display_pictures.css -->
+            <div class="slide_display_pictures">
+                <div class="slide_display_pictures_boxes pic_7" onclick="full_display('pic_7')"></div>
+                <div class="slide_display_pictures_boxes pic_6" onclick="full_display('pic_6')"></div>
+                <div class="slide_display_pictures_boxes pic_5" onclick="full_display('pic_5')"></div>
+                <div class="slide_display_pictures_boxes pic_4" onclick="full_display('pic_4')"></div>
+                <div class="slide_display_pictures_boxes pic_3" onclick="full_display('pic_3')"></div>
+                <div class="slide_display_pictures_boxes pic_2" onclick="full_display('pic_2')"></div>
+                <div class="slide_display_pictures_boxes pic_1" onclick="full_display('pic_1')"></div>
+            </div>
+            <!-- display_pictures.css -->
+        </div>
+        <!-- display_pictures.css -->
+        <div id="full_display">
+            <div id="full_display_close" onclick="full_display_close()"></div>
+            <div id="full_display_previous" onclick="full_display_change('<')"></div>
+            <div id="full_display_next" onclick="full_display_change('>')"></div>
+            <div id="full_display_pic"></div>
+        </div>
+        <!-- display_pictures.css -->
+    </section>
+    <!-- home.css -->
+    
+    <script src="app/app.js"></script>
+</body>
+</html>

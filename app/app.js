@@ -15,9 +15,11 @@ function nav_toogle() {
 display = document.getElementById("full_display")
 display_pic = document.getElementById("full_display_pic")
 display_close = document.getElementById("full_display_pic")
+var picture_name;
 function full_display(pic_name, pic_size='large') {
   display_pic.style.background = `url('css/images/works/${pic_name}.png') no-repeat`
   display_pic.style.backgroundSize = "100% 100%"
+  picture_name = pic_name
   display.style.zIndex = 100
   if (pic_size == 'large') {
     display_pic.style.width = "100%"
@@ -39,7 +41,24 @@ function full_display(pic_name, pic_size='large') {
 
 function full_display_close(){
   display.style.zIndex = -3
+  console.log(picture_name)
 }
 
-function james(){
+function full_display_change(direction) {
+  //Just a mock of the actual thing
+  let number = picture_name.split("_")
+  number = number[1]
+  number = Number(number)
+  if (direction == '>') {
+    if (number < 7) number++;
+    display_pic.style.background = `url('css/images/works/pic_${number}.png') no-repeat`
+    display_pic.style.backgroundSize = "100% 100%"
+    picture_name = `pic_${number}`
+  }
+  if (direction == '<') {
+    if (number > 1) number--;
+    display_pic.style.background = `url('css/images/works/pic_${number}.png') no-repeat`
+    display_pic.style.backgroundSize = "100% 100%"
+    picture_name = `pic_${number}`
+  }
 }
