@@ -1,7 +1,7 @@
 #contact{
     width: 100vw;
     min-height: 70vh;
-    background-color: rgb(49, 49, 47);
+    background-color: var(--contact-bg-color);
     padding-top: 3vh;
     font-size: 10px;
     color: aliceblue;
@@ -9,7 +9,7 @@
 }
 
 #contact h3{
-    font-size: 2.5em;
+    font-size: 1.5em;
     text-align: center;
     font-weight: 300;
     letter-spacing: 0.3em;
@@ -17,14 +17,16 @@
 }
 
 #contact p{
-    font-size: 1.5em;
+    font-size: 1em;
     text-align: center;
     letter-spacing: 0.1em;
+    padding-bottom: 2vh;
+    border-bottom: 1px var(--golden) dotted;
 }
 
 .media{
     width: 70vw;
-    height: 5vh;
+    height: 3vh;
     margin: 3vh auto 0 auto;
     background: transparent;
 }

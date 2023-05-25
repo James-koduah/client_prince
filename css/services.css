@@ -7,47 +7,58 @@
     align-items: center;
     justify-content: center;
     padding: 0vh 0 5vh 0;
-    color: rgb(0, 234, 255);
+    color: var(--glow-color);
     font-size: 10px;
 }
 
 
 #metrics{
     width: 70vw;
-    height: 80vh;
+    height: 70vh;
     display: grid;
     grid-auto-flow: row;
-    border-left: 2px rgb(0, 234, 255) solid;
+    border-left: 2px var(--glow-color) solid;
+    border-right: 2px var(--glow-color) solid;
     overflow-y: auto;
 }
 
 .service{
-    height: 5vh;
-    border-bottom: 5px rgb(0, 234, 255) solid;
+    height: 15vh;
+    /* border-bottom: 5px var(--glow-color) solid; */
 }
 
 .service_content{
     height: 100%;
-    width: 100%;
+    width: 65vw;
+    padding-left: 3vw;
     display: grid;
     grid-template-columns: 80% 20%;
+    grid-template-rows: 0.5fr 2.5fr;
 }
 
 .service_content :first-child{
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 2em;
+    font-size: 1.3em;
 }
 
-.service_content :last-child{
-    background-color: rgb(0, 234, 255);
+.service_percent{
     color: aliceblue;
-    height: 60%;
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 2em;
+}
+
+.service_percent i{
+    
+    height: 80%;
+    background-color: var(--glow-color);
     border-radius: 50%;
     padding: 0.2em;
+    font-size: 2em;
+}
+
+.service_description{
+    text-align: center;
 }
