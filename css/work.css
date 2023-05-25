@@ -1,23 +1,23 @@
 #work {
     position: relative;
     width: 100vw;
-    min-height: 100vh;
+    min-height: 80vh;
     margin: 0 0 0 0;
-    padding: 0 0 6vh 0;
+    padding: 0 0 0vh 0;
     background-color: black;
     font-size: 5px;
     box-shadow: 0vw 3vh 1vh rgb(0, 0, 23) ;
+    border-bottom: 2px rgb(1, 49, 53) dotted;
 }
 
 
 
 .slide_display{
-    width: 99%;
+    width: 95vw;
     height: fit-content;
-    margin-top: 3vh;
+    margin: 3vh auto 0 auto;
     display: grid;
     grid-template-rows: 20% 80%;
-    border: 1px rgb(105, 239, 251) solid;
 }
 .slide_display_title{
     width: 100%;
@@ -45,13 +45,14 @@
     overflow-y: hidden;
     display:grid;
     grid-auto-flow: column;
+    border: 1px rgb(228, 243, 245) solid;
 }
     .slide_display_pictures_boxes{
         position: relative;
         width: 40vw;
         min-width: 120px;
         max-width: 200px;
-        height: 30vh;
+        height: 40vw;
         max-height: 250px;
         min-height: 150px;
         border-right: 1px rgba(128, 128, 128, 0.5) solid;

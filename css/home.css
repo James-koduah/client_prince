@@ -2,24 +2,46 @@
     position: relative;
     width: 100vw;
     min-height: fit-content;
-    margin: 9vh 0 0 0;
+    margin: 9vh 0 11vh 0;
     padding: 0 0 0 0;
     background-color: black;
-    font-size: 5px;
+    font-size: 10px;
 }
 
 #quote {
     width: 100%;
-    min-height: 70vh;
+    height: 57vh;
     background: url(images/home1.jpg);
     background-repeat: no-repeat;
     background-size: 100% 100%;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
     text-align: center;
     padding-top: 3vh;
+    padding-bottom: 10vh;
 }
+
 
 #quote h2{
     font-size: 2em;
+    margin-bottom: 3vh;
+    color: rgb(197, 139, 73);
+    letter-spacing: 0.1em;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+#quote p{
+    font-size: 1.4em;
+    color: rgb(243, 193, 135);
+    letter-spacing: 0.2em;
+    margin-bottom: 7vh;
+}
+
+#quote :last-child{
+    width: 90vw;
+    color: rgb(243, 210, 172);
+    font-size: 1em;
+    letter-spacing: 0.3em;
 }
