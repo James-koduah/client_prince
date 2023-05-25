@@ -9,8 +9,17 @@ html{
 
 body{
     color: rgb(33, 32, 32);
-    background-color: antiquewhite;
+    background-color: black;
     width: 100vw;
     overflow-x: hidden;
     max-width: 100%;
+    z-index: 1;
+}
+
+
+main {
+    background-color: black;
+    z-index: 1;
+    width: 100vw;
+    height: fit-content;
 }

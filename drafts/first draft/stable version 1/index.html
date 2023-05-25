@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/nav.css">
+    <link rel="stylesheet" href="css/home.css">
+    <title>Portfolio</title>
+</head>
+<body>
+    <!-- nav.css -->
+    <div id="menu_bar">
+        <div id="main_menu"></div>
+        <div id="close_menu" onclick="nav_toogle()"></div>
+    </div>
+    <div id="nav1" class="nav">
+        <div class="logo">Artwork</div>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Services</a>
+            <a href="#">Works</a>
+            <a href="#">Contact</a>
+        </nav>
+    </div>
+    <div id="nav2" class="nav">
+        <div class="logo">Artwork</div>
+        <div id="nav_menu_button" onclick="nav_toogle()"></div>
+    </div>
+    <!-- nav.css -->
+
+    <!-- home.css -->
+    <section id="home">
+        <div id="quote">An Apple A Day Keeps The Doctor Away</div>
+        <div id="featured_work" class="slide_display">
+            <div class="slide_display_title">
+               <h5>Featured Work</h5>
+               <p>See more <span>↠</span></p>
+            </div>
+            <div class="slide_display_pictures">
+                <div class="slide_display_pictures_boxes"></div>
+                <div class="slide_display_pictures_boxes"></div>
+                <div class="slide_display_pictures_boxes"></div>
+                <div class="slide_display_pictures_boxes"></div>
+                <div class="slide_display_pictures_boxes"></div>
+            </div>
+        </div>
+        <div id="Recent_work" class="slide_display">
+            <div class="slide_display_title">
+               <h5>Recent Work</h5>
+               <p>See more <span>↠</span></p>
+            </div>
+            <div class="slide_display_pictures">
+                <div class="slide_display_pictures_boxes"></div>
+                <div class="slide_display_pictures_boxes"></div>
+                <div class="slide_display_pictures_boxes"></div>
+                <div class="slide_display_pictures_boxes"></div>
+                <div class="slide_display_pictures_boxes"></div>
+            </div>
+        </div>
+    </section>
+    <!-- home.css -->
+    
+    <script src="app/app.js"></script>
+</body>
+</html>
