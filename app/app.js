@@ -62,3 +62,12 @@ function full_display_change(direction) {
     picture_name = `pic_${number}`
   }
 }
+
+window.onload = function (){
+  let element = document.getElementsByClassName('service');
+  for (let i = 0; i < element.length; i++){
+    width = element[i].id
+    console.log(width)
+    element[i].style.width = `${width}%`
+  }
+}

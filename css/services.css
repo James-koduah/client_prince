@@ -1,0 +1,26 @@
+#services{
+    width: 100vw;
+    min-height: 100vh;
+    background: url(images/services.avif) no-repeat;
+    background-size: 100% 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5vh 0 5vh 0;
+}
+
+
+#metrics{
+    width: 90vw;
+    height: 80vh;
+    display: grid;
+    grid-auto-flow: row;
+    border-left: 2px rgb(0, 234, 255) solid;
+    overflow-y: auto;
+}
+
+.service{
+    width: 20vw;
+    height: 15vh;
+    border-bottom: 5px rgb(0, 234, 255) solid;
+}

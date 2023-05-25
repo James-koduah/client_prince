@@ -3,9 +3,10 @@
     width: 100vw;
     min-height: 100vh;
     margin: 0 0 0 0;
-    padding: 0 0 0 0;
+    padding: 0 0 6vh 0;
     background-color: black;
     font-size: 5px;
+    box-shadow: 0vw 3vh 1vh rgb(0, 0, 23) ;
 }
 
 
@@ -16,6 +17,7 @@
     margin-top: 3vh;
     display: grid;
     grid-template-rows: 20% 80%;
+    border: 1px rgb(105, 239, 251) solid;
 }
 .slide_display_title{
     width: 100%;
