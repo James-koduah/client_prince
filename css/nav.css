@@ -33,6 +33,7 @@
     position: absolute;
     left: 0;
     margin-left: 2vw;
+    max-width: 150px;
     width: 20vw;
     height: 8vh;
     background: url('images/logo_transparent1.png') no-repeat;
