@@ -61,12 +61,11 @@
     padding-left: 3em;
     padding-right: 3em;
     padding-bottom: 5em;
-    font-size: 1em;
+    font-size: 0.9em;
     letter-spacing: 0.2em;
-    border-left: 1px var(--golden) dotted;
 }
     .talks p{
-        font-size: 1.5em;
+        font-size: 1.2em;
         border-bottom: 1px var(--golden) dotted;
         padding-bottom: 1em;
         margin-bottom: 2vh;
