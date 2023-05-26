@@ -1,8 +1,8 @@
 #services{
     width: 100vw;
     min-height: 100vh;
-    background: url(images/services.avif) no-repeat;
-    background-size: 100% 100vh;
+    background: url(images/home1.avif) no-repeat;
+    background-size: 200% 100vh;
     background-attachment: fixed;
     display: flex;
     align-items: center;
@@ -14,27 +14,30 @@
 
 
 #metrics{
-    width: 90vw;
-    min-height: 70vh;
+    width: 95vw;
+    
+    height: fit-content;
+    min-height: 800px;
     display: grid;
-    grid-auto-flow: row;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    grid-column-gap: 3vw;
     border-left: 2px var(--glow-color) solid;
     border-right: 2px var(--glow-color) solid;
     margin-top: 5vh;
+    padding-left: 3vw;
+    padding-right: 3vw;
 }
 
 .service{
-    height: 15vh;
-    /* border-bottom: 5px var(--glow-color) solid; */
+    height: 20vh;
+    text-align: center;
+    /* border-bottom: 1px var(--glow-color) solid; */
 }
 
 .service_content{
     height: 100%;
-    width: 90vw;
     padding-left: 3vw;
-    display: grid;
-    grid-template-columns: 80% 20%;
-    grid-template-rows: 0.5fr 2.5fr;
 }
 
 .service_content :first-child{
@@ -42,22 +45,23 @@
     align-items: center;
     justify-content: center;
     font-size: 1.3em;
+    color: white;
 }
 
 .service_percent{
     color: rgb(255, 255, 255);
+    margin-top: 3vh;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
 .dis_metric{
-    
+    width: 40%;
     height: 100%;
     background: blue;
     border-radius: 50%;
-    padding: 0.7em;
-    font-size: 2em;
+    font-size: 1em;
 }
 
 .service_description{

@@ -146,7 +146,6 @@
                 <div class="service">
                     <div class="service_content">
                         <p>Wall Treatment</p>
-                        <p class="service_percent"><i id="70" class="dis_metric">80%</i></p>
                         <p class="service_description">
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                             Fusce fermentum nisi sed convallis fermentum. Mauris at neque massa.
@@ -157,7 +156,6 @@
                 <div class="service">
                     <div class="service_content">
                         <p>Swahili Design</p>
-                        <p class="service_percent"><i id="90" class="dis_metric">90%</i></p>
                         <p class="service_description">
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                             Fusce fermentum nisi sed convallis fermentum. Mauris at neque massa.
@@ -168,7 +166,6 @@
                 <div class="service">
                     <div class="service_content">
                         <p>Interior And Exterior Design</p>
-                        <p class="service_percent"><i id="85" class="dis_metric">85%</i></p>
                         <p class="service_description">
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                             Fusce fermentum nisi sed convallis fermentum. Mauris at neque massa.
@@ -179,7 +176,6 @@
                 <div class="service">
                     <div class="service_content">
                         <p>Grafiato Design</p>
-                        <p class="service_percent"><i id="95" class="dis_metric">95%</i></p>
                         <p class="service_description">
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                             Fusce fermentum nisi sed convallis fermentum. Mauris at neque massa.
@@ -190,7 +186,6 @@
                 <div class="service">
                     <div class="service_content">
                         <p>Pop Design</p>
-                        <p class="service_percent"><i id="95" class="dis_metric">95%</i></p>
                         <p class="service_description">
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                             Fusce fermentum nisi sed convallis fermentum. Mauris at neque massa.
@@ -201,7 +196,6 @@
                 <div class="service">
                     <div class="service_content">
                         <p>Wall Skimming</p>
-                        <p class="service_percent"><i id="100" class="dis_metric">100%</i></p>
                         <p class="service_description">
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                             Fusce fermentum nisi sed convallis fermentum. Mauris at neque massa.
@@ -212,7 +206,6 @@
                 <div class="service">
                     <div class="service_content">
                         <p>Metallic Flooring</p>
-                        <p class="service_percent"><i id="87" class="dis_metric">87%</i></p>
                         <p class="service_description">
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                             Fusce fermentum nisi sed convallis fermentum. Mauris at neque massa.
@@ -223,7 +216,6 @@
                 <div class="service">
                     <div class="service_content">
                         <p>3D Epoxy Floor Coating</p>
-                        <p class="service_percent"><i id="90" class="dis_metric">90%</i></p>
                         <p class="service_description">
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                             Fusce fermentum nisi sed convallis fermentum. Mauris at neque massa.
@@ -234,7 +226,6 @@
                 <div class="service">
                     <div class="service_content">
                         <p>CCTV Camera Installation</p>
-                        <p class="service_percent"><i id="92" class="dis_metric">92%</i></p>
                         <p class="service_description">
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                             Fusce fermentum nisi sed convallis fermentum. Mauris at neque massa.
@@ -245,7 +236,6 @@
                 <div class="service">
                     <div class="service_content">
                         <p>Wallpaper Installation</p>
-                        <p class="service_percent"><i id="90" class="dis_metric">90%</i></p>
                         <p class="service_description">
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                             Fusce fermentum nisi sed convallis fermentum. Mauris at neque massa.
@@ -296,13 +286,15 @@
     </main>
     <!-- display_pictures.css -->
     <div id="full_display">
-        <div id="full_display_close" onclick="full_display_close()"></div>
+        <div id="full_display_close" onclick="full_display_close()">
+            <ion-icon id="close_button" name="close-outline" color="light"></ion-icon>
+        </div>
         <div id="full_display_previous" onclick="full_display_change('<')">
-            <div id="full_display_previous_button"></div>
+            <img src="css/backward.svg" alt="Back" id="full_display_previous_button">
         </div>
         <div id="full_display_next" onclick="full_display_change('>')">
-            <div id="full_display_next_button"></div>
-        </div>
+            <img src="css/forward.svg" alt="forward" id="full_display_next_button">
+            </div>
         <div id="full_display_pic"></div>
     </div>
     <!-- nav.css -->
@@ -310,9 +302,9 @@
         <div id="main_menu"></div>
         <div id="close_menu" onclick="nav_toogle()"></div>
     </div>
-
-    <!-- <footer></footer> -->
     <script src="app/app.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </body>
 </html>
 
