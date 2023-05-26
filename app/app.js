@@ -64,10 +64,13 @@ function full_display_change(direction) {
 }
 
 window.onload = function (){
-  let element = document.getElementsByClassName('service');
+  let element = document.getElementsByClassName('dis_metric');
   for (let i = 0; i < element.length; i++){
-    width = element[i].id
-    console.log(width)
-    element[i].style.width = `${width}%`
+    // width = element[i].id
+    // console.log(width)
+    // element[i].style.width = `${width}%`
+    let id = element[i].id
+    console.log(id)
+    element[i].style.background = `linear-gradient(0deg, var(--glow-color), transparent ${id}%)`
   }
 }

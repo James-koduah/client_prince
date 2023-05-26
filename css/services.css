@@ -50,10 +50,10 @@
     justify-content: center;
 }
 
-.service_percent i{
+.dis_metric{
     
     height: 100%;
-    background-color: var(--glow-color);
+    background: blue;
     border-radius: 50%;
     padding: 0.7em;
     font-size: 2em;
