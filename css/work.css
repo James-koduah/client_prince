@@ -1,9 +1,9 @@
 #work {
     position: relative;
     width: 100vw;
-    min-height: 80vh;
+    min-height: 100vh;
     margin: 0 0 0 0;
-    padding: 0 0 0vh 0;
+    padding: 0 0 5vh 0;
     background-color: var(--main-bg-color);
     font-size: 5px;
     box-shadow: 0vw 3vh 1vh rgb(0, 0, 23) ;
