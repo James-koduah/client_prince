@@ -71,6 +71,13 @@ window.onload = function (){
     // element[i].style.width = `${width}%`
     let id = element[i].id
     console.log(id)
-    element[i].style.background = `linear-gradient(0deg, var(--glow-color), transparent ${id}%)`
+    if (id == 100){
+      element[i].style.background = 'var(--glow-color)'
+    }
+    else{
+      id = Number(id)
+      id += 5
+      element[i].style.background = `linear-gradient(0deg, var(--glow-color), transparent ${id}%)`
+    }
   }
 }

@@ -1,0 +1,64 @@
+#services{
+    width: 100vw;
+    min-height: 100vh;
+    background: url(images/services.avif) no-repeat;
+    background-size: 100% 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0vh 0 5vh 0;
+    color: var(--glow-color);
+    font-size: 10px;
+}
+
+
+#metrics{
+    width: 90vw;
+    min-height: 70vh;
+    display: grid;
+    grid-auto-flow: row;
+    border-left: 2px var(--glow-color) solid;
+    border-right: 2px var(--glow-color) solid;
+    margin-top: 5vh;
+}
+
+.service{
+    height: 15vh;
+    /* border-bottom: 5px var(--glow-color) solid; */
+}
+
+.service_content{
+    height: 100%;
+    width: 90vw;
+    padding-left: 3vw;
+    display: grid;
+    grid-template-columns: 80% 20%;
+    grid-template-rows: 0.5fr 2.5fr;
+}
+
+.service_content :first-child{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.3em;
+}
+
+.service_percent{
+    color: rgb(255, 255, 255);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.dis_metric{
+    
+    height: 100%;
+    background: blue;
+    border-radius: 50%;
+    padding: 0.7em;
+    font-size: 2em;
+}
+
+.service_description{
+    text-align: center;
+}
