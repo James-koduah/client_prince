@@ -64,7 +64,6 @@
     font-size: 1em;
     letter-spacing: 0.2em;
     border-left: 1px var(--golden) dotted;
-    border-right: 1px var(--golden) dotted;
 }
     .talks p{
         font-size: 1.5em;
