@@ -1,7 +1,7 @@
 #home {
     position: relative;
     width: 100vw;
-    height: 65vh;
+    height: 55vh;
     margin: 9vh 0 11vh 0;
     padding: 0 0 0 0;
     background-color: var(--main-bg-color);
@@ -10,7 +10,7 @@
 
 #quote {
     width: 100%;
-    height: 40vh;
+    height: 30vh;
     background: rgb(43, 42, 42);
     background-repeat: no-repeat;
     background-size: 100% 100%;
@@ -25,7 +25,8 @@
 
 
 #quote h2{
-    font-size: 2em;
+    font-size: 1.5em;
+    width: 80%;
     margin-bottom: 3vh;
     color: rgb(197, 139, 73);
     letter-spacing: 0.1em;
@@ -33,7 +34,7 @@
 }
 
 #quote p{
-    font-size: 1.4em;
+    font-size: 1em;
     color: rgb(243, 193, 135);
     letter-spacing: 0.2em;
 }
@@ -49,6 +50,6 @@
 #talk_p1 {
     margin: 5vh auto 5vh auto;
     width: 90%;
-    font-size: 1.1em;
+    font-size: 0.8em;
     letter-spacing: 0.3em;
 }
