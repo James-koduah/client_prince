@@ -1,6 +1,7 @@
 let nav_toggle_on = false;
 let menu_bar = document.getElementById("menu_bar")
 let nav_menu_button = document.getElementById("nav_menu_button")
+let nav = document.getElementsByClassName('nav')
 function nav_toogle() {
   if (nav_toggle_on == false) {
     menu_bar.style.zIndex = 999;
@@ -12,6 +13,19 @@ function nav_toogle() {
   }
 }
 
+window.onscroll = function (e) {
+  if (window.scrollY > 150)
+  {
+    for (let i = 0; i < nav.length; i++){
+      nav[i].style.background = 'var(--quotes-bg-color)'
+    }
+  }
+  else{
+    for (let i = 0; i < nav.length; i++){
+      nav[i].style.background = 'transparent'
+    }
+  }
+};
 
 display = document.getElementById("full_display")
 display_pic = document.getElementById("full_display_pic")
