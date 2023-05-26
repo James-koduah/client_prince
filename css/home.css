@@ -42,7 +42,7 @@
 }
 
 #talk {
-    width: 100vw;
+    width: 94vw;
     height: 50vh;
     background: linear-gradient(180deg, var(--quotes-bg-color), var(--main-bg-color));
     text-align: center;
@@ -51,6 +51,7 @@
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
     gap: 3em;
+    margin: 0 auto 0 auto;
 }
 
 .talks{
@@ -59,13 +60,14 @@
     overflow-y: hidden;
     padding-left: 3em;
     padding-right: 3em;
-    padding-top: 5em;
     padding-bottom: 5em;
-    font-size: 0.6em;
-    letter-spacing: 0.3em;
+    font-size: 0.8em;
+    letter-spacing: 0.2em;
+    border-left: 1px var(--golden) dotted;
+    border-right: 1px var(--golden) dotted;
 }
     .talks p{
-        font-size: 1em;
+        font-size: 1.2em;
         border-bottom: 1px var(--golden) dotted;
         padding-bottom: 1em;
         margin-bottom: 2vh;
