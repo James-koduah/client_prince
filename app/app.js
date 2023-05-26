@@ -14,6 +14,7 @@ function nav_toogle() {
 }
 
 window.onscroll = function (e) {
+  console.log(window.scrollY)
   if (window.scrollY > 150)
   {
     for (let i = 0; i < nav.length; i++){
@@ -32,7 +33,7 @@ display_pic = document.getElementById("full_display_pic")
 display_close = document.getElementById("full_display_pic")
 var picture_name;
 function full_display(pic_name, pic_size='large') {
-  display_pic.style.background = `url('css/images/works/${pic_name}.png') no-repeat`
+  display_pic.style.background = `url('css/images/works/${pic_name}.webp') no-repeat`
   display_pic.style.backgroundSize = "100% 100%"
   picture_name = pic_name
   display.style.zIndex = 100
