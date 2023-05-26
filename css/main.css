@@ -10,8 +10,10 @@ html{
 :root {
     --main-bg-color: rgb(31, 31, 31);
     --contact-bg-color: rgb(49, 49, 47);
+    --quotes-bg-color: rgb(43, 42, 42);
     --glow-color: rgb(0, 234, 255);
     --golden: wheat;
+
 }
 
 body{

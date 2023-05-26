@@ -13,13 +13,13 @@
 
 
 #metrics{
-    width: 70vw;
-    height: 70vh;
+    width: 90vw;
+    min-height: 70vh;
     display: grid;
     grid-auto-flow: row;
     border-left: 2px var(--glow-color) solid;
     border-right: 2px var(--glow-color) solid;
-    overflow-y: auto;
+    margin-top: 5vh;
 }
 
 .service{
@@ -29,7 +29,7 @@
 
 .service_content{
     height: 100%;
-    width: 65vw;
+    width: 90vw;
     padding-left: 3vw;
     display: grid;
     grid-template-columns: 80% 20%;
@@ -44,7 +44,7 @@
 }
 
 .service_percent{
-    color: aliceblue;
+    color: rgb(255, 255, 255);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -52,10 +52,10 @@
 
 .service_percent i{
     
-    height: 80%;
+    height: 100%;
     background-color: var(--glow-color);
     border-radius: 50%;
-    padding: 0.2em;
+    padding: 0.7em;
     font-size: 2em;
 }
 
