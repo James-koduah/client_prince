@@ -12,6 +12,7 @@ function nav_toogle() {
   }
 }
 
+
 display = document.getElementById("full_display")
 display_pic = document.getElementById("full_display_pic")
 display_close = document.getElementById("full_display_pic")
