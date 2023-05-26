@@ -67,13 +67,13 @@ function full_display_change(direction) {
   number = Number(number)
   if (direction == '>') {
     if (number < 7) number++;
-    display_pic.style.background = `url('css/images/works/pic_${number}.png') no-repeat`
+    display_pic.style.background = `url('css/images/works/pic_${number}.webp') no-repeat`
     display_pic.style.backgroundSize = "100% 100%"
     picture_name = `pic_${number}`
   }
   if (direction == '<') {
     if (number > 1) number--;
-    display_pic.style.background = `url('css/images/works/pic_${number}.png') no-repeat`
+    display_pic.style.background = `url('css/images/works/pic_${number}.webp') no-repeat`
     display_pic.style.backgroundSize = "100% 100%"
     picture_name = `pic_${number}`
   }
