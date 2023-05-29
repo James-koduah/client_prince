@@ -3,18 +3,25 @@
     height: 100vh;
     background-color: var(--main-bg-color);
     font-size: 5px;
-    padding-top: 5vh;
 }
 
+#home_logo_cover{
+    width: 100vw;
+    padding-top: 5vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: url('images/home1.webp');
+    flex-direction: column;
+
+}
 #home_logo{
     width: 70vw;
     min-width: 100px;
     max-width: 150px;
     min-height: 80px;
     height: 20vh;
-    max-height: 100px;
     margin: 0 auto 0 auto;
-    background: url('images/logo_transparent1.webp') no-repeat;
     background-size: 100% 100%;
 }
 
