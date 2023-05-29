@@ -8,6 +8,7 @@
 #home_logo_cover{
     width: 100vw;
     padding-top: 5vh;
+    min-height: 200px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -32,7 +33,6 @@
     text-align: center;
     font-size: 2em;
     letter-spacing: 0.2em;
-    border-bottom: 1px var(--color-golden) solid;
     display: flex;
     align-items: flex-start;
     justify-content: center;
@@ -55,32 +55,12 @@
 }
 
 #quick_contact ion-icon{
-    width: 15px;
-    height: 15px;
+    width: 20px;
+    height: 20px;
     color: var(--text-color);
 }
 
-#quick_services{
-    height: 4vh;
-    min-width: 100vw;
-    background-color: black;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-}
 
-#quick_services p{
-    font-size: 2.4em;
-    width: 20vw;
-    margin-left: 1vw;
-    color: aliceblue;
-}
-
-#quick_services ion-icon{
-    color: white;
-    width: 5vh;
-    height: 4vh;
-}
 
 @media (min-width: 450px) {
     #quick_services{
