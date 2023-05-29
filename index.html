@@ -7,282 +7,48 @@
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/nav.css">
     <link rel="stylesheet" href="css/home.css">
-    <link rel="stylesheet" href="css/display_pictures.css">
-    <link rel="stylesheet" href="css/work.css">
-    <link rel="stylesheet" href="css/services.css">
+
     <link rel="stylesheet" href="css/contact.css">
-    <link rel="stylesheet" href="css/footer.css">
-    <title>Portfolio</title>
+    <title>Document</title>
 </head>
 <body>
     <main>
-        <!-- nav.css -->
-        <div id="nav1" class="nav">
-            <div class="logo" onClick="window.location.reload(true)"></div>
-            <nav>
-                <a href="#">Home</a>
-                <a href="#">About</a>
-                <a href="#">Services</a>
-                <a href="#">Works</a>
-                <a href="#">Contact</a>
+        <section id="nav">
+            <nav class="nav" id="nav1">
+                <div class="logo" onClick="window.location.reload(true)"></div>
+                <div>
+                    <a href="#">Home</a>
+                    <a href="#">About</a>
+                    <a href="#">Services</a>
+                    <a href="#">Works</a>
+                    <a href="#">Contact</a>
+                </div>
             </nav>
-        </div>
-        <div id="nav2" class="nav">
-            <div class="logo" onClick="window.location.reload(true)"></div>
+            <nav class="nav" id="nav2">
+                <div class="logo" onClick="window.location.reload(true)"></div>
             <div id="nav_menu_button" onclick="nav_toogle()"></div>
-        </div>
-
-        <!-- home.css -->
+            </nav>
+        </section>
         <section id="home">
-            <div id="quote">
-                <h2>CLEAN HANDS PAINTING & ART WORKS COMPANY</h2>
-                <p>Customer Satisfaction Is Our Desire</p>
+            <div id="quick_contact">
+                <ion-icon name="contrast" onclick="light_dark()"></ion-icon>
+                <ion-icon name="logo-facebook"></ion-icon>
+                <ion-icon name="logo-instagram"></ion-icon>
+                <ion-icon name="mail-outline"></ion-icon>
+                <ion-icon name="logo-twitter"></ion-icon>
+                <ion-icon name="call-outline"></ion-icon>
             </div>
-            <div id="talk">
-                <div id="talk_p1" class="talks">
-                    <p>Clean Paintings</p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    Aliquam facilisis ornare orci, vitae sagittis turpis pretium sit amet. 
-                    Proin sagittis imperdiet ex eu lobortis. Sed dapibus sem id mauris auctor, 
-                    sit amet gravida urna rhoncus. Donec quis tempor justo. 
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean eu finibus nisl. 
-                    Cras non purus massa. Praesent vulputate mi condimentum aliquam pharetra. 
-                    Ut venenatis imperdiet vehicula. Nunc porta, nulla et pretium aliquet, 
-                    nulla magna maximus urna, ac luctus metus sapien ut augue.
-                </div>
-                <div id="talk_p2" class="talks">
-                    <p>Clean Paintings</p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    Aliquam facilisis ornare orci, vitae sagittis turpis pretium sit amet. 
-                    Proin sagittis imperdiet ex eu lobortis. Sed dapibus sem id mauris auctor, 
-                    sit amet gravida urna rhoncus. Donec quis tempor justo. 
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean eu finibus nisl. 
-                    Cras non purus massa. Praesent vulputate mi condimentum aliquam pharetra. 
-                    Ut venenatis imperdiet vehicula. Nunc porta, nulla et pretium aliquet, 
-                    nulla magna maximus urna, ac luctus metus sapien ut augue.
-                </div>
-                <div id="talk_p3" class="talks">
-                    <p>Clean Paintings</p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    Aliquam facilisis ornare orci, vitae sagittis turpis pretium sit amet. 
-                    Proin sagittis imperdiet ex eu lobortis. Sed dapibus sem id mauris auctor, 
-                    sit amet gravida urna rhoncus. Donec quis tempor justo. 
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean eu finibus nisl. 
-                    Cras non purus massa. Praesent vulputate mi condimentum aliquam pharetra. 
-                    Ut venenatis imperdiet vehicula. Nunc porta, nulla et pretium aliquet, 
-                    nulla magna maximus urna, ac luctus metus sapien ut augue.
-                </div>
-                <div id="talk_p4" class="talks">
-                    <p>Clean Paintings</p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    Aliquam facilisis ornare orci, vitae sagittis turpis pretium sit amet. 
-                    Proin sagittis imperdiet ex eu lobortis. Sed dapibus sem id mauris auctor, 
-                    sit amet gravida urna rhoncus. Donec quis tempor justo. 
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean eu finibus nisl. 
-                    Cras non purus massa. Praesent vulputate mi condimentum aliquam pharetra. 
-                    Ut venenatis imperdiet vehicula. Nunc porta, nulla et pretium aliquet, 
-                    nulla magna maximus urna, ac luctus metus sapien ut augue.
-                </div>
+            <div id="home_logo"></div>
+            <h1 id="home_header">CLEAN HANDS PAINTING & ART WORKS COMPANY</h1>
+            <div id="quick_services">
+                <p>Jaskin tech</p>
+                <p>Jaskin tech</p>
+                <p>Jaskin tech</p>
+                <p>Jaskin tech</p>
+                <p>Jaskin tech</p>
+                <ion-icon name="chevron-forward-circle"></ion-icon>
             </div>
         </section>
-        <!-- work.css -->
-        <section id="work">
-            <div id="featured_work" class="slide_display">
-                <div class="slide_display_title">
-                <h5>Featured Work</h5>
-                <p>See more <span>↠</span></p>
-                </div>
-                <div class="slide_display_pictures">
-                    <div class="slide_display_pictures_boxes pic_1" onclick="full_display('pic_1')"></div>
-                    <div class="slide_display_pictures_boxes pic_2" onclick="full_display('pic_2', 'flat')"></div>
-                    <div class="slide_display_pictures_boxes pic_3" onclick="full_display('pic_3')"></div>
-                    <div class="slide_display_pictures_boxes pic_4" onclick="full_display('pic_4')"></div>
-                    <div class="slide_display_pictures_boxes pic_5" onclick="full_display('pic_5')"></div>
-                    <div class="slide_display_pictures_boxes pic_6" onclick="full_display('pic_6')"></div>
-                    <div class="slide_display_pictures_boxes pic_7" onclick="full_display('pic_7')"></div>
-                </div>
-            </div>
-            <div id="Recent_work" class="slide_display">
-                <div class="slide_display_title">
-                <h5>Recent Work</h5>
-                <p>See more <span>↠</span></p>
-                </div>
-
-                <!-- display_pictures.css -->
-                <div class="slide_display_pictures">
-                    <div class="slide_display_pictures_boxes pic_7" onclick="full_display('pic_7')"></div>
-                    <div class="slide_display_pictures_boxes pic_6" onclick="full_display('pic_6')"></div>
-                    <div class="slide_display_pictures_boxes pic_5" onclick="full_display('pic_5')"></div>
-                    <div class="slide_display_pictures_boxes pic_4" onclick="full_display('pic_4')"></div>
-                    <div class="slide_display_pictures_boxes pic_3" onclick="full_display('pic_3')"></div>
-                    <div class="slide_display_pictures_boxes pic_2" onclick="full_display('pic_2')"></div>
-                    <div class="slide_display_pictures_boxes pic_1" onclick="full_display('pic_1')"></div>
-                </div>
-                <!-- display_pictures.css -->
-            </div>
-            <div id="more_work" class="slide_display">
-                <div class="slide_display_title">
-                <h5>More Work</h5>
-                <p>See more <span>↠</span></p>
-                </div>
-
-                <!-- display_pictures.css -->
-                <div class="slide_display_pictures">
-                    <div class="slide_display_pictures_boxes pic_7" onclick="full_display('pic_7')"></div>
-                    <div class="slide_display_pictures_boxes pic_6" onclick="full_display('pic_6')"></div>
-                    <div class="slide_display_pictures_boxes pic_5" onclick="full_display('pic_5')"></div>
-                    <div class="slide_display_pictures_boxes pic_4" onclick="full_display('pic_4')"></div>
-                    <div class="slide_display_pictures_boxes pic_3" onclick="full_display('pic_3')"></div>
-                    <div class="slide_display_pictures_boxes pic_2" onclick="full_display('pic_2')"></div>
-                    <div class="slide_display_pictures_boxes pic_1" onclick="full_display('pic_1')"></div>
-                </div>
-                <!-- display_pictures.css -->
-            </div>
-            <div id="more_work" class="slide_display">
-                <div class="slide_display_title">
-                <h5>More Work</h5>
-                <p>See more <span>↠</span></p>
-                </div>
-
-                <!-- display_pictures.css -->
-                <div class="slide_display_pictures">
-                    <div class="slide_display_pictures_boxes pic_4" onclick="full_display('pic_4')"></div>
-                    <div class="slide_display_pictures_boxes pic_3" onclick="full_display('pic_3')"></div>
-                    <div class="slide_display_pictures_boxes pic_2" onclick="full_display('pic_2')"></div>
-                    <div class="slide_display_pictures_boxes pic_1" onclick="full_display('pic_1')"></div>
-                    <div class="slide_display_pictures_boxes pic_5" onclick="full_display('pic_5')"></div>
-                    <div class="slide_display_pictures_boxes pic_6" onclick="full_display('pic_6')"></div>
-                    <div class="slide_display_pictures_boxes pic_7" onclick="full_display('pic_7')"></div>
-                </div>
-                <!-- display_pictures.css -->
-            </div>
-            <div id="more_work" class="slide_display">
-                <div class="slide_display_title">
-                <h5>More Work</h5>
-                <p>See more <span>↠</span></p>
-                </div>
-
-                <!-- display_pictures.css -->
-                <div class="slide_display_pictures">
-                    <div class="slide_display_pictures_boxes pic_6" onclick="full_display('pic_6')"></div>
-                    <div class="slide_display_pictures_boxes pic_4" onclick="full_display('pic_4')"></div>
-                    <div class="slide_display_pictures_boxes pic_3" onclick="full_display('pic_3')"></div>
-                    <div class="slide_display_pictures_boxes pic_7" onclick="full_display('pic_7')"></div>
-                    <div class="slide_display_pictures_boxes pic_5" onclick="full_display('pic_5')"></div>
-                    <div class="slide_display_pictures_boxes pic_2" onclick="full_display('pic_2')"></div>
-                    <div class="slide_display_pictures_boxes pic_1" onclick="full_display('pic_1')"></div>
-                </div>
-                <!-- display_pictures.css -->
-            </div>
-        </section>
-
-        <!-- services.css -->
-        <section id="services">
-            <div id="metrics">
-                <div class="service">
-                    <div class="service_content">
-                        <p>Wall Treatment</p>
-                        <p class="service_description">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                            Fusce fermentum nisi sed convallis fermentum. Mauris at neque massa.
-                            Etiam commodo tempus nibh, nec tincidunt libero dignissim faucibus
-                        </p>
-                    </div>
-                </div>
-                <div class="service">
-                    <div class="service_content">
-                        <p>Swahili Design</p>
-                        <p class="service_description">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                            Fusce fermentum nisi sed convallis fermentum. Mauris at neque massa.
-                            Etiam commodo tempus nibh, nec tincidunt libero dignissim faucibus
-                        </p>
-                    </div>
-                </div>
-                <div class="service">
-                    <div class="service_content">
-                        <p>Interior And Exterior Design</p>
-                        <p class="service_description">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                            Fusce fermentum nisi sed convallis fermentum. Mauris at neque massa.
-                            Etiam commodo tempus nibh, nec tincidunt libero dignissim faucibus
-                        </p>
-                    </div>
-                </div>
-                <div class="service">
-                    <div class="service_content">
-                        <p>Grafiato Design</p>
-                        <p class="service_description">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                            Fusce fermentum nisi sed convallis fermentum. Mauris at neque massa.
-                            Etiam commodo tempus nibh, nec tincidunt libero dignissim faucibus
-                        </p>
-                    </div>
-                </div>
-                <div class="service">
-                    <div class="service_content">
-                        <p>Pop Design</p>
-                        <p class="service_description">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                            Fusce fermentum nisi sed convallis fermentum. Mauris at neque massa.
-                            Etiam commodo tempus nibh, nec tincidunt libero dignissim faucibus
-                        </p>
-                    </div>
-                </div>
-                <div class="service">
-                    <div class="service_content">
-                        <p>Wall Skimming</p>
-                        <p class="service_description">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                            Fusce fermentum nisi sed convallis fermentum. Mauris at neque massa.
-                            Etiam commodo tempus nibh, nec tincidunt libero dignissim faucibus
-                        </p>
-                    </div>
-                </div>
-                <div class="service">
-                    <div class="service_content">
-                        <p>Metallic Flooring</p>
-                        <p class="service_description">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                            Fusce fermentum nisi sed convallis fermentum. Mauris at neque massa.
-                            Etiam commodo tempus nibh, nec tincidunt libero dignissim faucibus
-                        </p>
-                    </div>
-                </div>
-                <div class="service">
-                    <div class="service_content">
-                        <p>3D Epoxy Floor Coating</p>
-                        <p class="service_description">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                            Fusce fermentum nisi sed convallis fermentum. Mauris at neque massa.
-                            Etiam commodo tempus nibh, nec tincidunt libero dignissim faucibus
-                        </p>
-                    </div>
-                </div>
-                <div class="service">
-                    <div class="service_content">
-                        <p>CCTV Camera Installation</p>
-                        <p class="service_description">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                            Fusce fermentum nisi sed convallis fermentum. Mauris at neque massa.
-                            Etiam commodo tempus nibh, nec tincidunt libero dignissim faucibus
-                        </p>
-                    </div>
-                </div>
-                <div class="service">
-                    <div class="service_content">
-                        <p>Wallpaper Installation</p>
-                        <p class="service_description">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                            Fusce fermentum nisi sed convallis fermentum. Mauris at neque massa.
-                            Etiam commodo tempus nibh, nec tincidunt libero dignissim faucibus
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- contact.css -->
         <section id="contact">
             <h3>---Contact Us---</h3>
             <p>We Would Love To Hear From You</p>
@@ -317,34 +83,19 @@
                 </div>
             </div>
 
-            <div id="copyright">©copyright Jaskin Tech 2023</div>            
+            <div id="copyright">©copyright Jaskin Tech 2023</div>
         </section>
     </main>
-    <!-- display_pictures.css -->
-    <div id="full_display">
-        <div id="full_display_close" onclick="full_display_close()">
-            <ion-icon id="close_button" name="close-outline" color="light"></ion-icon>
+    <sub>
+        <!-- nav.css -->
+        <div id="menu_bar">
+            <div id="close_menu" onclick="nav_toogle()"></div>
+            <div id="main_menu"></div>
         </div>
-        <div id="full_display_previous" onclick="full_display_change('<')">
-            <img src="css/backward.svg" alt="Back" id="full_display_previous_button">
-        </div>
-        <div id="full_display_next" onclick="full_display_change('>')">
-            <img src="css/forward.svg" alt="forward" id="full_display_next_button">
-            </div>
-        <div id="full_display_pic"></div>
-    </div>
-    <!-- nav.css -->
-    <div id="menu_bar">
-        <div id="main_menu"></div>
-        <div id="close_menu" onclick="nav_toogle()"></div>
-    </div>
+    </sub>
+    
     <script src="app/app.js"></script>
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </body>
 </html>
-
-<!-- Wall Treatment, Swahili Design, Interior And Exterior Design, 
-                    Grafiato Design, Pop Design, Wall Skimming, Metallic Flooring, 
-                    3D Epoxy Floor Coating, CCTV Camera Installation, Wallpaper Installation
-Plastic Wallpaper. -->

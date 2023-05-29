@@ -3,32 +3,30 @@
     margin: 0 0 0 0;
 }
 
-html{
-    width: 100vw;
+:root{
+    --main-bg-color:  rgb(31, 31, 31);
+    --minor-bg-color: rgb(51, 49, 49);
+    --light-bg-color: rgb(249, 246, 240);
+    --text-color: aliceblue;
+    --color-golden: wheat;
 }
-
-:root {
-    --main-bg-color: rgb(31, 31, 31);
-    --contact-bg-color: rgb(49, 49, 47);
-    --quotes-bg-color: rgb(43, 42, 42);
-    --glow-color: rgb(0, 234, 255);
-    --golden: wheat;
-
+/* :root{
+    --main-bg-color:  rgb(221, 221, 251);
+    --minor-bg-color: rgb(82, 82, 84);
+    --light-bg-color: rgb(84, 84, 86);
+    --text-color: rgb(43, 42, 42);
+    --color-golden: blue;
+} */
+main{
+    z-index: 1;
+    background-color: var(--main-bg-color);
 }
 
 body{
-    color: rgb(33, 32, 32);
-    background-color: black;
     width: 100vw;
-    overflow-x: hidden;
-    max-width: 100%;
-    z-index: 1;
-}
-
-
-main {
+    min-height: 100vh;
     background-color: var(--main-bg-color);
-    z-index: 1;
-    width: 100vw;
-    height: fit-content;
+    color: var(--text-color);
 }
+
+

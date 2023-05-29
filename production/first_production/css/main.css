@@ -1,0 +1,34 @@
+*{
+    padding: 0 0 0 0;
+    margin: 0 0 0 0;
+}
+
+html{
+    width: 100vw;
+}
+
+:root {
+    --main-bg-color: rgb(31, 31, 31);
+    --contact-bg-color: rgb(49, 49, 47);
+    --quotes-bg-color: rgb(43, 42, 42);
+    --glow-color: rgb(0, 234, 255);
+    --golden: wheat;
+
+}
+
+body{
+    color: rgb(33, 32, 32);
+    background-color: black;
+    width: 100vw;
+    overflow-x: hidden;
+    max-width: 100%;
+    z-index: 1;
+}
+
+
+main {
+    background-color: var(--main-bg-color);
+    z-index: 1;
+    width: 100vw;
+    height: fit-content;
+}
