@@ -49,14 +49,14 @@
     max-width: 200px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-    padding-top: 1vh;
     z-index: 100;
     transition: 0.5;
 }
 
 #quick_contact ion-icon{
     width: 20px;
-    height: 20px;
+    height: 100%;
+    padding: 1vh;
     color: var(--text-color);
 }
 
