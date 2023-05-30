@@ -9,6 +9,7 @@
     --light-bg-color: rgb(249, 246, 240);
     --text-color: aliceblue;
     --color-golden: wheat;
+    --no-change-text: aliceblue;
 }
 /* :root{
     --main-bg-color:  rgb(221, 221, 251);
