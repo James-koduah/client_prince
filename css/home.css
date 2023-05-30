@@ -19,8 +19,8 @@
 }
 #home_logo{
     width: 70vw;
-    min-width: 100px;
-    max-width: 150px;
+    min-width: 60px;
+    max-width: 100px;
     min-height: 100px;
     height: 10vh;
     margin: 0 auto 0 auto;
@@ -32,7 +32,7 @@
     width: 100vw;
     height: 3vh;
     text-align: center;
-    font-size: 2em;
+    font-size: 1.6em;
     letter-spacing: 0.2em;
     display: flex;
     align-items: flex-start;

@@ -4,7 +4,7 @@
     padding-bottom: 5vh;
     background-color: var(--main-bg-color);
     font-size: 7px;
-    border-top: 1em var(--color-golden) solid;
+    border-top: 0.5em var(--color-golden) solid;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -19,14 +19,13 @@
 .work_text{
     width: 100%;
     height: fit-content;
-    border-bottom: 1px var(--color-golden) solid;
     text-align: center;
     word-break: break-all;
     padding-bottom: 1vh;
 }
     .work_text h3{
         width: 100%;
-        font-size: 2.4em;
+        font-size: 1.6em;
         margin-top: 1vh;
         letter-spacing: 0.2em;
         font-weight: 800;
@@ -34,8 +33,8 @@
 
 .grid_pics{
     width: 100%;
-    height: 60vh;
-    min-height: 500px;
+    height: 40vh;
+    min-height: 250px;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
@@ -57,4 +56,13 @@
     width: 100%;
     height: 100%;
     object-fit: cover;
+}
+
+@media (min-width: 500px) {
+    .grid_pics{
+        min-height: 500px;
+    }
+    .work_container{
+        max-width: 45vw;
+    }
 }
