@@ -35,11 +35,11 @@ for (let elem in divs){
         else item.classList.add('pics')
         grid_pics.appendChild(item)
     }
-
+    
+    main_body.appendChild(grid_pics)
     work_text.appendChild(work_text_h3)
     work_text.appendChild(work_text_p)
     main_body.appendChild(work_text)
-    main_body.appendChild(grid_pics)
     work_section.appendChild(main_body)
 }
 
