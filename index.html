@@ -7,12 +7,13 @@
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/nav.css">
     <link rel="stylesheet" href="css/home.css">
-
+    <link rel="stylesheet" href="css/work.css">
     <link rel="stylesheet" href="css/contact.css">
     <title>Document</title>
 </head>
 <body>
     <main>
+        <!-- nav.css -->
         <section id="nav">
             <nav class="nav" id="nav1">
                 <div class="logo" onClick="window.location.reload(true)"></div>
@@ -29,6 +30,7 @@
             <div id="nav_menu_button" onclick="nav_toogle()"></div>
             </nav>
         </section>
+        <!-- home.css -->
         <section id="home">
             <div id="quick_contact">
                 <ion-icon name="contrast" onclick="light_dark()"></ion-icon>
@@ -43,6 +45,27 @@
                 <h1 id="home_header">CLEAN HANDS PAINTING & ART WORKS COMPANY</h1>
             </div>
         </section>
+        <!-- works.css -->
+        <section id="works">
+            <div id="stone_design" class="work_container">
+                <div class="work_text">
+                    <h3>Stone design</h3>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Fusce fermentum nisi sed convallis fermentum. Mauris at neque massa.
+                        Etiam commodo tempus nibh, nec tincidunt libero dignissim faucibus
+                    </p>
+                </div>
+                <div class="grid_pics">
+                    <div class="pics long_pic" style="background-size: 100% 100%;"></div>
+                    <div class="pics"></div>
+                    <div class="pics"></div>
+                    <div class="pics"></div>
+                    <div class="pics"></div>
+                </div>
+            </div>
+        </section>
+        <!-- contact.css -->
         <section id="contact">
             <h3>---Contact Us---</h3>
             <p>We Would Love To Hear From You</p>
@@ -89,6 +112,7 @@
     </sub>
     
     <script src="app/app.js"></script>
+    <script src="app/populate.js"></script>
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </body>
