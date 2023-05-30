@@ -1,0 +1,72 @@
+#home{
+    width: 100vw;
+    height: 35vh;
+    background-color: var(--main-bg-color);
+    font-size: 5px;
+}
+
+#home_logo_cover{
+    width: 100vw;
+    padding-top: 5vh;
+    min-height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: url('images/home1.webp');
+    background-size: 100% 100%;
+    flex-direction: column;
+
+}
+#home_logo{
+    width: 70vw;
+    min-width: 100px;
+    max-width: 150px;
+    min-height: 80px;
+    height: 20vh;
+    margin: 0 auto 0 auto;
+    background-size: 100% 100%;
+}
+
+
+#home_header{
+    width: 100vw;
+    height: 3vh;
+    text-align: center;
+    font-size: 2em;
+    letter-spacing: 0.2em;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+
+
+#quick_contact{
+    position: fixed;
+    top: 2vh;
+    left: 1vw;
+    height: 3vh;
+    width: 90vw;
+    max-width: 200px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    z-index: 100;
+    transition: 0.5;
+}
+
+#quick_contact ion-icon{
+    width: 20px;
+    height: 100%;
+    padding: 1vh;
+    color: var(--text-color);
+}
+
+
+
+@media (min-width: 450px) {
+    #quick_services{
+        position: fixed;
+        z-index: -100;
+    }
+
+}
