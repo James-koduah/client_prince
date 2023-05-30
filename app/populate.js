@@ -1,7 +1,7 @@
 let divs = {
-    'stoneDesign' : {
+    'featured_work' : {
         'name': 'Featured Work',
-        "path": "css/images/works/stone_design/stone_design",
+        "path": "css/images/works/featured_work/featured_work",
         'displayPictures': [
             [7, 1],
             [2, 0],
@@ -9,14 +9,14 @@ let divs = {
             [31, 2]
         ]
     },
-    'secondDesign' : {
+    'recent_work' : {
         'name': 'Recent Work',
-        "path": "css/images/works/stone_design/stone_design",
+        "path": "css/images/works/recent_work/recent_work",
         'displayPictures': [
             [8, 0],
             [9, 0],
             [11, 0],
-            [31, 0],
+            [30, 0],
             [15, 0],
             [22, 0]
         ]
@@ -39,10 +39,11 @@ for (let elem in divs){
         pic_div.classList.add('pics')
         if (pics[1] == 1) pic_div.classList.add('long_pic')
         if (pics[1] == 2) pic_div.classList.add('wide_pic')
-        console.log(pic_div.clientWidth)
         let pic_div_img = document.createElement('img')
         pic_div_img.src = divs[elem]["path"] + pics[0] + '.jpg'
+        pic_div_img.setAttribute('id', `${elem}_${pics[0]}`)
         pic_div_img.classList.add('work_grid_img')
+        pic_div_img.setAttribute('onclick', "full_display(this)")
         pic_div.appendChild(pic_div_img)
         grid_pics.appendChild(pic_div)
     }

@@ -4,18 +4,27 @@
     left: 0;
     width: 100vw;
     height: 100vh;
-    background: rgba(0, 0, 0, 0.9);
+    background: rgb(0, 0, 0);
     display: flex;
     justify-content: center;
     align-items: center;
-    z-index: -9;
+    z-index: -39;
     overflow-y: auto;
 }
 
 #full_display_pic{
     height: 80%;
     width: 100%;
+    background: black;
     background-size: 100% 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#full_display_img{
+    height: auto;
+    width: 100%;
+    object-fit: cover;
 }
 #full_display_close {
     position: absolute;
@@ -62,32 +71,3 @@
         width: 7vh;
         height: 7vh;
     }
-
-.pic_1{
-    background: url(images/works/pic_1.webp) no-repeat;  
-    background-size: 100% 100%; 
-}
-.pic_2{
-    background: url(images/works/pic_2.webp) no-repeat;  
-    background-size: 100% 100%;
-}
-.pic_3{
-    background: url(images/works/pic_3.webp) no-repeat;  
-    background-size: 100% 100%;
-}
-.pic_4{
-    background: url(images/works/pic_4.webp) no-repeat;  
-    background-size: 100% 100%;
-}
-.pic_5{
-    background: url(images/works/pic_5.webp) no-repeat;  
-    background-size: 100% 100%;
-}
-.pic_6{
-    background: url(images/works/pic_6.webp) no-repeat;  
-    background-size: 100% 100%;
-}
-.pic_7{
-    background: url(images/works/pic_7.webp) no-repeat;  
-    background-size: 100% 100%;
-}

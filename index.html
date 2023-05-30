@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="css/home.css">
     <link rel="stylesheet" href="css/work.css">
     <link rel="stylesheet" href="css/contact.css">
+    <link rel="stylesheet" href="css/display_pictures.css">
     <title>Document</title>
 </head>
 <body>
@@ -104,10 +105,25 @@
             <div id="close_menu" onclick="nav_toogle()"></div>
             <div id="main_menu"></div>
         </div>
+        <!-- display_pictures.css -->
+        <div id="full_display">
+            <div id="full_display_close" onclick="full_display_close()">
+                <ion-icon id="close_button" name="close-outline" color="light"></ion-icon>
+            </div>
+            <div id="full_display_previous" onclick="full_display_change('<')">
+                <ion-icon name="chevron-back-outline" id="full_display_previous_button"></ion-icon>
+            </div>
+            <div id="full_display_next" onclick="full_display_change('>')">
+                <ion-icon name="chevron-forward-outline" id="full_display_next_button"></ion-icon>
+            </div>
+            <div id="full_display_pic">
+                <img src="" id="full_display_img">
+            </div>
+        </div>
     </sub>
     
-    <script src="app/app.js"></script>
     <script src="app/populate.js"></script>
+    <script src="app/app.js"></script>
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </body>

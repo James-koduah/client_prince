@@ -61,13 +61,6 @@ function nav_toogle() {
 let dark = true
 function light_dark(){
   if (dark == true) {
-    /**
-     * --main-bg-color:  rgb(31, 31, 31);
-    --minor-bg-color: rgb(51, 49, 49);
-    --light-bg-color: rgb(221, 221, 251);
-    --text-color: aliceblue;
-    --color-golden: wheat;
-     */
     document.documentElement.style.setProperty('--main-bg-color', 'rgb(249, 246, 240)')
     document.documentElement.style.setProperty('--minor-bg-color', 'rgb(82, 82, 84)')
     document.documentElement.style.setProperty('--light-bg-color', 'rgb(84, 84, 86)')
@@ -88,4 +81,31 @@ function light_dark(){
     nav_menu_button.style.backgroundSize = '100% 100%'
     dark = true
   }
+}
+
+
+/**
+ * full_display - Display Pictures in Full Screen Mode
+ * @pic_name: The Name of the Picture File to be displayed
+ * Return: Nothing
+ */
+display = document.getElementById("full_display")
+display_img = document.getElementById("full_display_img")
+var current_pic;
+function full_display(pic) {
+  let pic_id = pic.id
+  pic_id = pic_id.split('_')
+  let pic_path = pic_id[0] + '_' + pic_id[1]
+  current_pic = pic_id
+  pic_number = pic_id[2]
+  display_img.src = `css/images/works/${pic_path}/${pic_path + pic_number}.jpg`
+  display.style.zIndex = 100;
+}
+/**
+ * full_display_close - Close the full display
+ */
+function full_display_close(){
+  display.style.zIndex = -39
+}
+function full_display_change(direction){  
 }

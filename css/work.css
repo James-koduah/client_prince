@@ -10,7 +10,7 @@
     justify-content: center;
 }
 .work_container{
-    width: 90vw;
+    width: 95vw;
     max-width: 550px;
     height: fit-content;
     border: 1px var(--color-golden) solid;
