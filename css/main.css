@@ -7,8 +7,8 @@
     --main-bg-color:  rgb(31, 31, 31);
     --minor-bg-color: rgb(51, 49, 49);
     --light-bg-color: rgb(249, 246, 240);
-    --text-color: aliceblue;
-    --color-golden: wheat;
+    --text-color: rgb(255, 255, 255);
+    --color-golden: rgb(247, 231, 200);
     --no-change-text: aliceblue;
 }
 /* :root{
