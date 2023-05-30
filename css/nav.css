@@ -19,7 +19,7 @@
 }
     /*Nav anchor element*/
     nav a{
-        color:aliceblue;
+        color:var(--text-color);
         font-size: 1.8em;
         text-decoration: none;
         margin-right:3vw;

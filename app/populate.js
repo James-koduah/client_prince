@@ -1,9 +1,6 @@
 let divs = {
     'stoneDesign' : {
-        'name': 'Stone Design',
-        'text': 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.\
-        Fusce fermentum nisi sed convallis fermentum. Mauris at neque massa.\
-        Etiam commodo tempus nibh, nec tincidunt libero dignissim faucibus',
+        'name': 'Featured Work',
         "path": "css/images/works/stone_design/stone_design",
         'displayPictures': [
             [7, 1],
@@ -12,6 +9,18 @@ let divs = {
             [31, 2]
         ]
     },
+    'secondDesign' : {
+        'name': 'Recent Work',
+        "path": "css/images/works/stone_design/stone_design",
+        'displayPictures': [
+            [8, 0],
+            [9, 0],
+            [11, 0],
+            [31, 0],
+            [15, 0],
+            [22, 0]
+        ]
+    }
 }
 let work_section = document.getElementById('works')
 for (let elem in divs){
@@ -22,23 +31,24 @@ for (let elem in divs){
     work_text.classList.add('work_text')
     let work_text_h3 = document.createElement('h3')
     work_text_h3.innerHTML = `${divs[elem]["name"]}`
-    let work_text_p = document.createElement('p')
-    work_text_p.innerHTML = `${divs[elem]["text"]}`
     let grid_pics = document.createElement('div')
     grid_pics.classList.add('grid_pics')
     let pictures = divs[elem]["displayPictures"]
     for (let pics of pictures){
-        let item = document.createElement('img')
-        item.src = divs[elem]["path"] + pics[0] + '.jpg'
-        if (pics[1] == 1) item.classList.add('pics', 'long_pic')
-        else if (pics[1] == 2) item.classList.add('pics', 'wide_pic')
-        else item.classList.add('pics')
-        grid_pics.appendChild(item)
+        let pic_div = document.createElement('div')
+        pic_div.classList.add('pics')
+        if (pics[1] == 1) pic_div.classList.add('long_pic')
+        if (pics[1] == 2) pic_div.classList.add('wide_pic')
+        console.log(pic_div.clientWidth)
+        let pic_div_img = document.createElement('img')
+        pic_div_img.src = divs[elem]["path"] + pics[0] + '.jpg'
+        pic_div_img.classList.add('work_grid_img')
+        pic_div.appendChild(pic_div_img)
+        grid_pics.appendChild(pic_div)
     }
     
     main_body.appendChild(grid_pics)
     work_text.appendChild(work_text_h3)
-    work_text.appendChild(work_text_p)
     main_body.appendChild(work_text)
     work_section.appendChild(main_body)
 }
