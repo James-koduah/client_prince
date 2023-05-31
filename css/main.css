@@ -29,6 +29,7 @@ body{
     background-color: var(--main-bg-color);
     color: var(--text-color);
     overflow-x: hidden;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
 }
 
 

@@ -49,7 +49,7 @@
 .pics{
     width: 100%;
     height: 100%;
-    border: 1px var(--color-golden) solid;
+    border: 1px white solid;
     min-height: 0;
 }
 .work_grid_img{

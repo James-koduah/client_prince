@@ -85,6 +85,7 @@
     white-space: nowrap;
     font-size: 2em;
     color: white;
+    letter-spacing: 0.2em;
     animation-name: slider;
     animation-duration: 30s;
     animation-iteration-count: infinite;
