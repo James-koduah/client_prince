@@ -1,0 +1,7 @@
+#!/bin/bash
+i=0
+for File in *;
+do
+	mv $File "stone_design$i.jpg";
+	i=$((i+1))
+done

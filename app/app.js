@@ -13,7 +13,7 @@ let quick_contact = document.getElementById('quick_contact')
 window.onscroll = function (e) {
   if (window.scrollY > 50) {quick_contact.style.opacity = 0;}
   if (window.scrollY < 50) {quick_contact.style.opacity = 1;}
-  if (window.scrollY > 150)
+  if (window.scrollY > 120)
   {
     quick_contact.style.zIndex = -100;
     for (let i = 0; i < logo.length; i++){
@@ -98,7 +98,7 @@ function full_display(pic) {
   let pic_path = pic_id[0] + '_' + pic_id[1]
   current_pic = pic_id
   pic_number = pic_id[2]
-  display_img.src = `css/images/works/${pic_path}/${pic_path + pic_number}.jpg`
+  display_img.src = `css/images/works/${pic_path}/${pic_path + pic_number}.webp`
   display.style.zIndex = 100;
 }
 /**

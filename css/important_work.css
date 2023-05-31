@@ -1,5 +1,10 @@
 #works{
     width: 100vw;
+    height: fit-content;
+    display: flex;
+}
+#important_work{
+    width: 100vw;
     min-height: 100vh;
     padding-bottom: 5vh;
     background-color: var(--main-bg-color);
@@ -9,12 +14,19 @@
     flex-wrap: wrap;
     justify-content: center;
 }
+
+#side_panel{
+    position: fixed;
+    top: 10vh;
+    width: 40vw;
+    background-color: var(--main-bg-color);
+    height: 90vh;
+    z-index: -39;
+}
 .work_container{
     position: relative;
     width: 95vw;
-    max-width: 550px;
     height: fit-content;
-    /* border: 1px var(--color-golden) solid; */
     margin-top: 4vh;
 }
 
@@ -65,7 +77,14 @@
     .grid_pics{
         min-height: 500px;
     }
+    #important_work{
+        width: 70vw;
+    }
     .work_container{
-        max-width: 45vw;
+        max-width: 48%;
+    }
+    #side_panel{
+        position: sticky;
+        z-index: 10;
     }
 }

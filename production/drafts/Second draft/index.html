@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/nav.css">
+    <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="css/important_work.css">
+    <link rel="stylesheet" href="css/contact.css">
+    <link rel="stylesheet" href="css/display_pictures.css">
+    <link rel="icon" href="css/images/logo_transparent1.ico">
+    <title>CIHAWC</title>
+</head>
+<body>
+    <main>
+        <!-- nav.css -->
+        <section id="nav">
+            <nav class="nav" id="nav1">
+                <div class="logo" onClick="window.location.reload(true)"></div>
+                <div>
+                    <a href="#">Home</a>
+                    <a href="#">About</a>
+                    <a href="#">Services</a>
+                    <a href="#">Works</a>
+                    <a href="#">Contact</a>
+                </div>
+            </nav>
+            <nav class="nav" id="nav2">
+                <div class="logo" onClick="window.location.reload(true)"></div>
+            <div id="nav_menu_button" onclick="nav_toogle()"></div>
+            </nav>
+        </section>
+        <!-- home.css -->
+        <section id="home">
+            <div id="quick_contact">
+                <ion-icon name="sunny-outline" title="Dark/light mode" onclick="light_dark()"></ion-icon>
+                <ion-icon name="logo-facebook"></ion-icon>
+                <ion-icon name="logo-instagram"></ion-icon>
+                <ion-icon name="mail-outline"></ion-icon>
+                <ion-icon name="logo-twitter"></ion-icon>
+                <ion-icon name="call-outline"></ion-icon>
+            </div>
+            <div id="home_logo_cover">
+                <img id="home_logo" src="css/images/logo_transparent1.svg" alt="">
+                <h1 id="home_header">CLEAN HANDS PAINTING & ART WORKS COMPANY</h1>
+            </div>
+            <div id="space">
+                <div id="space_div">
+                    <p>
+                        Wall Treatment, Swahili Design, Interior And Exterior Design, 
+                        Grafiato Design, Pop Design, Wall Skimming, Metallic Flooring, 
+                        3D Epoxy Floor Coating, CCTV Camera Installation, Wallpaper Installation
+                        Plastic Wallpaper
+                    </p>
+                </div>
+            </div>
+        </section>
+        <!-- important_works.css -->
+        <section id="works">
+            <div id="side_panel"></div>
+            <div id="important_work">
+                <div class="work_container" id="featured_work">
+                    <div class="work_text">
+                        <h3>Featured Work</h3>
+                    </div>
+                    <div class="grid_pics">
+                        <div class="pics long_pic">
+                            <img src="css/images/works/featured_work/featured_work7.jpg" id="featured_work_7" class="work_grid_img" onclick="full_display(this)">
+                        </div>
+                        <div class="pics">
+                            <img src="css/images/works/featured_work/featured_work2.jpg" id="featured_work_2" class="work_grid_img" onclick="full_display(this)">
+                        </div>
+                        <div class="pics">
+                            <img src="css/images/works/featured_work/featured_work12.jpg" id="featured_work_12" class="work_grid_img" onclick="full_display(this)">
+                        </div>
+                        <div class="pics">
+                            <img src="css/images/works/featured_work/featured_work31.jpg" id="featured_work_31" class="work_grid_img" onclick="full_display(this)">
+                        </div>
+                        <div class="pics">
+                            <img src="css/images/works/featured_work/featured_work10.jpg" id="featured_work_10" class="work_grid_img" onclick="full_display(this)">
+                        </div>
+                    </div>
+                </div>
+                <div class="work_container" id="recent_work">
+                    <div class="work_text">
+                        <h3>Recent Work</h3>
+                    </div>
+                    <div class="grid_pics">
+                        <div class="pics">
+                            <img src="css/images/works/recent_work/recent_work8.jpg" id="recent_work_8" class="work_grid_img" onclick="full_display(this)">
+                        </div>
+                        <div class="pics">
+                            <img src="css/images/works/recent_work/recent_work9.jpg" id="recent_work_9" class="work_grid_img" onclick="full_display(this)">
+                        </div>
+                        <div class="pics">
+                            <img src="css/images/works/recent_work/recent_work11.jpg" id="recent_work_11" class="work_grid_img" onclick="full_display(this)">
+                        </div>
+                        <div class="pics">
+                            <img src="css/images/works/recent_work/recent_work30.jpg" id="recent_work_30" class="work_grid_img" onclick="full_display(this)">
+                        </div>
+                        <div class="pics">
+                            <img src="css/images/works/recent_work/recent_work15.jpg" id="recent_work_15" class="work_grid_img" onclick="full_display(this)">
+                        </div>
+                        <div class="pics">
+                            <img src="css/images/works/recent_work/recent_work22.jpg" id="recent_work_22" class="work_grid_img" onclick="full_display(this)">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- contact.css -->
+        <section id="contact">
+            <h3>---Contact Us---</h3>
+            <p>We Would Love To Hear From You</p>
+            <div class="media">
+                <div class="socials">
+                    <div class="socials_left_side">FaceBook</div>
+                    <div class="socials_right_side">Jaskin Tech</div>
+                </div>
+            </div>
+            <div class="media">
+                <div class="socials">
+                    <div class="socials_left_side">WhatsApp</div>
+                    <div class="socials_right_side">+233 00 000 0000</div>
+                </div>
+            </div>
+            <div class="media">
+                <div class="socials">
+                    <div class="socials_left_side">Instagram</div>
+                    <div class="socials_right_side">Jaskin Tech</div>
+                </div>
+            </div>
+            <div class="media">
+                <div class="socials">
+                    <div class="socials_left_side">Twitter</div>
+                    <div class="socials_right_side">Jaskin Tech</div>
+                </div>
+            </div>
+            <div class="media">
+                <div class="socials">
+                    <div class="socials_left_side">Telegram</div>
+                    <div class="socials_right_side">Jaskin Tech</div>
+                </div>
+            </div>
+
+            <div id="copyright">©copyright Jaskin Tech 2023</div>
+        </section>
+    </main>
+    <sub>
+        <!-- nav.css -->
+        <div id="menu_bar">
+            <div id="close_menu" onclick="nav_toogle()"></div>
+            <div id="main_menu"></div>
+        </div>
+        <!-- display_pictures.css -->
+        <div id="full_display">
+            <div id="full_display_close" onclick="full_display_close()">
+                <ion-icon id="close_button" name="close-outline" color="light"></ion-icon>
+            </div>
+            <div id="full_display_previous" onclick="full_display_change('<')">
+                <ion-icon name="chevron-back-outline" id="full_display_previous_button"></ion-icon>
+            </div>
+            <div id="full_display_next" onclick="full_display_change('>')">
+                <ion-icon name="chevron-forward-outline" id="full_display_next_button"></ion-icon>
+            </div>
+            <div id="full_display_pic">
+                <img src="" id="full_display_img">
+            </div>
+        </div>
+    </sub>
+    
+    <script src="app/populate.js"></script>
+    <script src="app/app.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
