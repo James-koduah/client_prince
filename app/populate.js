@@ -50,9 +50,9 @@ function populate(){
             grid_pics.appendChild(pic_div);
         }
         
-        main_body.appendChild(grid_pics);
         work_text.appendChild(work_text_h3);
         main_body.appendChild(work_text);
+        main_body.appendChild(grid_pics);
         work_section.appendChild(main_body);
     }
 }
