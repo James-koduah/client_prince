@@ -10,6 +10,7 @@
     justify-content: center;
 }
 .work_container{
+    position: relative;
     width: 95vw;
     max-width: 550px;
     height: fit-content;
@@ -37,6 +38,7 @@
     height: 40vh;
     min-height: 350px;
     display: grid;
+    max-height: 450px;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
 }
