@@ -13,7 +13,7 @@ let quick_contact = document.getElementById('quick_contact')
 window.onscroll = function (e) {
   if (window.scrollY > 50) {quick_contact.style.opacity = 0;}
   if (window.scrollY < 50) {quick_contact.style.opacity = 1;}
-  if (window.scrollY > 120)
+  if (window.scrollY > 80)
   {
     quick_contact.style.zIndex = -100;
     for (let i = 0; i < logo.length; i++){
@@ -91,21 +91,45 @@ function light_dark(){
  */
 display = document.getElementById("full_display")
 display_img = document.getElementById("full_display_img")
-var current_pic;
-function full_display(pic) {
-  let pic_id = pic.id
+picture_path = 'css/images/works/'
+var currentPictureNumber;
+let currentPictureFolder;
+function full_display(picture) {
+  let pic_id = picture.id
   pic_id = pic_id.split('_')
-  let pic_path = pic_id[0] + '_' + pic_id[1]
-  current_pic = pic_id
-  pic_number = pic_id[2]
-  display_img.src = `css/images/works/${pic_path}/${pic_path + pic_number}.webp`
+  pic_number = pic_id[1]
+  pic_folder = pic_id[0]
+  display_img.src = picture_path + pic_folder + `/${pic_folder}_${pic_number}.webp`;
   display.style.zIndex = 100;
+  currentPictureNumber = pic_number;
+  currentPictureFolder = pic_folder;
 }
 /**
  * full_display_close - Close the full display
  */
 function full_display_close(){
-  display.style.zIndex = -39
+  display.style.zIndex = -39;
 }
-function full_display_change(direction){  
+/**
+ * Any picture you use in the html recent and featured works number must reflect here
+ */
+let featured = ['7', '2', '12', '31', '10'];
+let recent = ['8', '9', '11', '30', '15', '22']
+var currentArray;
+function full_display_change(direction){
+  if (currentPictureFolder == 'featuredwork') currentArray = featured;
+  if (currentPictureFolder == 'recentwork') currentArray = recent;
+  let position = currentArray.indexOf(currentPictureNumber)
+  if (direction == '>'){
+    position++;
+    if (position >= currentArray.length) position = 0;
+    display_img.src = picture_path + pic_folder + `/${pic_folder}_${currentArray[position]}.webp`;
+    currentPictureNumber = currentArray[position];
+  }
+  if (direction == '<'){
+    position--;
+    if (position < 0) position = currentArray.length - 1;
+    display_img.src = picture_path + pic_folder + `/${pic_folder}_${currentArray[position]}.webp`;
+    currentPictureNumber = currentArray[position];
+  }
 }
