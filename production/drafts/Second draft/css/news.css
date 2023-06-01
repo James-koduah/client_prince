@@ -1,0 +1,23 @@
+#news_section{
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 2vh;
+    gap: 2vw;
+}
+
+.news_item{
+    width: 30%;
+    height: 40vh;
+    min-height: 280px;
+    background-color: green;
+    margin-top: 1vh;
+}
+
+@media (max-width: 500px) {
+    .news_item{
+        width: 80%;
+    }
+}
