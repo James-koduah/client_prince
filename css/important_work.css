@@ -2,14 +2,14 @@
     width: 100vw;
     height: fit-content;
     display: flex;
+    font-size: 7px;
+    border-top: 0.3em var(--color-golden) solid;
 }
 #important_work{
     width: 100vw;
     min-height: 100vh;
     padding-bottom: 5vh;
     background-color: var(--main-bg-color);
-    font-size: 7px;
-    border-top: 0.5em var(--color-golden) solid;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -27,22 +27,29 @@
     position: relative;
     width: 95vw;
     height: fit-content;
-    margin-top: 4vh;
+    margin-top: 1vh;
 }
 
 .work_text{
     width: 100%;
     height: fit-content;
-    text-align: center;
     word-break: break-all;
     padding-bottom: 1vh;
+    display: flex;
+    align-items: center;
+    font-size: 1.3em;
+    letter-spacing: 0.1em;
+    font-weight: 500;
 }
     .work_text h3{
-        width: 100%;
-        font-size: 1.6em;
         margin-top: 1vh;
-        letter-spacing: 0.2em;
-        font-weight: 800;
+        margin-left: 1vw;
+    }
+    .work_text p{
+        margin-top: 1vh;
+        position: absolute;
+        right: 1vw;       
+        font-weight: 800; 
     }
 
 .grid_pics{
