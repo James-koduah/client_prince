@@ -94,6 +94,7 @@ display_img = document.getElementById("full_display_img")
 picture_path = 'css/images/works/'
 var currentPictureNumber;
 let currentPictureFolder;
+let display_on = false
 function full_display(picture) {
   let pic_id = picture.id
   pic_id = pic_id.split('_')
@@ -103,12 +104,14 @@ function full_display(picture) {
   display.style.zIndex = 100;
   currentPictureNumber = pic_number;
   currentPictureFolder = pic_folder;
+  display_on = true
 }
 /**
  * full_display_close - Close the full display
  */
 function full_display_close(){
   display.style.zIndex = -39;
+  display_on = false
 }
 /**
  * Any picture you use in the html recent and featured works number must reflect here
@@ -133,3 +136,10 @@ function full_display_change(direction){
     currentPictureNumber = currentArray[position];
   }
 }
+
+addEventListener('keydown', (e) => {
+  if (display_on){
+    if (e.key == 'ArrowLeft') full_display_change('>')
+    if (e.key == 'ArrowRight') full_display_change('<')
+  }
+})

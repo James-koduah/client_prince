@@ -3,6 +3,9 @@ function populate_side(n){
     for (let i = 0; i < n; i++){
         let panel = document.createElement('div')
         panel.classList.add('side_panel_pictures')
+        let panel_img = document.createElement('img')
+        panel_img.src = 'css/images/works/featuredwork/featuredwork_7.webp'
+        panel.appendChild(panel_img)
         side_pics.appendChild(panel)
     }
 }
