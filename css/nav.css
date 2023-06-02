@@ -48,8 +48,8 @@
     z-index: -40;
 }
 #nav_menu_button{
-    max-width: 50px;
-    max-height: 50px;
+    max-width: 35px;
+    max-height: 35px;
     background:url('images/menu_transparent_light.webp') no-repeat;
     background-size: 100% 100%;
     margin-right: 10vw;
