@@ -81,7 +81,6 @@
 }
 .wide_pic{
     grid-column: 1 / 3;
-    grid-row: 3 / 4;
 }
 .long_pic{
     grid-row: 1 / 3;

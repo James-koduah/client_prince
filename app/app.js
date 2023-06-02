@@ -116,7 +116,7 @@ function full_display_close(){
 /**
  * Any picture you use in the html recent and featured works number must reflect here
  */
-let featured = ['7', '2', '12', '31', '10'];
+let featured = ['10', '7', '12', '31', '2'];
 let recent = ['8', '9', '11', '30', '15', '22']
 var currentArray;
 function full_display_change(direction){
