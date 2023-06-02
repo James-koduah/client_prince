@@ -2,7 +2,6 @@
     width: 100vw;
     height: fit-content;
     min-height: 400px;
-    max-height: 630px;
     background-color: var(--main-bg-color);
     font-size: 5px;
 }
@@ -96,9 +95,8 @@
 
 #welcome_words{
     width: 100vw;
-    height: 40vh;
-    max-height: fit-content;
-    min-height: 250px;
+    height: fit-content;
+    min-height: 60vh;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
@@ -106,7 +104,6 @@
     margin-top: 2vh;
     padding-top: 2vh;
     border-top: 0.5em var(--color-golden) solid;
-    overflow-y: auto;
 }
 .welcome_words_text{
     width: 46vw;
@@ -131,7 +128,7 @@
     margin-bottom: 0.4em;
 }
 .welcome_words_text p{
-    font-size: 1.5em;
+    font-size: 1.8em;
 }
 
 @media (min-width: 600px) {
