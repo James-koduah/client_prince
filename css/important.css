@@ -119,3 +119,8 @@
         font-size: 0.8em;
     }
 }
+@media (max-width: 500px) {
+    .work_text{
+        font-size: 1.3em;
+    }
+}
