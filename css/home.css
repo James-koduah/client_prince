@@ -109,10 +109,11 @@
     overflow-y: auto;
 }
 .welcome_words_text{
-    width: 48vw;
-    height: 50%;
+    width: 46vw;
+    height: fit-content;
+    min-height: 50%;
     text-align: center;
-    padding-bottom: 1vh;
+    padding: 1em;
     overflow-y: hidden;
     word-wrap: break-word;
     letter-spacing: 0.2em;
@@ -130,12 +131,12 @@
     margin-bottom: 0.4em;
 }
 .welcome_words_text p{
-    font-size: 2.5em;
+    font-size: 1.5em;
 }
 
 @media (min-width: 600px) {
     .welcome_words_text{
-        width: 24vw;
+        width: 22vw;
         height: 75%;
         border: none;
     }
