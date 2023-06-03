@@ -2,7 +2,7 @@
     width: 100vw;
     height: fit-content;
     min-height: 400px;
-    max-height: 630px;
+    max-height: 730px;
     background-color: var(--main-bg-color);
     font-size: 5px;
 }
@@ -96,7 +96,7 @@
 
 #welcome_words{
     width: 100vw;
-    height: 40vh;
+    height: 50vh;
     max-height: fit-content;
     min-height: 250px;
     display: flex;
@@ -106,7 +106,6 @@
     margin-top: 2vh;
     padding-top: 2vh;
     border-top: 0.5em var(--color-golden) solid;
-    overflow-y: auto;
 }
 .welcome_words_text{
     width: 46vw;

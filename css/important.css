@@ -15,7 +15,7 @@
 #side_panel{
     position: fixed;
     top: 10vh;
-    width: 40vw;
+    width: 20vw;
     background-color: var(--main-bg-color);
     height: 90vh;
     z-index: -39;
@@ -30,7 +30,7 @@
 }
 .side_panel_pictures{
     width: 100%;
-    height: 6vw;
+    height: 4vw;
     background-color: blue;
     border: 1px white solid;
     border-top: none;
@@ -40,6 +40,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    margin-top: -3vh;
 }
 .work_container{
     position: relative;
@@ -94,7 +95,7 @@
         min-height: 400px;
     }
     #important{
-        width: 70vw;
+        width: 80vw;
     }
     .work_container{
         max-width: 48%;
@@ -105,12 +106,17 @@
     }
 }
 
+@media (min-width: 800px){
+    #important{
+        width: 60vw;
+    }
+}
 @media (max-width: 650px) {
     #side_pics{
         grid-template-columns: auto auto auto auto;
     }
     .side_panel_pictures{
-        height: 7vw;
+        height: 5vw;
     }
     .work_text{
         font-size: 0.8em;

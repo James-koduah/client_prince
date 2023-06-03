@@ -94,13 +94,14 @@ display_img = document.getElementById("full_display_img")
 picture_path = 'css/images/works/'
 var currentPictureNumber;
 let currentPictureFolder;
+let imageExtention = 'webp'
 let display_on = false
 function full_display(picture) {
   let pic_id = picture.id
   pic_id = pic_id.split('_')
   pic_number = pic_id[1]
   pic_folder = pic_id[0]
-  display_img.src = picture_path + pic_folder + `/${pic_folder}_${pic_number}.webp`;
+  display_img.src = picture_path + pic_folder + `/${pic_folder}_${pic_number}.${imageExtention}`;
   display.style.zIndex = 100;
   currentPictureNumber = pic_number;
   currentPictureFolder = pic_folder;
@@ -118,21 +119,24 @@ function full_display_close(){
  */
 let featured = ['10', '7', '12', '31', '2'];
 let recent = ['8', '9', '11', '30', '15', '22']
+let stonedesign = []
+for(i = 0; i < 31; i++) stonedesign.push(`${i}`)
 var currentArray;
 function full_display_change(direction){
   if (currentPictureFolder == 'featuredwork') currentArray = featured;
   if (currentPictureFolder == 'recentwork') currentArray = recent;
+  if (currentPictureFolder == 'stonedesign') currentArray = stonedesign;
   let position = currentArray.indexOf(currentPictureNumber)
   if (direction == '>'){
     position++;
     if (position >= currentArray.length) position = 0;
-    display_img.src = picture_path + pic_folder + `/${pic_folder}_${currentArray[position]}.webp`;
+    display_img.src = picture_path + pic_folder + `/${pic_folder}_${currentArray[position]}.${imageExtention}`;
     currentPictureNumber = currentArray[position];
   }
   if (direction == '<'){
     position--;
     if (position < 0) position = currentArray.length - 1;
-    display_img.src = picture_path + pic_folder + `/${pic_folder}_${currentArray[position]}.webp`;
+    display_img.src = picture_path + pic_folder + `/${pic_folder}_${currentArray[position]}.${imageExtention}`;
     currentPictureNumber = currentArray[position];
   }
 }
