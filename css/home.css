@@ -5,6 +5,7 @@
     max-height: 730px;
     background-color: var(--main-bg-color);
     font-size: 5px;
+    margin-bottom: 3vh;
 }
 
 #home_logo_cover{
@@ -106,6 +107,7 @@
     margin-top: 2vh;
     padding-top: 2vh;
     border-top: 0.5em var(--color-golden) solid;
+    overflow-y: auto;
 }
 .welcome_words_text{
     width: 46vw;
