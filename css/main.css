@@ -5,7 +5,7 @@
 
 :root{
     --main-bg-color:  rgb(31, 31, 31);
-    --minor-bg-color: rgb(51, 49, 49);
+    --minor-bg-color: rgb(51, 49, 51);
     --light-bg-color: rgb(249, 246, 240);
     --text-color: rgb(255, 255, 255);
     --color-golden: rgb(247, 231, 200);
@@ -13,7 +13,7 @@
 }
 /* :root{
     --main-bg-color:  rgb(249, 246, 240);
-    --minor-bg-color: rgb(82, 82, 84);
+    --minor-bg-color: rgb(249, 215, 247);
     --light-bg-color: rgb(84, 84, 86);
     --text-color: rgb(43, 42, 42);
     --color-golden: blue;

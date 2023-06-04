@@ -1,11 +1,11 @@
 #home{
+    position: relative;
     width: 100vw;
     height: fit-content;
-    min-height: 400px;
-    max-height: 730px;
+    min-height: 100vh;
     background-color: var(--main-bg-color);
     font-size: 5px;
-    margin-bottom: 3vh;
+    margin-bottom: 9vh;
 }
 
 #home_logo_cover{
@@ -95,30 +95,38 @@
     animation-timing-function: linear;
 }
 
-#welcome_words{
-    width: 100vw;
-    height: 50vh;
-    max-height: fit-content;
-    min-height: 250px;
+#home_invite{
+    min-height: 400px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
+
+}
+
+#welcome_words{
+    position: relative;
+    width: 50vw;
+    height: 60%;
+    /* max-height: fit-content; */
+    min-height: 200px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     align-items: center;
-    margin-top: 2vh;
-    padding-top: 2vh;
+    padding-top: 1vh;
     border-top: 0.5em var(--color-golden) solid;
-    overflow-y: auto;
+
 }
 .welcome_words_text{
-    width: 46vw;
-    height: fit-content;
-    min-height: 50%;
+    height: 50%;
     text-align: center;
     padding: 1em;
     overflow-y: hidden;
     word-wrap: break-word;
-    letter-spacing: 0.2em;
+    letter-spacing: 0.1em;
     margin-top: 1vh;
+    background-color: var(--minor-bg-color);
+    border-radius: 2vw;
 }
 .border_right{
     border-right: 1px var(--text-color) dashed;
@@ -128,21 +136,53 @@
     border-left: 1px var(--text-color) dashed;
 }
 .welcome_words_text h2{
+    text-align: left;
+    margin-left: 3vw;
     font-size: 5em;
     margin-bottom: 0.4em;
 }
 .welcome_words_text p{
     font-size: 1.8em;
 }
+.welcome_words_text h2 ion-icon{
+    font-size: 0.8em;
+}
 
+.slides{
+    position: relative;
+    width: 50vw;
+    height: 40%;
+    background-color: aqua;
+}
+@media (min-width: 700px) {
+    .welcome_words_text h2 ion-icon{
+        font-size: 1.5em;
+    }
+}
 @media (min-width: 600px) {
     .welcome_words_text{
-        width: 22vw;
+        width: 45%;
         height: 75%;
         border: none;
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
     }
-    #welcome_words{
+    
+    /* #welcome_words{
         height: 15vh;
+        width: 50vw;
+    } */
+}
+@media (max-width: 450px) {
+    #welcome_words{
+        width: 100vw;
+        height: 60%;
+        margin-bottom: 5vh;
+    }
+    .slides{
+        width: 100vw;
+        height: 20vh;
     }
 }
 

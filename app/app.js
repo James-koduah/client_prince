@@ -62,9 +62,9 @@ let dark = true
 function light_dark(){
   if (dark == true) {
     document.documentElement.style.setProperty('--main-bg-color', 'rgb(249, 246, 240)')
-    document.documentElement.style.setProperty('--minor-bg-color', 'rgb(82, 82, 84)')
+    document.documentElement.style.setProperty('--minor-bg-color', 'rgb(249, 215, 247)')
     document.documentElement.style.setProperty('--light-bg-color', 'rgb(84, 84, 86)')
-    document.documentElement.style.setProperty('--text-color', 'rgb(43, 42, 42)')
+    document.documentElement.style.setProperty('--text-color', 'rgb(68, 64, 64)')
     document.documentElement.style.setProperty('--color-golden', 'blue')
     nav_menu_button.style.background = "url('css/images/menu_transparent_dark.webp') no-repeat"
     nav_menu_button.style.backgroundSize = '100% 100%'
