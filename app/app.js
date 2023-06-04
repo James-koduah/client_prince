@@ -62,7 +62,7 @@ let dark = true
 function light_dark(){
   if (dark == true) {
     document.documentElement.style.setProperty('--main-bg-color', 'rgb(249, 246, 240)')
-    document.documentElement.style.setProperty('--minor-bg-color', 'rgb(249, 215, 247)')
+    document.documentElement.style.setProperty('--minor-bg-color', 'rgb(246, 221, 244)')
     document.documentElement.style.setProperty('--light-bg-color', 'rgb(84, 84, 86)')
     document.documentElement.style.setProperty('--text-color', 'rgb(68, 64, 64)')
     document.documentElement.style.setProperty('--color-golden', 'blue')
