@@ -4,8 +4,7 @@
     height: fit-content;
     min-height: 100vh;
     background-color: var(--main-bg-color);
-    font-size: 5px;
-    margin-bottom: 9vh;
+    margin-bottom: 4vh;
 }
 
 #home_logo_cover{
@@ -108,7 +107,6 @@
     justify-content: space-evenly;
     align-items: center;
     padding-top: 4vh;
-    padding-bottom: 4vh;
     border-top: 0.5em var(--color-golden) solid;
 
 }
@@ -145,6 +143,15 @@
     font-size: 0.8em;
 }
 
+.title{
+    width: 100vw;
+    height: fit-content;
+    text-align: left;
+    font-size: 2.6em;
+}
+.title h3{
+    margin-left: 4vw;
+}
 .slides{
     position: relative;
     width: 50vw;
@@ -195,7 +202,12 @@
     }
     .slides{
         width: 100vw;
-        height: 20vh;
+        height: 15vh;
+    }
+    .slide_tile{
+        width: 40%;
+        height: 10vh;
+        min-height: 100px;
     }
     .welcome_words_text{
         width: 100%;

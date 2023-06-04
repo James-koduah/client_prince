@@ -2,7 +2,6 @@
     width: 100vw;
     height: fit-content;
     display: flex;
-    font-size: 7px;
     margin-top: 4vh;
 }
 #important{
@@ -56,18 +55,15 @@
     padding-bottom: 1vh;
     display: flex;
     align-items: center;
-    font-size: 1.1em;
     letter-spacing: 0.1em;
     font-weight: 900;
 }
-    .work_text h3{
-        margin-left: 1vw;
-    }
     .work_text p{
         margin-top: 1vh;
         position: absolute;
         right: 1vw;       
         font-weight: 800; 
+        font-size: 2.9em;
     }
 
 .grid_pics{
