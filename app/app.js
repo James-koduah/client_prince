@@ -93,8 +93,10 @@ for (let i = 0; i < images.length; i++){
  * @pic_name: The Name of the Picture File to be displayed
  * Return: Nothing
  */
+let display_on = false
 function full_display(picture, source) {
   console.log(source)
+  display_on = true
 }
 /**
  * full_display_close - Close the full display
