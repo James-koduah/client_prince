@@ -187,10 +187,13 @@
         height: fit-content;
     }
     .slide_tile{
-        height: 70%;
+        height: 90%;
     }
     .slides{
         height: 20vh;
+    }
+    #home_slides{
+        min-height: 150px;
     }
 }
 @media (min-width: 700px) {

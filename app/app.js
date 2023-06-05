@@ -94,15 +94,18 @@ for (let i = 0; i < images.length; i++){
  * Return: Nothing
  */
 let display_on = false
+let full_display_element = document.getElementById("full_display")
+let full_display_img = document.getElementById("full_display_img")
 function full_display(picture, source) {
-  console.log(source)
+  full_display_element.style.zIndex = 100;
+  full_display_img.src = `${source}`;
   display_on = true
 }
 /**
  * full_display_close - Close the full display
  */
 function full_display_close(){
-  display.style.zIndex = -39;
+  full_display_element.style.zIndex = -39;
   display_on = false
 }
 /**
@@ -122,4 +125,3 @@ addEventListener('keydown', (e) => {
     if (e.key == 'ArrowRight') full_display_change('<')
   }
 })
-
