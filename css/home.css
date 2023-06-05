@@ -2,9 +2,9 @@
     position: relative;
     width: 100vw;
     height: fit-content;
-    min-height: 80vh;
+    min-height: 50vh;
     background-color: var(--main-bg-color);
-    margin-bottom: 4vh;
+    margin-bottom: 2vh;
 }
 
 #home_logo_cover{
@@ -161,7 +161,7 @@
 }
 .slides{
     position: relative;
-    width: 49vw;
+    width: 50vw;
     height: 35vh;
     display: flex;
     justify-content: space-evenly;
@@ -187,7 +187,7 @@
         height: fit-content;
     }
     .slide_tile{
-        height: 90%;
+        height: 70%;
     }
     .slides{
         height: 20vh;

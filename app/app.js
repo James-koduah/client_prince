@@ -117,6 +117,7 @@ let stonedesign = []
 for(i = 0; i < 31; i++) stonedesign.push(`${i}`)
 var currentArray;
 function full_display_change(direction){
+  
 }
 
 addEventListener('keydown', (e) => {
