@@ -85,7 +85,7 @@ function light_dark(){
 let images = document.querySelectorAll('img');
 for (let i = 0; i < images.length; i++){
   images[i].addEventListener('click', ()=>{
-    full_display(this, images[i].src)
+    full_display(this, images[i].src, i)
   })
 }
 /**
@@ -94,12 +94,14 @@ for (let i = 0; i < images.length; i++){
  * Return: Nothing
  */
 let display_on = false
+let currentimg;
 let full_display_element = document.getElementById("full_display")
 let full_display_img = document.getElementById("full_display_img")
-function full_display(picture, source) {
+function full_display(picture, source, number) {
   full_display_element.style.zIndex = 100;
   full_display_img.src = `${source}`;
   display_on = true
+  currentimg = number
 }
 /**
  * full_display_close - Close the full display
@@ -117,7 +119,12 @@ let stonedesign = []
 for(i = 0; i < 31; i++) stonedesign.push(`${i}`)
 var currentArray;
 function full_display_change(direction){
-  
+  if (direction == '>') currentimg+=1;
+  if (direction == '<') currentimg-=1;
+  if (currentimg == images.length) currentimg = 0;
+  else if (currentimg == 0) currentimg = images.length-1
+  console.log(currentimg)
+  full_display(images[currentimg], images[currentimg].src, currentimg)
 }
 
 addEventListener('keydown', (e) => {
