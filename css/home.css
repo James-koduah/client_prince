@@ -2,7 +2,7 @@
     position: relative;
     width: 100vw;
     height: fit-content;
-    min-height: 100vh;
+    min-height: 80vh;
     background-color: var(--main-bg-color);
     margin-bottom: 4vh;
 }
@@ -143,22 +143,33 @@
     font-size: 0.8em;
 }
 
+#home_slides{
+    display: flex;
+    flex-wrap: wrap;
+    min-height: 300px;
+    max-height: 350px;
+}
+
 .title{
-    width: 100vw;
+    width: 100%;
     height: fit-content;
     text-align: left;
-    font-size: 2.6em;
+    font-size: 1.4em;
 }
 .title h3{
     margin-left: 4vw;
 }
 .slides{
     position: relative;
-    width: 50vw;
+    width: 49vw;
     height: 35vh;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+    flex-wrap: wrap;
+}
+.slides .title{
+    margin-bottom: 2vh;
 }
 .slide_tile{
     width: 45%;
@@ -166,9 +177,9 @@
     min-height: 100px;
     border: 1px var(--color-golden) solid;
 }
-#home_slide_1{
+/* #home_slide_1{
     align-items: flex-end;
-}
+} */
 
 @media (min-width: 450px) {
     .welcome_words_text{
@@ -176,13 +187,11 @@
         height: fit-content;
     }
     .slide_tile{
-        height: 50%;
+        height: 70%;
     }
-    
-    /* #welcome_words{
-        height: 15vh;
-        width: 50vw;
-    } */
+    .slides{
+        height: 20vh;
+    }
 }
 @media (min-width: 700px) {
     .welcome_words_text h2 ion-icon{

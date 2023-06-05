@@ -9,7 +9,6 @@ let quick_contact = document.getElementById('quick_contact')
  * if we scroll a certain height
  * Return: Void
  */
-
 window.onscroll = function (e) {
   if (window.scrollY > 50) {quick_contact.style.opacity = 0;}
   if (window.scrollY < 50) {quick_contact.style.opacity = 1;}
@@ -83,29 +82,19 @@ function light_dark(){
   }
 }
 
-
+let images = document.querySelectorAll('img');
+for (let i = 0; i < images.length; i++){
+  images[i].addEventListener('click', ()=>{
+    full_display(this, images[i].src)
+  })
+}
 /**
  * full_display - Display Pictures in Full Screen Mode
  * @pic_name: The Name of the Picture File to be displayed
  * Return: Nothing
  */
-display = document.getElementById("full_display")
-display_img = document.getElementById("full_display_img")
-picture_path = 'css/images/works/'
-var currentPictureNumber;
-let currentPictureFolder;
-let imageExtention = 'webp'
-let display_on = false
-function full_display(picture) {
-  let pic_id = picture.id
-  pic_id = pic_id.split('_')
-  pic_number = pic_id[1]
-  pic_folder = pic_id[0]
-  display_img.src = picture_path + pic_folder + `/${pic_folder}_${pic_number}.${imageExtention}`;
-  display.style.zIndex = 100;
-  currentPictureNumber = pic_number;
-  currentPictureFolder = pic_folder;
-  display_on = true
+function full_display(picture, source) {
+  console.log(source)
 }
 /**
  * full_display_close - Close the full display
@@ -123,22 +112,6 @@ let stonedesign = []
 for(i = 0; i < 31; i++) stonedesign.push(`${i}`)
 var currentArray;
 function full_display_change(direction){
-  if (currentPictureFolder == 'featuredwork') currentArray = featured;
-  if (currentPictureFolder == 'recentwork') currentArray = recent;
-  if (currentPictureFolder == 'stonedesign') currentArray = stonedesign;
-  let position = currentArray.indexOf(currentPictureNumber)
-  if (direction == '>'){
-    position++;
-    if (position >= currentArray.length) position = 0;
-    display_img.src = picture_path + pic_folder + `/${pic_folder}_${currentArray[position]}.${imageExtention}`;
-    currentPictureNumber = currentArray[position];
-  }
-  if (direction == '<'){
-    position--;
-    if (position < 0) position = currentArray.length - 1;
-    display_img.src = picture_path + pic_folder + `/${pic_folder}_${currentArray[position]}.${imageExtention}`;
-    currentPictureNumber = currentArray[position];
-  }
 }
 
 addEventListener('keydown', (e) => {
@@ -147,3 +120,4 @@ addEventListener('keydown', (e) => {
     if (e.key == 'ArrowRight') full_display_change('<')
   }
 })
+
