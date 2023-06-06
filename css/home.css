@@ -95,6 +95,26 @@
 }
 
 
+#big{
+    width: 100vw;
+    height: 60vh;
+    padding-bottom: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background: url(images/png/homemecury.jpg) no-repeat;
+    background-size: 100% 150%;
+}
+#big h1{
+    font-size: 10em;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    letter-spacing: 0.1em;
+}
+#big p{
+    font-size: 7em;
+}
+
 
 #welcome_words{
     position: relative;
