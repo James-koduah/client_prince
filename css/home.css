@@ -200,6 +200,7 @@
 }
 
 .slide_tile_overlay{
+    width: fit-content;
     position: absolute;
     height: fit-content;
     background-color: rgba(0, 0, 0, 0.1);
@@ -210,6 +211,7 @@
     font-size: 2em;
     background-color: rgba(0, 0, 0, 0.5);
     padding-top: 1vh;
+    padding-right: 2vw;
     padding-bottom: 1vh;
     word-wrap:break-word;
 }
@@ -263,6 +265,12 @@
         width: 100%;
         height: fit-content;
         padding-bottom: 1vh;
+    }
+    .slide_tile_overlay{
+        width: 80%;
+    }
+    .slide_tile_overlay p{
+        width: 100%;
     }
 }
 
