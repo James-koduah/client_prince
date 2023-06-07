@@ -11,10 +11,10 @@
     background-color: var(--main-bg-color);
 }
 
-#side_panel{
+.side_panel{
     position: fixed;
     top: 10vh;
-    width: 20vw;
+    width: 15vw;
     background-color: var(--main-bg-color);
     height: 90vh;
     z-index: -39;
@@ -97,7 +97,7 @@
     .work_container{
         max-width: 48%;
     }
-    #side_panel{
+    .side_panel{
         position: sticky;
         z-index: 10;
     }

@@ -10,6 +10,7 @@ let quick_contact = document.getElementById('quick_contact')
  * Return: Void
  */
 window.onscroll = function (e) {
+  // console.log(window.scrollY )
   if (window.scrollY > 50) {quick_contact.style.opacity = 0;}
   if (window.scrollY < 50) {quick_contact.style.opacity = 1;}
   if (window.scrollY > 80)

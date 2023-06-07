@@ -1,0 +1,22 @@
+#promotions{
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    background: #ffe7c1;
+    background-size: 100% 100%;
+    padding-top: 3vh;
+}
+#promotions h3{
+    font-size: 3em;
+    width: 100%;
+    color: var(--minor-bg-color);
+    text-align: center;
+}
+
+#promotion_image{
+    position: sticky;
+    width: 47px;
+    height: 61px;
+    top: 10vh;
+    margin-left: 85vw;
+}
