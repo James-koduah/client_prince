@@ -1,8 +1,11 @@
 #welcome{
     width: 100vw;
     height: 100vh;
-    background: url('../resources/image_resources/welcome.jpg') no-repeat;
+    background: url('../resources/image_resources/home.jpeg') no-repeat;
     background-size: 100% 100%;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    transition: 0.5;
 }
 
 #welcome_logo{
@@ -20,16 +23,27 @@
     height: 5vh;
     object-fit:fill;
 }
-#welcome_words{
+#welcome_slides{
+    position: relative;
     width: 100vw;
-    height: 85vh;
+    height: 55vh;
     text-align: center;
+    display: flex;
+    justify-content: center;
+    margin: 0 0 0 0;
 }
-#welcome_words h1{
+.slideW{
+    position: absolute;
+    display: none;
+}
+.slideW h1{
+    color: rgb(184, 160, 117);
+    font-size: 7vw;
+}
+.slideW h2{
+    width: 100vw;
     font-size: 4vw;
-    color: rgb(98, 97, 97);
-    padding-left: 3vw;
-    padding-right: 3vw;
+    color: rgb(197, 196, 196);
     word-spacing: 0.1em;
     letter-spacing: 0.01em;
     line-height: 160%;
@@ -37,8 +51,61 @@
     font-stretch:extra-expanded;
 }
 
+#welcome_contact{
+    width: 50vw;
+    height: 10vh;
+    margin: 1vh auto 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1vw;
+}
+
+#welcome_contact button{
+    width: 100%;
+    height: 100%;
+    border: 1px white solid;
+    border-radius: 2vw;
+}
+.fade_left {
+    animation-name: fade_left;
+    animation-duration: 2s;
+  }
+.fade_right{
+    animation-name: fade_right;
+    animation-duration: 2s;    
+}
+.fade_up{
+    animation-name: fade_up;
+    animation-duration: 2s; 
+}
+  
+  @keyframes fade_left {
+    from {left: 100vw}
+    to {left: 0}
+  }
+  @keyframes fade_right {
+    from {right : 100vw}
+    to {right : 0}
+  }
+  @keyframes fade_up {
+    from {top : 100vh}
+    to {top : 0}
+  }
 @media (max-width: 500px) {
-    #welcome_words h1{
-        font-size: 8vw;
+    #welcome{
+        background-size: 150% 100%;
+    }
+    #welcome_slides{
+        margin-top: 10vh;
+    }
+    .slideW h1{
+        font-size: 9vw;
+        margin-bottom: 5vh;
+    }
+
+    #welcome_contact{
+        height: 5vh;
+        width: 70vw;
+        gap: 10vw;
     }
 }
