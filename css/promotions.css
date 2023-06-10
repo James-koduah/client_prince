@@ -1,0 +1,26 @@
+#promotions{
+    width: 100vw;
+    min-height: 100vh;
+    background-color: #ffe7c1;
+}
+
+.right_promo{
+    width: 100vw;
+    height: 30vh;
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 5vh;
+}
+.left_promo{
+    width: 100vw;
+    height: 30vh;
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 5vh;
+}
+
+.promo{
+    width: 60%;
+    height: 100%;
+    border: black solid;
+}

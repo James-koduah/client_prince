@@ -13,9 +13,9 @@ let welcome_slide_show = setInterval(()=>{
 }, 10000)
 
 welcome_slides[0].style.display = "block"
-welcome_slides[0].className += ' fade_left'
+welcome_slides[0].className += ' fade_up'
 function change_slide(current){
-    let movements = [" fade_left", " fade_right", " fade_up"]
+    let movements = [" fade_up", " fade_right", " fade_left"]
     let next = current + 1
     if (next > 2) next = 0
     welcome_slides[current].style.display = 'none'

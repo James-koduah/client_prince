@@ -1,0 +1,34 @@
+#team{
+    width: 100vw;
+    min-height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding-bottom: 5vh;
+}
+
+.team_member{
+    width: 28vw;
+    height: 40vh;
+    border-radius: 1vw;
+    border: 1px white solid;
+    margin-top: 4vh;
+    display: flex;
+    justify-content: center;
+}
+.team_image_cover{
+    width: 60%;
+    height: 50%;
+}
+.team_image_cover img{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    border: 1px white solid;
+}
+
+@media (max-width: 500px) {
+    .team_member{
+        width: 45vw;
+    }
+}
