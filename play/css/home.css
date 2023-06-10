@@ -1,0 +1,284 @@
+#home{
+    position: relative;
+    width: 100vw;
+    height: fit-content;
+    min-height: 50vh;
+    background-color: var(--main-bg-color);
+    margin-bottom: 2vh;
+}
+
+#home_logo_cover{
+    width: 100vw;
+    padding-top: 7vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: transparent;
+    background-size: 100% 100%;
+    flex-direction: column;
+
+}
+#home_logo{
+    width: 70vw;
+    min-width: 60px;
+    max-width: 120px;
+    min-height: 80px;
+    height: 10vh;
+    margin: 0 auto 0 auto;
+    object-fit:fill;
+}
+
+
+#home_header{
+    width: 100vw;
+    text-align: center;
+    font-size: 1.9em;
+    letter-spacing: 0.2em;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    color: var(--text-color);
+}
+
+
+
+#quick_contact{
+    position: fixed;
+    top: 2vh;
+    left: 1vw;
+    height: 3vh;
+    width: 90vw;
+    max-width: 200px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    z-index: 100;
+    transition: 0.5;
+}
+
+#quick_contact ion-icon{
+    width: 20px;
+    height: 100%;
+    padding: 1vh;
+    color: var(--text-color);
+}
+
+
+#space{
+    width: 100vw;
+    height: 50px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center
+}
+
+#space_div{
+    width: 100vw;
+    height: 30px;
+    background-color: black;
+    overflow-x: hidden;
+    display: flex;
+    align-items: center;
+    margin-top: 1vh;
+
+}
+
+#space p{
+    position: relative;
+    white-space: nowrap;
+    font-size: 2em;
+    color: white;
+    letter-spacing: 0.2em;
+    animation-name: slider;
+    animation-duration: 30s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+
+#big{
+    width: 100vw;
+    height: 60vh;
+    padding-bottom: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background: url(images/png/homemecury.jpg) no-repeat;
+    background-size: 100% 150%;
+}
+#big h1{
+    font-size: 10em;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    letter-spacing: 0.1em;
+}
+#big p{
+    font-size: 7em;
+}
+
+
+#welcome_words{
+    position: relative;
+    width: 100vw;
+    height: fit-content;
+    /* max-height: fit-content; */
+    min-height: 200px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-top: 4vh;
+    border-top: 0.5em var(--color-golden) solid;
+
+}
+.welcome_words_text{
+    height: 70%;
+    width: 24%;
+    text-align: center;
+    padding: 1em;
+    padding-bottom: 12em;
+    overflow-y: hidden;
+    word-wrap: break-word;
+    letter-spacing: 0.1em;
+    margin-top: 1vh;
+    background-color: var(--minor-bg-color);
+    border-radius: 2vw;
+}
+.border_right{
+    border-right: 1px var(--text-color) dashed;
+}
+.border_left{
+    
+    border-left: 1px var(--text-color) dashed;
+}
+.welcome_words_text h2{
+    text-align: left;
+    margin-left: 3vw;
+    font-size: 5em;
+    margin-bottom: 0.4em;
+}
+.welcome_words_text p{
+    font-size: 1.8em;
+}
+.welcome_words_text h2 ion-icon{
+    font-size: 0.8em;
+}
+
+#home_slides{
+    display: flex;
+    flex-wrap: wrap;
+    min-height: 300px;
+    max-height: 350px;
+}
+
+.title{
+    width: 100%;
+    height: fit-content;
+    text-align: left;
+    font-size: 1.4em;
+}
+.title h3{
+    margin-left: 4vw;
+}
+.slides{
+    position: relative;
+    width: 50vw;
+    height: 35vh;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.slides .title{
+    margin-bottom: 2vh;
+}
+.slide_tile{
+    position: relative;
+    width: 45%;
+    height: 90%;
+    min-height: 100px;
+    border: 1px var(--color-golden) solid;
+}
+
+.slide_tile_overlay{
+    width: fit-content;
+    position: absolute;
+    height: fit-content;
+    background-color: rgba(0, 0, 0, 0.1);
+}
+.slide_tile_overlay p{
+    width: 100%;
+    height: fit-content;
+    font-size: 2em;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: aliceblue;
+    padding-top: 1vh;
+    padding-right: 2vw;
+    padding-bottom: 1vh;
+    word-wrap:break-word;
+}
+.slide_tile_overlay:hover{
+    background-color: rgba(0, 0, 0, 0);
+}
+@media (min-width: 450px) {
+    .welcome_words_text{
+        width: 47%;
+        height: fit-content;
+    }
+    .slide_tile{
+        height: 90%;
+    }
+    .slides{
+        height: 40vh;
+    }
+    #home_slides{
+        min-height: 150px;
+    }
+}
+@media (min-width: 700px) {
+    .welcome_words_text h2 ion-icon{
+        font-size: 1.5em;
+    }
+}
+@media (min-width: 1000px) {
+    .welcome_words_text{
+        width: 24%;
+    }
+}
+@media (max-width: 450px) {
+    #welcome_words{
+        width: 100vw;
+        height: 60%;
+        margin-bottom: 5vh;
+    }
+    #home_slides{
+        max-height: 900px;
+    }
+    .slides{
+        width: 100vw;
+        height: 30vh;
+    }
+    .slide_tile{
+        width: 45%;
+        height: 90%;
+        min-height: 100px;
+    }
+    .welcome_words_text{
+        width: 100%;
+        height: fit-content;
+        padding-bottom: 1vh;
+    }
+    .slide_tile_overlay{
+        width: 80%;
+    }
+    .slide_tile_overlay p{
+        width: 100%;
+    }
+}
+
+@keyframes slider {
+    0%{
+        right: -80%;
+    }
+    100%{right: 100%;}
+}
+

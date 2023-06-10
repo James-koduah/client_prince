@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/nav.css">
+    <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="css/important.css">
+    <link rel="stylesheet" href="css/news.css">
+    <link rel="stylesheet" href="css/promotions.css">
+    <link rel="stylesheet" href="css/contact.css">
+    <link rel="stylesheet" href="css/display_pictures.css">
+    <link rel="icon" href="css/images/logo_transparent1.ico">
+    <title>CIHAWC</title>
+</head>
+<body>
+    <main>
+        <!-- nav.css -->
+        <section id="nav">
+            <nav class="nav" id="nav1">
+                <div class="logo" onClick="window.location.reload(true)"></div>
+                <div>
+                    <a href="#">Home</a>
+                    <a href="#">About</a>
+                    <a href="#">Services</a>
+                    <a href="#">Works</a>
+                    <a href="#">Contact</a>
+                </div>
+            </nav>
+            <nav class="nav" id="nav2">
+                <div class="logo" onClick="window.location.reload(true)"></div>
+            <div id="nav_menu_button" onclick="nav_toogle()"></div>
+            </nav>
+        </section>
+        <!-- home.css -->
+        <section id="home">
+            <div id="quick_contact">
+                <ion-icon name="sunny-outline" title="Dark/light mode" onclick="light_dark()"></ion-icon>
+                <ion-icon name="logo-facebook"></ion-icon>
+                <ion-icon name="logo-instagram"></ion-icon>
+                <ion-icon name="mail-outline"></ion-icon>
+                <ion-icon name="logo-twitter"></ion-icon>
+                <ion-icon name="call-outline"></ion-icon>
+            </div>
+            <div id="home_logo_cover">
+                <img id="home_logo" src="css/images/logo_transparent1.webp" alt="">
+                <h1 id="home_header">CLEAN HANDS PAINTING & ART WORKS COMPANY</h1>
+            </div>
+            <div id="space">
+                <div id="space_div">
+                    <p>
+                        Wall Treatment, Swahili Design, Interior And Exterior Design, 
+                        Grafiato Design, Pop Design, Wall Skimming, Metallic Flooring, 
+                        3D Epoxy Floor Coating, CCTV Camera Installation, Wallpaper Installation
+                        Plastic Wallpaper
+                    </p>
+                </div>
+            </div>
+            <div id="big">
+                <h1>Welcome</h1>
+                <p>Enjoy Yourself</p>
+            </div>
+            <div id="welcome_words">
+                <div class="welcome_words_text">
+                    <h2><ion-icon name="build-outline"></ion-icon></h2>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                        Sed ornare ullamcorper convallis. Nullam et fermentum felis. In congue porttitor sagittis.
+                        Vestibulum quis ex at mauris finibus tempus et ut arcu. Nullam et fermentum felis. In congue porttitor sagittis.
+                        Vestibulum quis ex at mauris finibus tempus et ut arcu. 
+                    </p>
+                </div>
+                <div class="welcome_words_text">
+                    <h2><ion-icon name="business-outline"></ion-icon></h2>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                        Sed ornare ullamcorper convallis. Nullam et fermentum felis. In congue porttitor sagittis.
+                        Vestibulum quis ex at mauris finibus tempus et ut arcu. Nullam et fermentum felis. In congue porttitor sagittis.
+                        Vestibulum quis ex at mauris finibus tempus et ut arcu. 
+                    </p>
+                </div>
+            </div>
+            <div id="home_slides">
+                <div id="home_slide_1" class="slides">
+                    <div class="title"><h3>Our Works</h3></div>
+                    <div class="slide_tile">
+                        <div class="slide_tile_overlay"><p>A Beautiful Stone and lighting System</p></div>
+                        <img src="css/images/works/stonedesign/stonedesign_16.webp" alt="">
+                    </div>
+                    <div class="slide_tile">
+                        <div class="slide_tile_overlay"><p>Celling Decorations</p></div>
+                        <img src="css/images/works/stonedesign/stonedesign_10.webp" alt="">
+                    </div>
+                </div>
+                <div id="home_slide_2" class="slides">
+                    <div class="title"><h3>.</h3></div>
+                    <div class="slide_tile">
+                        <div class="slide_tile_overlay"><p>A Master Swahili Design</p></div>
+                        <img src="css/images/works/pic_2.webp" alt="">
+                    </div>
+                    <div class="slide_tile">
+                        <div class="slide_tile_overlay"><p>Beautiful Wall Design</p></div>
+                        <img src="css/images/works/pic_4.webp" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- important.css -->
+        <section id="main">
+            <div class="side_panel">
+                <div id="side_pics"></div>
+            </div>
+            <div id="important">
+                <div id="work_display">
+                    <div class="work_container" id="featuredwork">
+                        <div class="work_text">
+                            <div class="title"><h3>Featured Work</h3></div>
+                            <p>Show More ></p>
+                        </div>
+                        <div class="grid_pics">
+                            <div class="pics wide_pic">
+                                <img src="css/images/works/featuredwork/featuredwork_10.webp" id="featuredwork_10">
+                            </div>
+                            <div class="pics">
+                                <img src="css/images/works/featuredwork/featuredwork_7.webp" id="featuredwork_7">
+                            </div>
+                            <div class="pics">
+                                <img src="css/images/works/featuredwork/featuredwork_12.webp" id="featuredwork_12">
+                            </div>
+                            <div class="pics">
+                                <img src="css/images/works/featuredwork/featuredwork_31.webp" id="featuredwork_31">
+                            </div>
+                            <div class="pics">
+                                <img src="css/images/works/featuredwork/featuredwork_2.webp" id="featuredwork_2">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="work_container" id="recentwork">
+                        <div class="work_text">
+                            <div class="title"><h3>Recent Work</h3></div>
+                            <p>Show More ></p>
+                        </div>
+                        <div class="grid_pics">
+                            <div class="pics">
+                                <img src="css/images/works/recentwork/recentwork_8.webp" id="recentwork_8">
+                            </div>
+                            <div class="pics">
+                                <img src="css/images/works/recentwork/recentwork_9.webp" id="recentwork_9">
+                            </div>
+                            <div class="pics long_pic">
+                                <img src="css/images/works/recentwork/recentwork_11.webp" id="recentwork_11">
+                            </div>
+                            <div class="pics">
+                                <img src="css/images/works/recentwork/recentwork_30.webp" id="recentwork_30">
+                            </div>
+                            <div class="pics">
+                                <img src="css/images/works/recentwork/recentwork_15.webp" id="recentwork_15">
+                            </div>
+                            <!-- <div class="pics">
+                                <img src="css/images/works/recentwork/recentwork_22.webp" id="recentwork_22">
+                            </div> -->
+                        </div>
+                    </div>
+                </div>
+                <!-- news.css -->
+                <div id="news_section">
+                    <div id="1" class="news_item">
+                        <div class="news_picture">
+                            <img src="css/images/works/stonedesign/stonedesign_16.webp" alt="">
+                        </div>
+                        <!-- <div class="news_text">
+                            <div class="news_text_main">
+                                <h4>---- Stone Design ----</h4>
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                                    Sed ornare ullamcorper convallis. Nullam et fermentum felis.
+                                </p>
+                            </div>
+                            <div class="news_text_more">Learn More ></div>
+                        </div> -->
+                    </div>
+                    <div id="2" class="news_item">
+                        <div class="news_picture">
+                            <img src="css/images/works/stonedesign/stonedesign_19.webp" alt="">
+                        </div>
+                        <!-- <div class="news_text">
+                            <div class="news_text_main">
+                                <h4>---- Stone Design ----</h4>
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                                    Sed ornare ullamcorper convallis. Nullam et fermentum felis.
+                                </p>
+                            </div>
+                            <div class="news_text_more">Learn More ></div>
+                        </div> -->
+                    </div>
+                    <div id="3" class="news_item">
+                        <div class="news_picture">
+                            <img src="css/images/works/stonedesign/stonedesign_22.webp" alt="">
+                        </div>
+                        <!-- <div class="news_text">
+                            <div class="news_text_main">
+                                <h4>---- Stone Design ----</h4>
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                                    Sed ornare ullamcorper convallis. Nullam et fermentum felis.
+                                </p>
+                            </div>
+                            <div class="news_text_more">Learn More ></div>
+                        </div> -->
+                    </div>
+                    <div id="4" class="news_item">
+                        <div class="news_picture">
+                            <img src="css/images/works/stonedesign/stonedesign_2.webp" alt="">
+                        </div>
+                        <!-- <div class="news_text">
+                            <div class="news_text_main">
+                                <h4>---- Stone Design ----</h4>
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                                    Sed ornare ullamcorper convallis. Nullam et fermentum felis.
+                                </p>
+                            </div>
+                            <div class="news_text_more">Learn More ></div>
+                        </div> -->
+                    </div>
+                    <div id="5" class="news_item">
+                        <div class="news_picture">
+                            <img src="css/images/works/stonedesign/stonedesign_9.webp" alt="">
+                        </div>
+                        <!-- <div class="news_text">
+                            <div class="news_text_main">
+                                <h4>---- Stone Design ----</h4>
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                                    Sed ornare ullamcorper convallis. Nullam et fermentum felis.
+                                </p>
+                            </div>
+                            <div class="news_text_more">Learn More ></div>
+                        </div> -->
+                    </div>
+                    <div id="6" class="news_item">
+                        <div class="news_picture">
+                            <img src="css/images/works/stonedesign/stonedesign_6.webp" alt="">
+                        </div>
+                        <!-- <div class="news_text">
+                            <div class="news_text_main">
+                                <h4>---- Stone Design ----</h4>
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                                    Sed ornare ullamcorper convallis. Nullam et fermentum felis.
+                                </p>
+                            </div>
+                            <div class="news_text_more">Learn More ></div>
+                        </div> -->
+                    </div>
+                    <div id="7" class="news_item">
+                        <div class="news_picture">
+                            <img src="css/images/works/stonedesign/stonedesign_23.webp" alt="">
+                        </div>
+                        <!-- <div class="news_text">
+                            <div class="news_text_main">
+                                <h4>---- Stone Design ----</h4>
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                                    Sed ornare ullamcorper convallis. Nullam et fermentum felis.
+                                </p>
+                            </div>
+                            <div class="news_text_more">Learn More ></div>
+                        </div> -->
+                    </div>
+                    <div id="8" class="news_item">
+                        <div class="news_picture">
+                            <img src="css/images/works/stonedesign/stonedesign_28.webp" alt="">
+                        </div>
+                        <!-- <div class="news_text">
+                            <div class="news_text_main">
+                                <h4>---- Stone Design ----</h4>
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                                    Sed ornare ullamcorper convallis. Nullam et fermentum felis.
+                                </p>
+                            </div>
+                            <div class="news_text_more">Learn More ></div>
+                        </div> -->
+                    </div>
+                    <div id="9" class="news_item">
+                        <div class="news_picture">
+                            <img src="css/images/works/stonedesign/stonedesign_30.webp" alt="">
+                        </div>
+                        <!-- <div class="news_text">
+                            <div class="news_text_main">
+                                <h4>---- Stone Design ----</h4>
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                                    Sed ornare ullamcorper convallis. Nullam et fermentum felis.
+                                </p>
+                            </div>
+                            <div class="news_text_more">Learn More ></div>
+                        </div> -->
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- promotions.css -->
+        <section id="promotions">
+            <h3>LUCKY YOU</h3>
+            <img id="promotion_image" src="css/images/promotion.webp" alt="">
+        </section>
+        <!-- contact.css -->
+        <section id="contact">
+            <h3>---Contact Us---</h3>
+            <p>We Would Love To Hear From You</p>
+            <div class="media">
+                <div class="socials">
+                    <div class="socials_left_side">FaceBook</div>
+                    <div class="socials_right_side">Jaskin Tech</div>
+                </div>
+            </div>
+            <div class="media">
+                <div class="socials">
+                    <div class="socials_left_side">WhatsApp</div>
+                    <div class="socials_right_side">+233 00 000 0000</div>
+                </div>
+            </div>
+            <div class="media">
+                <div class="socials">
+                    <div class="socials_left_side">Instagram</div>
+                    <div class="socials_right_side">Jaskin Tech</div>
+                </div>
+            </div>
+            <div class="media">
+                <div class="socials">
+                    <div class="socials_left_side">Twitter</div>
+                    <div class="socials_right_side">Jaskin Tech</div>
+                </div>
+            </div>
+            <div class="media">
+                <div class="socials">
+                    <div class="socials_left_side">Telegram</div>
+                    <div class="socials_right_side">Jaskin Tech</div>
+                </div>
+            </div>
+
+            <div id="copyright">©copyright Jaskin Tech 2023</div>
+        </section>
+    </main>
+    <sub>
+        <!-- nav.css -->
+        <div id="menu_bar">
+            <div id="close_menu" onclick="nav_toogle()"></div>
+            <div id="main_menu"></div>
+        </div>
+        <!-- display_pictures.css -->
+        <div id="full_display">
+            <div id="full_display_close" onclick="full_display_close()">
+                <ion-icon id="close_button" name="close-outline" color="light"></ion-icon>
+            </div>
+            <div id="full_display_previous" onclick="full_display_change('<')">
+                <ion-icon name="caret-back-outline" id="full_display_previous_button"></ion-icon>
+            </div>
+            <div id="full_display_next" onclick="full_display_change('>')">
+                <ion-icon name="caret-forward-outline" id="full_display_next_button"></ion-icon>
+            </div>
+            <div id="full_display_pic">
+                <img src="" id="full_display_img">
+            </div>
+        </div>
+    </sub>
+    
+    <script src="app/populate.js"></script>
+    <script src="app/app.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+</html>

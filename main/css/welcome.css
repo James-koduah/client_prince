@@ -1,0 +1,44 @@
+#welcome{
+    width: 100vw;
+    height: 100vh;
+    background: url('../resources/image_resources/welcome.jpg') no-repeat;
+    background-size: 100% 100%;
+}
+
+#welcome_logo{
+    width: 100vw;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    margin-bottom: 5vh;
+}
+#welcome_logo img{
+    min-width: 30px;
+    max-width: 100px;
+    min-height: 40px;
+    margin-left: 3vw;
+    height: 5vh;
+    object-fit:fill;
+}
+#welcome_words{
+    width: 100vw;
+    height: 85vh;
+    text-align: center;
+}
+#welcome_words h1{
+    font-size: 4vw;
+    color: rgb(98, 97, 97);
+    padding-left: 3vw;
+    padding-right: 3vw;
+    word-spacing: 0.1em;
+    letter-spacing: 0.01em;
+    line-height: 160%;
+    font-family: sans-serif, "Helvetica Neue", "Lucida Grande", Arial;
+    font-stretch:extra-expanded;
+}
+
+@media (max-width: 500px) {
+    #welcome_words h1{
+        font-size: 8vw;
+    }
+}
