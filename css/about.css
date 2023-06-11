@@ -1,0 +1,45 @@
+#about{
+    width: 100vw;
+    min-height: 100vh;
+    background: url('../resources/image_resources/about.jpg') no-repeat;
+    background-size: 100% 100%;
+}
+
+.right_align{
+    width: 100vw;
+    height: 30vh;
+    display: flex;
+    justify-content: center;
+}
+.left_align{
+    width: 100vw;
+    height: 30vh;
+    display: flex;
+    justify-content: center;
+}
+
+.in_align{
+    width: 70%;
+    height: 100%;
+    text-align: center;
+    padding: 1vh;
+    background-color: var(--main-bg-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.in_align h4{
+    font-size: 3em;
+}
+
+.in_align p{
+    font-size: 3em;
+}
+
+@media (max-width: 550px) {
+    #about{
+        background-size: 200% 100%;
+    }
+}

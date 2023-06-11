@@ -99,7 +99,11 @@
         margin-top: 10vh;
     }
     .slideW h1{
-        font-size: 9vw;
+        font-size: 12vw;
+        margin-bottom: 5vh;
+    }
+    .slideW h2{
+        font-size: 7vw;
         margin-bottom: 5vh;
     }
 

@@ -7,6 +7,15 @@
     padding-bottom: 5vh;
 }
 
+#team_title{
+    width: 100vw;
+    text-align: center;
+}
+#team_title h3{
+    font-size: 5em;
+}
+
+
 .team_member{
     width: 28vw;
     height: 40vh;
@@ -15,6 +24,8 @@
     margin-top: 4vh;
     display: flex;
     justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 .team_image_cover{
     width: 60%;
@@ -26,7 +37,18 @@
     border-radius: 50%;
     border: 1px white solid;
 }
+.team_member_description{
+    width: 100%;
+    height: 50%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    padding: 2vw;
+}
 
+.team_member_description p{
+    font-size: 2.3em;
+}
 @media (max-width: 500px) {
     .team_member{
         width: 45vw;
