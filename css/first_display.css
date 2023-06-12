@@ -3,7 +3,6 @@
     height: fit-content;
     margin-top: -40vh;
     padding-bottom: 5vh;
-    background-color: var(--minor-bg-color);
 }
 
 #first_display{
@@ -18,7 +17,7 @@
     border-top: 1px white solid;
 }
 #first_pics_title{
-    width: 100vw;
+    position: relative;
     height: 10vh;
     display: flex;
     justify-content: center;

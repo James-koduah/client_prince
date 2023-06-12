@@ -67,7 +67,7 @@
 }
 @media (max-width: 500px) {
     .team_member{
-        width: 45vw;
+        width: 75vw;
     }
     .team_image_cover{
         width: 90%;
