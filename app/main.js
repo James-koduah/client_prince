@@ -5,6 +5,7 @@
  * I am using a setInterval to display different divs
  */
 let welcome_slides = document.getElementsByClassName('slideW')
+let welcome = document.getElementById('picture_change')
 let n = 0;
 let welcome_slide_show = setInterval(()=>{
     if (n > 2) n = 0
@@ -14,8 +15,22 @@ let welcome_slide_show = setInterval(()=>{
 
 welcome_slides[0].style.display = "block"
 welcome_slides[0].className += ' fade_up'
+let wallpaper = true
 function change_slide(current){
     let movements = [" fade_up", " fade_right", " fade_left"]
+    if (wallpaper == true){
+        if (screen.width < 500) welcome.style.background = "url(resources/image_resources/team_small.jpg) no-repeat";
+        else welcome.style.background = "url(resources/image_resources/team.jpg) no-repeat";
+        welcome.style.backgroundSize = '100% 100%'
+        welcome.style.backgroundAttachment = "fixed"
+        wallpaper = false
+    }
+    else{
+        welcome.style.background = "url(resources/image_resources/about.jpg) no-repeat";
+        welcome.style.backgroundSize = '120% 100%'
+        welcome.style.backgroundAttachment = "fixed"
+        wallpaper = true
+    }
     let next = current + 1
     if (next > 2) next = 0
     welcome_slides[current].style.display = 'none'

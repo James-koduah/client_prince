@@ -1,8 +1,6 @@
 #welcome{
     width: 100vw;
     height: 100vh;
-    background: url('../resources/image_resources/home.jpeg') no-repeat;
-    background-size: 100% 100%;
     overflow-x: hidden;
     overflow-y: hidden;
     transition: 0.5;
@@ -43,7 +41,7 @@
 .slideW h2{
     width: 100vw;
     font-size: 4vw;
-    color: rgb(197, 196, 196);
+    color: rgb(236, 233, 233);
     word-spacing: 0.1em;
     letter-spacing: 0.01em;
     line-height: 160%;
@@ -93,7 +91,7 @@
   }
 @media (max-width: 500px) {
     #welcome{
-        background-size: 150% 100%;
+        background-size: 120% 100%;
     }
     #welcome_slides{
         margin-top: 10vh;

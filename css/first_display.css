@@ -5,6 +5,8 @@
     flex-direction: row;
     overflow-x: hidden;
     overflow-y: hidden;
+    background: var( --main-bg-color-faded);
+    padding-top: 5vh;
 }
 
 #first_pics{
@@ -14,7 +16,6 @@
     grid-template-columns: 1fr 1fr 1fr;
     grid-gap: 1vw;
     border-right: 1px white solid;
-    padding-top: 5vh;
     padding-bottom: 5vh;
     padding-left: 3vw;
     padding-right: 3vw;
@@ -38,7 +39,7 @@
     height: 30vh;
     border: 1px wheat solid;
     box-shadow: 0.3vh 0.3vh 0.3vh white,-0.3vh -0.3vh 0.3vh white;
-    opacity: 0.7;
+    opacity: 0.9;
     
 }
 .picture_first_display:hover{

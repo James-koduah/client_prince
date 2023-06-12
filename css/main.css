@@ -6,14 +6,17 @@
 
 :root{
     --main-bg-color:  rgb(249, 246, 240);
+    --main-bg-color-faded: linear-gradient(180deg, transparent, rgba(249, 246, 240, 0.6), rgba(249, 246, 240, 0.9));
     --minor-bg-color: rgb(246, 221, 244);
     --light-bg-color: rgb(84, 84, 86);
     --text-color: rgb(43, 42, 42);
     --color-golden: blue;
+    /* --team-size : url(../resources/image_resource. */
 }
 @media (prefers-color-scheme: dark) {
     :root{
         --main-bg-color:  rgb(31, 31, 31);
+        --main-bg-color-faded: linear-gradient(180deg, transparent,rgba(51, 49, 51, 1),rgb(31, 31, 31));
         --minor-bg-color: rgb(51, 49, 51);
         --light-bg-color: rgb(249, 246, 240);
         --text-color: rgb(255, 255, 255);
@@ -41,4 +44,10 @@ main{
     z-index: 1;
     position: relative;
     background-color: var(--main-bg-color);
+}
+
+#picture_change{
+    background: url(/resources/image_resources/about.jpg);
+    background-size: 120% 100vh;
+    transition: 1s;
 }
