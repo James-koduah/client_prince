@@ -22,10 +22,10 @@
 }
 #works_logo{
     position: relative;
-    width: 30vw;
-    height: 70%;
+    width: 15vw;
+    height: 25%;
     background-color: var(--main-bg-color);
-    top: 60%;
+    top: 70%;
     border-radius: 5vw;
     padding: 1vh;
     border: 1px white solid;
