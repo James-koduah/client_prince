@@ -2,6 +2,8 @@
     width: 100vw;
     height: fit-content;
     margin-top: -40vh;
+    padding-bottom: 5vh;
+    background-color: var(--minor-bg-color);
 }
 
 #first_display{
@@ -23,8 +25,8 @@
 }
 #works_logo{
     position: relative;
-    width: 20vw;
-    height: 35%;
+    width: 30vw;
+    height: 50%;
     background-color: var(--main-bg-color);
     top: 70%;
     border-radius: 5vw;

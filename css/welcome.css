@@ -35,15 +35,14 @@
 .slideW{
     position: absolute;
     display: none;
+    color: rgb(184, 160, 117);
 }
 .slideW h1{
-    color: rgb(184, 160, 117);
     font-size: 7vw;
 }
 .slideW h2{
     width: 100vw;
     font-size: 4vw;
-    color: rgb(236, 233, 233);
     word-spacing: 0.1em;
     letter-spacing: 0.01em;
     line-height: 160%;
@@ -54,7 +53,7 @@
 #welcome_contact{
     width: 50vw;
     height: 10vh;
-    margin: 1vh auto 0 auto;
+    margin: 10vh auto 0 auto;
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 1vw;
