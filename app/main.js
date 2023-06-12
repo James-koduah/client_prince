@@ -5,28 +5,26 @@
  * I am using a setInterval to display different divs
  */
 let welcome_slides = document.getElementsByClassName('slideW')
-let welcome = document.getElementById('picture_change')
-let n = 0;
-let welcome_slide_show = setInterval(()=>{
-    if (n > 2) n = 0
-    change_slide(n)
-    n++
-}, 10000)
+let welcome = document.getElementById('welcome')
+
 
 welcome_slides[0].style.display = "block"
 welcome_slides[0].className += ' fade_up'
+let movements = [" fade_up", " fade_right", " fade_left"]
+let team_pic = "url(resources/image_resources/team.webp) no-repeat"
+if (screen.width < 500){
+    team_pic = "url(resources/image_resources/team_small.webp) no-repeat"
+}
 let wallpaper = true
 function change_slide(current){
-    let movements = [" fade_up", " fade_right", " fade_left"]
     if (wallpaper == true){
-        if (screen.width < 500) welcome.style.background = "url(resources/image_resources/team_small.jpg) no-repeat";
-        else welcome.style.background = "url(resources/image_resources/team.jpg) no-repeat";
+        welcome.style.background = team_pic;
         welcome.style.backgroundSize = '100% 100%'
         welcome.style.backgroundAttachment = "fixed"
         wallpaper = false
     }
     else{
-        welcome.style.background = "url(resources/image_resources/about.jpg) no-repeat";
+        welcome.style.background = "url(resources/image_resources/about.webp) no-repeat";
         welcome.style.backgroundSize = '120% 100%'
         welcome.style.backgroundAttachment = "fixed"
         wallpaper = true
@@ -48,3 +46,25 @@ for (let i = 0; i < first_display_pics.length; i++){
     first_display_pics[i].appendChild(img)
     pic_num++
 }
+let run = true
+cleared = false
+let n = 0;
+let welcome_slide_show = setInterval(slides, 10000)
+function slides(){
+    if (n > 2) n = 0
+    change_slide(n)
+    n++
+    if (run == false) clearInterval(welcome_slide_show)
+    console.log("running")
+}
+
+
+window.onscroll = function (e) {
+    // console.log(window.scrollY )
+    if (window.scrollY > 800 && window.scrollY < 1000) {run = false, cleared = true; console.log("cleared"); clearInterval(welcome_slide_show)}
+    if (window.scrollY < 750) {
+        run = true;
+        if (cleared == true) {welcome_slide_show = setInterval(slides, 10000); console.log("restarted")}
+        cleared = false;
+    }
+  };

@@ -3,7 +3,9 @@
     height: 100vh;
     overflow-x: hidden;
     overflow-y: hidden;
-    transition: 0.5;
+    background: url(/resources/image_resources/about.webp);
+    background-size: 120% 100vh;
+    transition: 2s;
 }
 
 #welcome_logo{
@@ -24,7 +26,7 @@
 #welcome_slides{
     position: relative;
     width: 100vw;
-    height: 55vh;
+    height: 25vh;
     text-align: center;
     display: flex;
     justify-content: center;

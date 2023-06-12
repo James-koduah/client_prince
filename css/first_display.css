@@ -1,3 +1,9 @@
+#first_works{
+    width: 100vw;
+    height: fit-content;
+    margin-top: -40vh;
+}
+
 #first_display{
     width: 100vw;
     min-height: 100vh;
@@ -5,10 +11,25 @@
     flex-direction: row;
     overflow-x: hidden;
     overflow-y: hidden;
-    background: var( --main-bg-color-faded);
+    background: var( --main-bg-color);
     padding-top: 5vh;
 }
-
+#first_pics_title{
+    width: 100vw;
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+}
+#works_logo{
+    position: relative;
+    width: 30vw;
+    height: 70%;
+    background-color: var(--main-bg-color);
+    top: 60%;
+    border-radius: 5vw;
+    padding: 1vh;
+    border: 1px white solid;
+}
 #first_pics{
     width: 69vw;
     height: 150vh;
@@ -65,7 +86,7 @@
         height: 100vh;
         min-height: 500px;
         border: none;
-        padding: 0 0 0 0;
+        padding: 5vh 0 0 0;
         gap: 0;
     }
     .picture_first_display{

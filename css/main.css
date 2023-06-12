@@ -45,9 +45,3 @@ main{
     position: relative;
     background-color: var(--main-bg-color);
 }
-
-#picture_change{
-    background: url(/resources/image_resources/about.jpg);
-    background-size: 120% 100vh;
-    transition: 1s;
-}
