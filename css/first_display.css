@@ -13,6 +13,7 @@
     overflow-y: hidden;
     background: var( --main-bg-color);
     padding-top: 5vh;
+    border-top: 1px white solid;
 }
 #first_pics_title{
     width: 100vw;
@@ -22,8 +23,8 @@
 }
 #works_logo{
     position: relative;
-    width: 15vw;
-    height: 25%;
+    width: 20vw;
+    height: 35%;
     background-color: var(--main-bg-color);
     top: 70%;
     border-radius: 5vw;

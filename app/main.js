@@ -55,16 +55,15 @@ function slides(){
     change_slide(n)
     n++
     if (run == false) clearInterval(welcome_slide_show)
-    console.log("running")
 }
 
 
 window.onscroll = function (e) {
     // console.log(window.scrollY )
-    if (window.scrollY > 800 && window.scrollY < 1000) {run = false, cleared = true; console.log("cleared"); clearInterval(welcome_slide_show)}
+    if (window.scrollY > 800 && window.scrollY < 1000) {run = false, cleared = true;  clearInterval(welcome_slide_show)}
     if (window.scrollY < 750) {
         run = true;
-        if (cleared == true) {welcome_slide_show = setInterval(slides, 10000); console.log("restarted")}
+        if (cleared == true) {welcome_slide_show = setInterval(slides, 10000);}
         cleared = false;
     }
   };
