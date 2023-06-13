@@ -11,10 +11,7 @@ let welcome = document.getElementById('welcome')
 welcome_slides[0].style.display = "block"
 welcome_slides[0].className += ' fade_up'
 let movements = [" fade_up", " fade_right", " fade_left"]
-let team_pic = "url(resources/image_resources/team.webp) no-repeat"
-if (screen.width < 500){
-    team_pic = "url(resources/image_resources/team_small.webp) no-repeat"
-}
+let team_pic = "url(resources/image_resources/team_small.webp) no-repeat"
 let wallpaper = true
 function change_slide(current){
     if (wallpaper == true){

@@ -1,6 +1,8 @@
 #welcome{
     width: 100vw;
-    height: 100vh;
+    height: 95vh;
+    display: flex;
+    align-items: center;
     overflow-x: hidden;
     overflow-y: hidden;
     background: url(/resources/image_resources/about.webp);
@@ -30,12 +32,14 @@
     text-align: center;
     display: flex;
     justify-content: center;
+    top: -10vh;
     margin: 0 0 0 0;
 }
 .slideW{
     position: absolute;
     display: none;
-    color: rgb(184, 160, 117);
+    color: transparent;
+    -webkit-text-stroke: 2px black;
 }
 .slideW h1{
     font-size: 7vw;

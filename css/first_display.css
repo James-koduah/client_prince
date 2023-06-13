@@ -1,18 +1,15 @@
 #first_works{
     width: 100vw;
     height: fit-content;
-    margin-top: -40vh;
     padding-bottom: 5vh;
 }
 
 #first_display{
     width: 100vw;
-    min-height: 100vh;
+    height: fit-content;
     display: flex;
     flex-direction: row;
-    overflow-x: hidden;
-    overflow-y: hidden;
-    background: var( --main-bg-color);
+    background: #f4f4f4;
     padding-top: 5vh;
     border-top: 1px white solid;
 }
@@ -34,18 +31,37 @@
     border: 1px black solid;
 }
 #first_pics{
-    width: 69vw;
-    height: 150vh;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-gap: 1vw;
-    border-right: 1px white solid;
-    padding-bottom: 5vh;
-    padding-left: 3vw;
-    padding-right: 3vw;
+    position: relative;
+    top: -20vh;
+    width: 75vw;
+    height: fit-content;
+    background-color: #fff;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 5vh 0 10vh 0;
+    border: 1px var(--color-border) solid;
+    border-top-right-radius: 2vw;
+    border-top-left-radius: 2vw;
 }
+.picture_first_display{
+    width: 15vw;
+    height: 15vw;
+    border: 1px rgb(128, 126, 126) solid;
+    box-shadow: 0.3vh 0.3vh 0.3vh white,-0.3vh -0.3vh 0.3vh white;
+    opacity: 0.9;
+    margin-left: 1vw;
+    margin-bottom: 1vh;
+    
+}
+.picture_first_display:hover{
+    transform: scale(0.9);
+    opacity: 1;
+}
+
 #first_pitch{
-    width: 30vw;
+    position: relative;
+    width: 25vw;
     height: 100vh;
     background-color: var(--minor-bg-color);
     padding-top: 5vh;
@@ -70,18 +86,6 @@
     height: 15vh;
 }
 
-.picture_first_display{
-    width: 23vw;
-    height: 30vh;
-    border: 1px wheat solid;
-    box-shadow: 0.3vh 0.3vh 0.3vh white,-0.3vh -0.3vh 0.3vh white;
-    opacity: 0.9;
-    
-}
-.picture_first_display:hover{
-    transform: scale(0.9);
-    opacity: 1;
-}
 
 #see_more{
     width: 70vw;
@@ -97,20 +101,23 @@
         flex-direction: column;
     }
     #first_pics{
-        width: 100vw;
-        height: 100vh;
+        width: 90vw;
+        height: fit-content;
         min-height: 500px;
         border: none;
-        padding: 5vh 0 0 0;
+        padding: 2vh 0 0 0;
+        margin: 0 auto 0 auto;
         gap: 0;
     }
     .picture_first_display{
-        width: 30vw;
-        height: 15vh;
+        width: 20vw;
+        height: 20vw;
+        margin: 2vh 1vw 2vh 1vw;
     }
     #first_pitch{
         width: 100vw;
         height: 40vh;
+        top: -15vh;
     }
     #see_more{
         width: 100vw;
