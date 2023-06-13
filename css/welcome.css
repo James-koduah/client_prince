@@ -21,16 +21,16 @@
     top: -10vh;
     margin: 0 0 0 0;
 }
-.slideW{
+.slide{
     position: absolute;
     display: none;
     color: transparent;
 }
-.slideW h1{
+.slide h1{
     font-size: 7vw;
     -webkit-text-stroke: 2px black;
 }
-.slideW h2{
+.slide h2{
     width: 100vw;
     font-size: 4vw;
     word-spacing: 0.1em;
@@ -73,11 +73,11 @@
     #welcome_slides{
         margin-top: 10vh;
     }
-    .slideW h1{
+    .slide h1{
         font-size: 12vw;
         margin-bottom: 5vh;
     }
-    .slideW h2{
+    .slide h2{
         font-size: 7vw;
         margin-bottom: 5vh;
     }

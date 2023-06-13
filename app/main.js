@@ -4,7 +4,7 @@
  * This block of code is for the slide_show on the welcome page
  * I am using a setInterval to display different divs
  */
-let welcome_slides = document.getElementsByClassName('slideW')
+let welcome_slides = document.getElementsByClassName('slide')
 let welcome = document.getElementById('welcome')
 
 
@@ -28,7 +28,7 @@ function change_slide(current){
     let next = current + 1
     if (next > 2) next = 0
     welcome_slides[current].style.display = 'none'
-    welcome_slides[current].className = 'slideW'
+    welcome_slides[current].className = 'slide'
     welcome_slides[next].style.display = 'block'
     welcome_slides[next].className += movements[next]
 }
@@ -36,7 +36,7 @@ function change_slide(current){
 /**
  * populate the first_display section
 */
-let first_display_pics = document.getElementsByClassName('picture_first_display')
+let first_display_pics = document.getElementsByClassName('picture_first_work')
 let pic_num = 6;
 for (let i = 0; i < first_display_pics.length; i++){
     let img = document.createElement('img')
@@ -66,7 +66,3 @@ window.onscroll = function (e) {
         cleared = false;
     }
   };
-
-
-
-  

@@ -6,8 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/nav.css">
+    <link rel="stylesheet" href="css/display_pictures.css">
     <link rel="stylesheet" href="css/welcome.css">
-    <link rel="stylesheet" href="css/first_display.css">
+    <link rel="stylesheet" href="css/first_work.css">
     <link rel="stylesheet" href="css/team.css">
     <link rel="stylesheet" href="css/about.css">
     <link rel="stylesheet" href="css/promotions.css">
@@ -28,23 +29,22 @@
     <main id="main">
         <section id="welcome">
             <div id="welcome_slides">
-                <div class="slideW">
+                <div class="slide">
                     <h1>Welcome</h1>
                     <h2>Clean Hands Painting And ArtWork Company</h2>
-                    
                 </div>
-                <div class="slideW">
+                <div class="slide">
                     <h1>We Add Color</h1>
                     <h2>And Beauty To Your World</h2>
                 </div>
-                <div class="slideW">
+                <div class="slide">
                     <h1>Customer Satisfaction</h1>
                     <h2>Is Our Motto</h2>
                 </div>
             </div>
         </section>
         <section id="first_works">
-            <div id="first_display">
+            <div id="work_display">
                 <div id="first_pics">
                     <div id="first_pics_title">
                         <div id="first_pics_title_pic"></div>
@@ -59,29 +59,29 @@
                             </div>
                         </div>
                     </div>
-                    <div class="picture_first_display"></div>
-                    <div class="picture_first_display"></div>
-                    <div class="picture_first_display"></div>
-                    <div class="picture_first_display"></div>
-                    <div class="picture_first_display"></div>
-                    <div class="picture_first_display"></div>
-                    <div class="picture_first_display"></div>
-                    <div class="picture_first_display"></div>
-                    <div class="picture_first_display"></div>
-                    <div class="picture_first_display"></div>
-                    <div class="picture_first_display"></div>
-                    <div class="picture_first_display"></div>
-                    <div class="picture_first_display"></div>
-                    <div class="picture_first_display"></div>
-                    <div class="picture_first_display"></div>
-                    <div style="background: url(resources/image_resources/team_small.webp);" class="picture_first_display"></div>
-                    <div class="picture_first_display"></div>
-                    <div class="picture_first_display"></div>
-                    <div class="picture_first_display"></div>
-                    <div class="picture_first_display"></div>
-                    <div class="picture_first_display"></div>
-                    <div class="picture_first_display"></div>
-                    <div class="picture_first_display"></div>
+                    <div class="picture_first_work"></div>
+                    <div class="picture_first_work"></div>
+                    <div class="picture_first_work"></div>
+                    <div class="picture_first_work"></div>
+                    <div class="picture_first_work"></div>
+                    <div class="picture_first_work"></div>
+                    <div class="picture_first_work"></div>
+                    <div class="picture_first_work"></div>
+                    <div class="picture_first_work"></div>
+                    <div class="picture_first_work"></div>
+                    <div class="picture_first_work"></div>
+                    <div class="picture_first_work"></div>
+                    <div class="picture_first_work"></div>
+                    <div class="picture_first_work"></div>
+                    <div class="picture_first_work"></div>
+                    <div style="background: url(resources/image_resources/team_small.webp);" class="picture_first_work"></div>
+                    <div class="picture_first_work"></div>
+                    <div class="picture_first_work"></div>
+                    <div class="picture_first_work"></div>
+                    <div class="picture_first_work"></div>
+                    <div class="picture_first_work"></div>
+                    <div class="picture_first_work"></div>
+                    <div class="picture_first_work"></div>
                     <a href="all_pictures/index.html"><button id="see_more">See More</button> </a>                   
                 </div>
                 <div id="first_pitch">
@@ -94,8 +94,9 @@
         </section>
     
         <section id="team">
-            <div id="team_title">
-                <h3>Our Team</h3>
+            <div class="title">
+                <div class="title_pic"></div>
+                <div style="color: white;" class="title_text">Meet The Team</div>
             </div>
             <div class="team_member">
                 <div class="team_image_cover">
@@ -218,12 +219,29 @@
 
 
     </main>
+    <sub>
+        <!-- display_pictures.css -->
+        <div id="full_display">
+            <div id="full_display_close" onclick="full_display_close()">
+                <ion-icon id="close_button" name="close-outline" color="light"></ion-icon>
+            </div>
+            <div id="full_display_previous" onclick="full_display_change('<')">
+                <ion-icon name="caret-back-outline" id="full_display_previous_button"></ion-icon>
+            </div>
+            <div id="full_display_next" onclick="full_display_change('>')">
+                <ion-icon name="caret-forward-outline" id="full_display_next_button"></ion-icon>
+            </div>
+            <div id="full_display_pic">
+                <img src="" id="full_display_img">
+            </div>
+        </div>
+    </sub>
     
     
-
-    <script src="https://james-koduah.github.io/full_display_images/full_display.js"></script>
+    <script src="app/main.js"></script>
+    <script src="app/full_display.js"></script>
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
-    <script src="app/main.js"></script>
+    
     
 </body>

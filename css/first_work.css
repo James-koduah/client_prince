@@ -4,7 +4,7 @@
     padding-bottom: 5vh;
 }
 
-#first_display{
+#work_display{
     width: 100vw;
     height: fit-content;
     display: flex;
@@ -16,7 +16,8 @@
 #first_pics_title{
     width: 100%;
     height: 20vh;
-    top: -10vh;
+    min-height: 200px;
+    top: -13vh;
     position: relative;
 }
 #first_pics_title_pic{
@@ -73,7 +74,7 @@
     border-top-right-radius: 2vw;
     border-top-left-radius: 2vw;
 }
-.picture_first_display{
+.picture_first_work{
     width: 15vw;
     height: 15vw;
     border: 1px rgb(128, 126, 126) solid;
@@ -83,7 +84,7 @@
     margin-bottom: 1vh;
     
 }
-.picture_first_display:hover{
+.picture_first_work:hover{
     transform: scale(0.9);
     opacity: 1;
 }
@@ -104,17 +105,6 @@
     border-bottom: 1px black solid;
 }
 
-.pitch_pictures{
-    width: 100%;
-    height: 50%;
-    border-bottom: 1px black solid;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-}
-.pitch_pictures img{
-    height: 15vh;
-}
-
 
 #see_more{
     width: 100vw;
@@ -127,7 +117,7 @@
     -webkit-text-stroke: 1px #fff;
 }
 @media (max-width: 800px) {
-    #first_display{
+    #work_display{
         flex-direction: column;
     }
     #first_pics{
@@ -144,7 +134,7 @@
     #first_socials div ion-icon{
         font-size: 3em;
     }
-    .picture_first_display{
+    .picture_first_work{
         width: 20vw;
         height: 20vw;
         margin: 2vh 1vw 2vh 1vw;
@@ -161,7 +151,7 @@
     }
 }
 @media (max-width: 550px) {
-    .picture_first_display{
+    .picture_first_work{
         width: 25vw;
         height: 20vw;
         margin: 2vh 1vw 2vh 1vw;

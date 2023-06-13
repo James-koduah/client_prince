@@ -42,3 +42,9 @@ nav a{
         opacity: 0;
     }
 }
+
+@media (max-width: 800px) {
+    nav a{
+        font-size: 1.4em;
+    }
+}
