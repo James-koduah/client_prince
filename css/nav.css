@@ -37,3 +37,9 @@ nav a{
     background: url('../resources/image_resources/logo_transparent1.svg') no-repeat;
     background-size: 100% 100%;
 }
+
+@media (max-width: 500px) {
+    nav a{
+        opacity: 0;
+    }
+}
