@@ -6,14 +6,14 @@
 
 :root{
     --main-bg-color:  rgb(249, 246, 240);
-    --main-bg-color-faded: linear-gradient(180deg, transparent, rgba(249, 246, 240, 0.6), rgba(249, 246, 240, 0.9));
+    --main-bg-color-faded: rgba(249, 246, 240, 0.7);
     --minor-bg-color: rgb(246, 221, 244);
     --light-bg-color: rgb(84, 84, 86);
     --text-color: rgb(43, 42, 42);
     --color-golden: blue;
     /* --team-size : url(../resources/image_resource. */
 }
-@media (prefers-color-scheme: dark) {
+/* @media (prefers-color-scheme: dark) {
     :root{
         --main-bg-color:  rgb(31, 31, 31);
         --main-bg-color-faded: rgba(31, 31, 31, 0.7);
@@ -23,7 +23,7 @@
         --color-golden: rgb(247, 231, 200);
         --no-change-text: aliceblue;
     }
-}
+} */
 
 body{
     width: 100vw;
