@@ -9,7 +9,7 @@
     height: fit-content;
     display: flex;
     flex-direction: row;
-    background: #f4f4f4;
+    background: var(--soft-bg-color);
     padding-top: 5vh;
     border-top: 1px white solid;
 }
@@ -65,7 +65,7 @@
     top: -20vh;
     width: 75vw;
     height: fit-content;
-    background-color: #fff;
+    background-color: var(--main-bg-color);
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -128,7 +128,7 @@
 #see_more{
     width: 100vw;
     height: 5vh;
-    background-color: var(--light-bg-color);
+    background-color: var(--opposite-bg-color);
     text-align: center;
     font-size: 2.3em;
     color: #fff;
@@ -161,9 +161,13 @@
     }
     
     #first_pitch{
-        width: 100vw;
+        width: 90vw;
         height: fit-content;
         top: -15vh;
+        margin: 0 auto 0 auto;
+        border: 1px gray solid;
+        border-top: none;
+
     }
     
     #see_more{

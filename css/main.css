@@ -5,23 +5,24 @@
 
 
 :root{
-    --main-bg-color:  rgb(249, 246, 240);
+    --main-bg-color:  #fff;
+    --soft-bg-color: #f4f4f4;
     --main-bg-color-faded: rgba(249, 246, 240, 0.7);
     --minor-bg-color: rgb(246, 221, 244);
-    --light-bg-color: rgb(84, 84, 86);
+    --opposite-bg-color: rgb(84, 84, 86);
     --text-color: rgb(43, 42, 42);
-    --color-border: rgb(253, 93, 93);
-    /* --team-size : url(../resources/image_resource. */
+    --color-border: rgb(104, 104, 104);
+    --extreme-text-color: black;
 }
 /* @media (prefers-color-scheme: dark) {
     :root{
         --main-bg-color:  rgb(31, 31, 31);
         --main-bg-color-faded: rgba(31, 31, 31, 0.7);
         --minor-bg-color: rgb(51, 49, 51);
-        --light-bg-color: rgb(249, 246, 240);
+        --opposite-bg-color: rgb(249, 246, 240);
         --text-color: rgb(255, 255, 255);
-        --color-golden: rgb(247, 231, 200);
-        --no-change-text: aliceblue;
+        --color-border: rgb(247, 231, 200);
+        --extreme-text-color: white;
     }
 } */
 
