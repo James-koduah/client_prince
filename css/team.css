@@ -76,13 +76,17 @@
     width: 140%;
     height: 15vh;
     background-size: 100% 100%;
-    opacity: 0.8;
+    background-color: black;
+    z-index: 4;
+}
+.team_member_pic img{
+    opacity: 0.7;
 }
 .team_member_description{
     position: relative;
     top: -5vh;
     width: 150%;
-    color: #f9f9f9;
+    color: #dfdcdc;
     font-size: 2.5em;
     font-weight: 500;
     word-wrap: break-word;
