@@ -5,6 +5,8 @@ let images = document.querySelectorAll('img');
   /**
    * Full Display section
    */
+  
+  let full_display_running = false;
   let full_display_section = document.getElementById('full_display')
   let full_display_img = document.getElementById('full_display_img')
   /**
@@ -12,6 +14,7 @@ let images = document.querySelectorAll('img');
    */
   function full_display_close(){
     full_display_section.style.zIndex = -40;
+    full_display_running = false
   }
 
 
@@ -22,4 +25,19 @@ let images = document.querySelectorAll('img');
     image_source = image.src
     full_display_img.src = image_source
     full_display_section.style.zIndex = 40
+    full_display_running = true
   }
+
+
+
+  jQuery(document).ready(function($) {
+    if (window.history && window.history.pushState) {
+      window.history.pushState('forward', null, './#forward');
+      $(window).on('popstate', function() {
+        if (full_display_running == true){
+            full_display_close()
+        }
+      });
+  
+    }
+  });
