@@ -66,6 +66,7 @@
 
 .team_member{
     width: 55vw;
+    max-width: 300px;
     height: 15vh;
     display: grid;
     gap: 2vw;
@@ -75,6 +76,7 @@
 .team_member_pic{
     width: 140%;
     height: 15vh;
+    min-height: 150px;
     background-size: 100% 100%;
     background-color: black;
     z-index: 4;
@@ -105,7 +107,12 @@
     padding-top: 1vh;
 }
 
-
+.team_member_left{
+    margin-left: 0vw;
+}
+.team_member_right{
+    margin-left: 0vw;
+}
 
 @media (max-width: 500px) {
     .title{
@@ -114,4 +121,14 @@
     .teamline{
         left: 5vw;
     }
+}
+
+@media (min-width: 1200px) {
+    .team_member_left{
+        margin-left: -35vw;
+    }
+    .team_member_right{
+        margin-left: 15vw;
+    }
+    
 }
