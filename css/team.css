@@ -69,11 +69,13 @@
     display: grid;
     gap: 2vw;
     grid-template-columns: 1fr 1fr;
+    margin-top: 15vh;
 }
 .team_member_pic{
     width: 140%;
     height: 15vh;
     background-size: 100% 100%;
+    opacity: 0.8;
 }
 .team_member_description{
     position: relative;
@@ -84,6 +86,18 @@
     font-weight: 600;
     font-family: Roboto Condensed,Lato,Arial,sans-serif!important;
     word-wrap: break-word;
+}
+.end_description_line{
+    height: 4px;
+    width: 100%;
+    margin-top: 1vh;
+    background-color: #f9f9f9;
+
+}
+
+.team_member_number{
+    color: rgb(72, 74, 74);
+    padding-top: 1vh;
 }
 
 
