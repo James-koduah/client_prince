@@ -11,7 +11,6 @@
     flex-direction: row;
     background: var(--soft-bg-color);
     padding-top: 5vh;
-    border-top: 1px white solid;
 }
 #first_pics_title{
     width: 100%;
@@ -19,6 +18,7 @@
     min-height: 200px;
     top: -13vh;
     position: relative;
+    color: var(--extreme-text-color);
 }
 #first_pics_title_pic{
     margin: 0 auto 0 auto;
@@ -31,7 +31,7 @@
     background:url(../resources/image_resources/team2.webp) no-repeat;
     background-size: 100% 100%;
     border-radius: 50%;
-    border: 7px white solid;
+    border: 7px var(--main-bg-color) solid;
     
 }
 #first_pics_title_text{
@@ -40,7 +40,6 @@
     text-align: center;
     font-size: 4em;
     margin-top: 3vh;
-    color: rgb(35, 30, 30);
 }
 #first_socials{
     width: 100%;
@@ -131,9 +130,9 @@
     background-color: var(--opposite-bg-color);
     text-align: center;
     font-size: 2.3em;
-    color: #fff;
+    color: var(--extreme-text-color);
     letter-spacing: 0.3em;
-    -webkit-text-stroke: 1px #fff;
+    -webkit-text-stroke: 1px var(--main-bg-color);
 }
 @media (max-width: 800px) {
     #work_display{

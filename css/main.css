@@ -14,17 +14,18 @@
     --color-border: rgb(104, 104, 104);
     --extreme-text-color: black;
 }
-/* @media (prefers-color-scheme: dark) {
+@media (prefers-color-scheme: dark) {
     :root{
-        --main-bg-color:  rgb(31, 31, 31);
+        --main-bg-color:  #000000;
+        --soft-bg-color: #212020;
         --main-bg-color-faded: rgba(31, 31, 31, 0.7);
         --minor-bg-color: rgb(51, 49, 51);
         --opposite-bg-color: rgb(249, 246, 240);
-        --text-color: rgb(255, 255, 255);
+        --text-color: rgb(202, 198, 198);
         --color-border: rgb(247, 231, 200);
         --extreme-text-color: white;
     }
-} */
+}
 
 body{
     width: 100vw;
