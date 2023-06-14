@@ -123,7 +123,7 @@
 
 .offer_description{
     background-color: red;
-    height: 50%;
+    min-height: 50%;
     margin-top: 5vh;
     text-align: center;
     padding: 5px;
