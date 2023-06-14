@@ -75,6 +75,8 @@
 }
 .picture_first_work{
     width: 15vw;
+    max-width: 135px;
+    max-height: 135px;
     height: 15vw;
     border: 1px black solid;
     box-shadow: 0.3vh 0.3vh 0.3vh white,-0.3vh -0.3vh 0.3vh white;
@@ -94,6 +96,7 @@
     height: 100vh;
     padding-top: 5vh;
     text-align: center;
+    background-color: var(--main-bg-color);
     padding-left: 1vw;
     padding-right: 1vw;
 }
@@ -122,12 +125,16 @@
     background-color: red;
     height: 50%;
     margin-top: 5vh;
+    text-align: center;
+    padding: 5px;
+    font-size: 2em;
+    color: #fff;
 }
 
 
 
 #see_more{
-    width: 100vw;
+    width: 75vw;
     height: 5vh;
     background-color: var(--opposite-bg-color);
     text-align: center;
