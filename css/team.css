@@ -24,9 +24,9 @@
     width: 18vw;
     height: 18vw;
     min-width: 65px;
-    max-width: 120px;
+    max-width: 100px;
     min-height: 65px;
-    max-height: 120px;
+    max-height: 100px;
     background:url(../resources/image_resources/team_title.webp) no-repeat;
     background-size: 100% 100%;
     border-radius: 50%;
@@ -39,7 +39,9 @@
     text-align: center;
     font-size: 4em;
     margin-top: 3vh;
-    color: rgb(35, 30, 30);
+    font-weight: 700;    
+    color: #988e9f;
+    font-family: Roboto Condensed,Lato,Arial,sans-serif!important;
 }
 
 .teamline {
@@ -57,7 +59,7 @@
     position: absolute;
     width: 5px;
     height: 5px;
-    background-color: #5918df;
+    top: -7px;
     border: 2px #5918df solid;
     border-radius: 50%;
 
@@ -72,6 +74,7 @@
     gap: 2vw;
     grid-template-columns: 1fr 1fr;
     margin-top: 25vh;
+    
 }
 .team_member_pic{
     width: 140%;
@@ -88,11 +91,12 @@
     position: relative;
     top: -5vh;
     width: 150%;
-    color: #dfdcdc;
-    font-size: 2.5em;
-    font-weight: 500;
+    color: #f9f9f9;
+    font-weight: 700;
     word-wrap: break-word;
     line-height: 1.2;
+    font-family: Roboto Condensed,Lato,Arial,sans-serif!important;
+    font-size: 3em;
 }
 .end_description_line{
     height: 4px;

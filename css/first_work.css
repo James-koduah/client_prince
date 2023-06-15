@@ -25,9 +25,9 @@
     width: 18vw;
     height: 18vw;
     min-width: 65px;
-    max-width: 120px;
+    max-width: 100px;
     min-height: 65px;
-    max-height: 120px;
+    max-height: 100px;
     background:url(../resources/image_resources/team2.webp) no-repeat;
     background-size: 100% 100%;
     border-radius: 50%;
@@ -79,7 +79,7 @@
     max-height: 135px;
     height: 15vw;
     border: 1px black solid;
-    box-shadow: 0.3vh 0.3vh 0.3vh white,-0.3vh -0.3vh 0.3vh white;
+    box-shadow: 0.3vh 0.3vh 0.3vh var(--color-border),-0.3vh -0.3vh 0.3vh var(--color-border);
     opacity: 0.9;
     margin-left: 1vw;
     margin-bottom: 1vh;

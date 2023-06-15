@@ -14,7 +14,7 @@
     --color-border: rgb(104, 104, 104);
     --extreme-text-color: black;
 }
-/* @media (prefers-color-scheme: dark) {
+@media (prefers-color-scheme: dark) {
     :root{
         --main-bg-color:  #000000;
         --soft-bg-color: #212020;
@@ -25,7 +25,7 @@
         --color-border: rgb(247, 231, 200);
         --extreme-text-color: white;
     }
-} */
+}
 
 body{
     width: 100vw;
