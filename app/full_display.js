@@ -50,7 +50,6 @@ if (window.history && window.history.pushState) {
     $(window).on('popstate', function() {
         if (full_display_running == true){
             full_display_close()
-            if (screen.width < 800) alert('Please Use the | X |')
         }
     });
 
