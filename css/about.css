@@ -7,7 +7,7 @@
 }
 
 #about_title_pic{
-    background: url(../resources/image_resources/home.jpeg) no-repeat;
+    background: url(../resources/image_resources/about_title.jpg) no-repeat;
     background-size: 100% 100%;
 }
 
@@ -23,16 +23,20 @@
 
 #about_description{
     width: 100%;
-    text-align: left;
     padding-left: 2vw;
     padding-bottom: 5vh;
+}
+.about_item{
+    text-align: left;
     word-wrap: break-word;
 }
+
 .about_description_pic{
     width: 96%;
     height: 20vh;
     min-height: 200px;
     margin-bottom: 2vh;
+    clip-path: polygon(0% 0%,100% 0%,95% 100%,0% 100%);
 }
 #about_description h5{
     font-size: 6em;
@@ -51,5 +55,16 @@
 @media (max-width: 550px) {
     #about{
         background-size: 200% 100%;
+    }
+}
+@media (min-width: 600px) {
+    .about_description_pic{
+        height: 40vh;
+        min-height: 400px;
+    }
+}
+@media (min-width: 900px) {
+    .about_description_pic{
+        width: 60%;
     }
 }
