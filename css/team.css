@@ -4,7 +4,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-bottom: 15vh;
+    padding-bottom: 25vh;
     background-size: 200% 100%;
     background:url(../resources/image_resources/yazio.webp) no-repeat;
     background-size: 150% 100%;
@@ -12,36 +12,9 @@
 
 }
 
-.title{
-    width: 100%;
-    height: 20vh;
-    min-height: 200px;
-    top: -10vh;
-    position: relative;
-}
-.title_pic{
-    margin: 0 auto 0 auto;
-    width: 18vw;
-    height: 18vw;
-    min-width: 65px;
-    max-width: 100px;
-    min-height: 65px;
-    max-height: 100px;
+#team_title_pic{
     background:url(../resources/image_resources/team_title.webp) no-repeat;
     background-size: 100% 100%;
-    border-radius: 50%;
-    border: 7px white solid;
-    
-}
-.title_text{
-    width: 100%;
-    height: fit-content;
-    text-align: center;
-    font-size: 4em;
-    margin-top: 3vh;
-    font-weight: 700;    
-    color: #988e9f;
-    font-family: Roboto Condensed,Lato,Arial,sans-serif!important;
 }
 
 .teamline {

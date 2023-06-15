@@ -13,8 +13,9 @@
     --text-color: rgb(43, 42, 42);
     --color-border: rgb(104, 104, 104);
     --extreme-text-color: black;
+    --about-text-color: #6a666c;
 }
-@media (prefers-color-scheme: dark) {
+/* @media (prefers-color-scheme: dark) {
     :root{
         --main-bg-color:  #000000;
         --soft-bg-color: #212020;
@@ -25,7 +26,7 @@
         --color-border: rgb(247, 231, 200);
         --extreme-text-color: white;
     }
-}
+} */
 
 body{
     width: 100vw;
@@ -46,4 +47,34 @@ main{
     z-index: 1;
     position: relative;
     background-color: var(--main-bg-color);
+}
+
+.title{
+    width: 100%;
+    height: 20vh;
+    min-height: 200px;
+    top: -10vh;
+    position: relative;
+}
+.title_pic{
+    margin: 0 auto 0 auto;
+    width: 18vw;
+    height: 18vw;
+    min-width: 65px;
+    max-width: 100px;
+    min-height: 65px;
+    max-height: 100px;
+    border-radius: 50%;
+    border: 7px var(--main-bg-color) solid;
+    
+}
+.title_text{
+    width: 100%;
+    height: fit-content;
+    text-align: center;
+    font-size: 4em;
+    margin-top: 3vh;
+    font-weight: 700;    
+    color: #988e9f;
+    font-family: Roboto Condensed,Lato,Arial,sans-serif!important;
 }

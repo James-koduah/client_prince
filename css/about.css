@@ -3,39 +3,44 @@
     min-height: 100vh;
     background: url('../resources/image_resources/about.webp') no-repeat;
     background-size: 100% 100%;
+    font-family: Oscine, sans-serif;
 }
 
-.right_align{
-    width: 100vw;
-    height: 30vh;
-    display: flex;
-    justify-content: center;
-}
-.left_align{
-    width: 100vw;
-    height: 30vh;
-    display: flex;
-    justify-content: center;
+#about_title_pic{
+    background: url(../resources/image_resources/home.jpeg) no-repeat;
+    background-size: 100% 100%;
 }
 
-.in_align{
-    width: 70%;
-    height: 100%;
-    text-align: center;
-    padding: 1vh;
+
+#about_main{
+    width: 90vw;
     background-color: var(--main-bg-color);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
+    min-height: 100vh;
+    margin: 0vh auto 0 auto;
+    border: var(--border_color);
+    color: var(--about-text-color);
 }
 
-.in_align h4{
-    font-size: 3em;
+#about_description{
+    width: 100%;
+    text-align: left;
+    padding-left: 2vw;
+    padding-bottom: 5vh;
+    word-wrap: break-word;
 }
-
-.in_align p{
+.about_description_pic{
+    width: 90%;
+    height: 20vh;
+}
+#about_description h5{
+    font-size: 6em;
+    font-weight: 200;
+    margin-bottom: 5vh;
+}
+#about_description p{
     font-size: 3em;
+    color: var(--text-color);
+    margin-bottom: 10vh;
 }
 
 @media (max-width: 550px) {

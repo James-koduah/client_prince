@@ -99,8 +99,7 @@
     background-color: var(--main-bg-color);
     color: var(--text-color);
     font-family: Oscine, sans-serif;
-    padding-left: 1vw;
-    padding-right: 1vw;
+    padding: 2vh 1vw 5vh 1vw;
 }
 #first_pitch h3{
     font-size: 4em;
