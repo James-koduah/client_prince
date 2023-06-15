@@ -31,16 +31,20 @@
 .about_description_pic{
     width: 90%;
     height: 20vh;
+    margin-bottom: 2vh;
 }
 #about_description h5{
     font-size: 6em;
     font-weight: 200;
-    margin-bottom: 5vh;
+    margin-bottom: 3vh;
 }
 #about_description p{
-    font-size: 3em;
-    color: var(--text-color);
+    width: 80vw;
+    font-size: 2em;
     margin-bottom: 10vh;
+    font-weight: 300;
+    color: rgb(97, 97, 97);
+    word-wrap: break-word;
 }
 
 @media (max-width: 550px) {
