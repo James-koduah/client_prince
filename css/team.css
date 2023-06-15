@@ -82,6 +82,7 @@
     min-height: 150px;
     background-size: 100% 100%;
     background-color: black;
+    border: 1px #5918df solid;
     z-index: 4;
 }
 .team_member_pic img{
