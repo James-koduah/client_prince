@@ -29,8 +29,9 @@
     word-wrap: break-word;
 }
 .about_description_pic{
-    width: 90%;
+    width: 96%;
     height: 20vh;
+    min-height: 200px;
     margin-bottom: 2vh;
 }
 #about_description h5{
