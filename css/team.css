@@ -99,9 +99,6 @@
 }
 
 @media (max-width: 500px) {
-    .title{
-        top: -5vh;
-    }
     .teamline{
         left: 15vw;
     }

@@ -56,14 +56,25 @@ function slides(){
     if (run == false) clearInterval(welcome_slide_show)
 }
 
-
+let nav = document.querySelector('nav')
+let yScroll = 100;
 window.onscroll = function (e) {
-    // console.log(window.scrollY )
+    //Stop the hompage background change animation
     if (window.scrollY > 800 && window.scrollY < 1000) {run = false, cleared = true;  clearInterval(welcome_slide_show)}
     if (window.scrollY < 750) {
         run = true;
         if (cleared == true) {welcome_slide_show = setInterval(slides, 10000);}
         cleared = false;
+    }
+
+    // Control the navbar disappearing and appearing during scroll
+    if (window.scrollY > yScroll){
+        nav.style.top = '-20vh' 
+        yScroll = window.scrollY       
+    }
+    else{
+        nav.style.top = '0'
+        yScroll = window.scrollY
     }
   };
 

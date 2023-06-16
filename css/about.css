@@ -29,6 +29,7 @@
 .about_item{
     text-align: left;
     word-wrap: break-word;
+    padding-bottom: 10vh;
 }
 
 .about_description_pic{
@@ -36,7 +37,7 @@
     height: 20vh;
     min-height: 200px;
     margin-bottom: 2vh;
-    clip-path: polygon(0% 0%,100% 0%,95% 100%,0% 100%);
+    /* clip-path: polygon(0% 0%,100% 0%,95% 100%,0% 100%); */
 }
 #about_description h5{
     font-size: 6em;
@@ -46,8 +47,8 @@
 #about_description p{
     width: 80vw;
     font-size: 2em;
-    margin-bottom: 10vh;
     font-weight: 300;
+    margin-bottom: 0.5em;
     color: rgb(97, 97, 97);
     word-wrap: break-word;
 }

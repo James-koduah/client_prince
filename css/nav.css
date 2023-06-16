@@ -1,6 +1,5 @@
 nav{
-    position: sticky;
-    bottom: 95vh;
+    position: fixed;
     left: 0px;
     width: 100vw;
     height: 12vh;
@@ -13,6 +12,7 @@ nav{
     letter-spacing: 0.2em;
     border-radius: 3px;
     z-index: 5;
+    transition: 0.7s;
 }
 nav a{
     color:var(--color-border);
