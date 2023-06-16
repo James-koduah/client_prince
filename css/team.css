@@ -1,5 +1,11 @@
-#team{
+#team_cover{
     width: 100vw;
+    display: flex;
+    justify-content: center;
+    background-color: var(--main-bg-color);
+}
+#team{
+    width: 90vw;
     min-height: 1200px;
     display: flex;
     flex-direction: column;
@@ -9,6 +15,9 @@
     background:url(../resources/image_resources/yazio.webp) no-repeat;
     background-size: 150% 100%;
     position: relative;
+    border:1px #5918df solid;
+    border-top: none;
+    border-bottom: none;
 
 }
 
