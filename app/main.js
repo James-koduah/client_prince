@@ -59,8 +59,7 @@ function slides(){
 let nav = document.querySelector('nav')
 let yScroll = 100;
 window.onscroll = function (e) {
-    //Stop the hompage background change animation
-    console.log(scrollY)
+    //Stop the hompage background change animations
     if (window.scrollY > 800 && window.scrollY < 1000) {run = false, cleared = true;  clearInterval(welcome_slide_show)}
     if (window.scrollY < 750) {
         run = true;
