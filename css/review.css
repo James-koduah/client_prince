@@ -62,7 +62,6 @@
 .review_details{
     width: 99%;
     height: 50px;
-    background-color: black;
     display: flex;
     flex-direction: row;
     align-items: center;
