@@ -129,12 +129,12 @@
 #see_more{
     width: 75vw;
     height: 5vh;
-    background-color: var(--opposite-bg-color);
+    background-color: var(--soft-bg-color);
     text-align: center;
     font-size: 2.3em;
+    font-weight: 200;
     color: var(--extreme-text-color);
     letter-spacing: 0.3em;
-    -webkit-text-stroke: 1px var(--main-bg-color);
 }
 @media (max-width: 800px) {
     #work_display{
