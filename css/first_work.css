@@ -129,7 +129,7 @@
 #see_more{
     width: 75vw;
     height: 5vh;
-    background-color: var(--soft-bg-color);
+    background-color: var(--main-bg-color);
     text-align: center;
     font-size: 2.3em;
     font-weight: 200;
