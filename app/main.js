@@ -33,18 +33,6 @@ function change_slide(current){
     welcome_slides[next].className += movements[next]
 }
 
-/**
- * populate the first_display section
-*/
-let first_display_pics = document.getElementsByClassName('picture_first_work')
-let pic_num = 0;
-for (let i = 0; i < first_display_pics.length; i++){
-    let img = document.createElement('img')
-    img.src = `resources/stonedesign/stonedesign_${pic_num}.webp`
-    img.setAttribute('loading', 'lazy')
-    first_display_pics[i].appendChild(img)
-    pic_num++
-}
 let run = true
 cleared = false
 let n = 0;

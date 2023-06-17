@@ -80,9 +80,11 @@
     height: 15vw;
     border: 1px black solid;
     box-shadow: 0.3vh 0.3vh 0.3vh var(--color-border),-0.3vh -0.3vh 0.3vh var(--color-border);
+    background: url(../resources/image_resources/image_placeholder.webp) no-repeat;
+    background-size: 100% 100%;
     opacity: 0.9;
-    margin-left: 1vw;
-    margin-bottom: 1vh;
+    margin-left: 1.4vw;
+    margin-bottom: 2vh;
     
 }
 .picture_first_work:hover{

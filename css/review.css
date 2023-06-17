@@ -121,6 +121,12 @@
     padding: 10px 10px 10px 5px;
     font-size: 2em;
 }
+#see_more_reviews{
+    width: 100vw;
+    height: 50px;
+    background-color: var(--soft-bg-color);
+    color: var(--extreme-text-color);
+}
 @media (max-width: 550px) {
     #review_intro{
         height: 50vh;

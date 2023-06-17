@@ -63,9 +63,9 @@
     --width: 120px;
     width: var(--width);
     height: var(--width);
-    background-size: 100% 100%;
-    background-color: black;
     box-shadow: 4px 4px 4px #5918df,-4px -4px 4px #5918df;
+    background: url(../resources/image_resources/image_placeholder.webp) no-repeat;
+    background-size: 100% 100%;
     z-index: 4;
     justify-self: flex-end;
 }
