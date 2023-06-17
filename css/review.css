@@ -6,26 +6,10 @@
 }
 
 #review_intro{
-      width: 100%;
-      height: 80vh;
       background: url(../resources/image_resources/review.webp) no-repeat;
       background-size: 100% 100%;
 }
 
-#review_intro_inner{
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
-    color: transparent;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-#review_intro_inner h5{
-    font-size: 7vw;
-    -webkit-text-stroke: 2px #fff;
-}
 
 #review_header{
     width: 100%;
@@ -128,14 +112,6 @@
     color: var(--extreme-text-color);
 }
 @media (max-width: 550px) {
-    #review_intro{
-        height: 50vh;
-        max-height: 400px;
-    }
-    #review_intro_inner h5{
-        font-size: 10vw;
-        -webkit-text-stroke: 1px #fff;
-    }
     #review_header h5{
         font-size: 3.5em;
     }

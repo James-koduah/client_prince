@@ -28,7 +28,7 @@
 }
 .slide h1{
     font-size: 7vw;
-    -webkit-text-stroke: 2px var(--extreme-text-color);
+    -webkit-text-stroke: 2px #000;
 }
 .slide h2{
     width: 100vw;
@@ -38,7 +38,7 @@
     line-height: 160%;
     font-family: sans-serif, "Helvetica Neue", "Lucida Grande", Arial;
     font-stretch:extra-expanded;
-    -webkit-text-stroke: 1px var(--extreme-text-color);
+    -webkit-text-stroke: 1px #000;
 }
 
 .fade_left {
