@@ -1,6 +1,7 @@
 #services{
     width: 100vw;
     height: fit-content;
+    font-family: Oscine, sans-serif;
 }
 
 #services_intro_picture{
@@ -32,14 +33,14 @@
     width: 55vw;
     height: 100%;
     border: 1px var(--color-border) solid;
-    clip-path: polygon(0% 0%,100% 0%,75% 100%,0% 100%);
+    clip-path: polygon(0% 0%,80% 0%,100% 100%,0% 100%);
 }
 .service_item_picture_reverse{
     width: 55vw;
     height: 100%;
     border: 1px var(--color-border) solid;
     order: 2;
-    clip-path: polygon(25% 0%,100% 0%,100% 100%,0% 100%) !important;
+    clip-path: polygon(20% 0%,100% 0%,100% 100%,0% 100%);
 }
 .service_item_description{
     position: relative;
@@ -50,13 +51,16 @@
     padding-left: 1vw;
 }
 .service_item_description h6{
-    font-size: 2.5em;
+    font-size: 3.5em;
+    font-weight: 200;
     margin-bottom: 5vh;
 }
 .service_item_description p{
-    font-size: 1.9em;
-    line-height: 1.2;
+    font-size: 2em;
+    font-weight: 300;
     margin-bottom: 1em;
+    color: var(--about-text-color);
+    word-wrap: break-word;
 }
 
 @media (min-width: 600px){
@@ -65,7 +69,7 @@
         min-height: 400px;
     }
     .service_item_description h6{
-        font-size: 4.5em;
+        font-size: 9em;
     }
     .service_item_description p{
         font-size: 2.9em;
