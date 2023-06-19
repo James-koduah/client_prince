@@ -3,13 +3,56 @@
     min-height: 100vh;
     height: fit-content;
     background-color: var(--main-bg-color);
+    overflow-x: hidden;
 }
 
 #contact_intro{
-    background: url(../resources/image_resources/contact_img.avif) no-repeat;
+    background: url(../resources/image_resources/contact_img.webp) no-repeat;
     background-size: 100% 100%;
 }
 
+#message_submission{
+    width: 100vw;
+    min-height: 60vh;
+    height: fit-content;
+    padding: 5vh 0 5vh 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    
+}
+#message_submission_information{
+    width: 55vw;
+    height: 60vh;
+}
+#message_submission_information_inner{
+    position: relative;
+    width: 97%;
+    padding-right: 3%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.01);
+    padding-top: 25px;
+    text-align: right;
+}
+
+#message_submission_information_inner img{
+    position: relative;
+    width: 30%;
+    height: 30%;
+    left: -60%;
+}
+
+#message_submission_information_inner h6{
+    font-size: 4em;
+    margin-bottom: 25px;
+}
+#message_submission_information_inner p{
+    font-size: 2.5em;
+    line-height: 2;
+    padding-left: 5vw;
+}
 
 #contact_form{
     width: 40vw;
@@ -18,7 +61,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 5vh auto 5vh auto;
+    margin: 5vh auto 0vh auto;
     padding: 5vh 0 5vh 0;
 }
 .form_element{
@@ -32,6 +75,7 @@
 }
 .form_element label{
     font-size: 2em;
+    margin-bottom: 2px;
 }
 #contact_name{
     height: 50px;
@@ -39,14 +83,29 @@
 #contact_email{
     height: 50px;
 }
+#phone_number{
+    height: 50px;
+}
 #contact_message{
     height: 100px;
     padding: 1px;
 }
+#contact_button{
+    height: 40px;
+    background-color: var(--soft-bg-color);
+    color: var(--extreme-text-color);
+}
+
+
 
 @media (max-width: 550px) {
     #contact_form{
         width: 100vw;
+    }
+    
+    #message_submission_information{
+        width: 100vw;
+        height: fit-content;
     }
 }
 

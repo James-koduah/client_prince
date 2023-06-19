@@ -651,31 +651,52 @@
         <section id="contact">
             <div id="contact_intro" class="section_intro">
                 <div class="section_intro_inner">
-                    <h5>Let's Connect</h5>
+                    <h5>Talk To Us</h5>
                 </div>
             </div>
 
-            <div id="contact_form">
-                <form class="form_element" action="https://public.herotofu.com/v1/935c6ea0-0eb2-11ee-a6b0-17653bd30bd3" method="post" accept-charset="UTF-8">
-                    <div>
-                        <label for="name">Your Name</label>
-                        <input placeholder="Name" name="Name" id="contact_name" type="text" required />
+            <div id="message_submission">
+                <div id="message_submission_information">
+                    <div id="message_submission_information_inner">
+                        <h6>CONTACT US</h6>
+                        <p>We look forward to hearing from you</p>
+                        <p>Contact us for estimates, inquiries and any other question about our services</p>
+                        <p>We assure you a fast response to your inquiries</p>
+                        <p>
+                            blah blah blah blah blah blah blah blah blah
+                            blah blah blah blah blah blah blah blah blah
+                            blah blah blah blah blah blah blah blah blah
+                            blah blah blah blah blah blah blah blah blah
+                            blah blah blah blah blah blah blah blah blah
+                            blah blah blah blah blah blah blah blah blah
+                        </p>
+                        <img src="resources/image_resources/contact_clipboard_transparent.png" alt="">
                     </div>
-                    <div>
-                        <label for="email">Your Email</label>
-                        <input placeholder="Email Adress" name="Email" id="contact_email" type="email" required  />
-                    </div>
-                    <div>
-                        <label for="message">Your Message</label>
-                        <textarea placeholder="Your inquiries, suggestions, proposals..." name="message" id="contact_message" cols="30" rows="10"></textarea>
-                      </div>
-                    <div>
-                        <button type="submit">Send</button>
-                    </div>
-                    <div style="display: none;">
-                        <input type="text" name="_gotcha" tabindex="-1" autocomplete="off" />
-                    </div>
-                </form>
+                </div>
+                <div id="contact_form">
+                    <form class="form_element" action="https://public.herotofu.com/v1/935c6ea0-0eb2-11ee-a6b0-17653bd30bd3" method="post" accept-charset="UTF-8">
+                        <div>
+                            <label for="name">Your Name</label>
+                            <input placeholder="Name" name="Name" id="contact_name" type="text" required />
+                        </div>
+                        <div>
+                            <label for="email">Your Email</label>
+                            <input placeholder="Email Adress" name="Email" id="contact_email" type="email" />
+                            <label style="margin-top: 1vh;" for="phone_number">Or Phone Number (WhatsApp)</label>
+                            <input placeholder="Phone Number (WhatsApp)" type="number" id="phone_number"/>
+                        </div>
+                        <div>
+                            <label for="message">Your Message</label>
+                            <textarea placeholder="Your inquiries, suggestions, proposals..." name="message" id="contact_message" cols="30" rows="10"></textarea>
+                        </div>
+                        <div>
+                            <button id="contact_button" type="submit">Send</button>
+                        </div>
+                        <div style="display: none;">
+                            <input type="text" name="_gotcha" tabindex="-1" autocomplete="off" />
+                        </div>
+                    </form>
+                </div>
             </div>
         </section>
 
