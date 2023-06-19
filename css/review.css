@@ -108,6 +108,7 @@
 #see_more_reviews{
     width: 100vw;
     height: 50px;
+    border-top: none;
     background-color: var(--soft-bg-color);
     color: var(--extreme-text-color);
 }

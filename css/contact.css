@@ -1,8 +1,60 @@
 #contact{
     width: 100vw;
-    height: 100vh;
+    min-height: 100vh;
+    height: fit-content;
     background-color: var(--main-bg-color);
 }
+
+#contact_intro{
+    background: url(../resources/image_resources/contact_img.avif) no-repeat;
+    background-size: 100% 100%;
+}
+
+
+#contact_form{
+    width: 40vw;
+    height: fit-content;
+    border: 1px var(--color-border) solid;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 5vh auto 5vh auto;
+    padding: 5vh 0 5vh 0;
+}
+.form_element{
+    width: 90%;
+    height: fit-content;
+}
+.form_element div{
+    display: flex;
+    flex-direction: column;
+    margin-top: 3vh;
+}
+.form_element label{
+    font-size: 2em;
+}
+#contact_name{
+    height: 50px;
+}
+#contact_email{
+    height: 50px;
+}
+#contact_message{
+    height: 100px;
+    padding: 1px;
+}
+
+@media (max-width: 550px) {
+    #contact_form{
+        width: 100vw;
+    }
+}
+
+
+
+
+
+
 
 
 

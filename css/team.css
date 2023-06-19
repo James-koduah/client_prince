@@ -11,12 +11,11 @@
     flex-direction: column;
     align-items: center;
     padding-bottom: 25vh;
-    background-size: 200% 100%;
-    background:url(../resources/image_resources/yazio.webp) no-repeat;
-    background-size: 150% 100%;
+    /* background:url(../resources/image_resources/yazio.webp) no-repeat;
+    background-size: 150% 100%; */
+    background-color: var(--main-bg-color);
     position: relative;
     border:1px #5918df solid;
-    border-top: none;
     border-bottom: none;
 
 }

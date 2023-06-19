@@ -34,11 +34,17 @@
     height: 50%;
     border: 1px var(--color-border) solid;
 }
+.service_item_picture:hover{
+    transform: scale(0.95);
+}
 .service_item_picture_reverse{
     width: 30vw;
     height: 50%;
     border: 1px var(--color-border) solid;
     order: 2;
+}
+.service_item_picture_reverse:hover{
+    transform: scale(0.95);
 }
 .service_item_description{
     position: relative;
