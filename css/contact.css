@@ -32,7 +32,7 @@
     width: 97%;
     padding-right: 3%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.01);
+    background-color: rgba(0, 0, 0, 0.1);
     padding-top: 25px;
     text-align: right;
 }
@@ -98,6 +98,40 @@
 
 
 
+#end_credits{
+    width: 100vw;
+    min-height: 70vh;
+    padding-bottom: 5vh;
+    background-color: #000;
+    display: flex;
+    flex-wrap: wrap;
+}
+#end_credits div{
+    width: 33vw;
+    height: fit-content;
+    min-height: 40vh;    
+}
+#end_credits_site_stamps{
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+}
+#end_credits_site_stamps a{
+    text-decoration: none;
+    color: white;
+    font-size: 3em;
+    margin-bottom: 20px;
+}
+
+#end_credits_socials{
+
+}
+#end_credits_developer_rating{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 @media (max-width: 550px) {
     #contact_form{
         width: 100vw;
@@ -106,6 +140,9 @@
     #message_submission_information{
         width: 100vw;
         height: fit-content;
+    }
+    #end_credits div{
+        width: 90vw;  
     }
 }
 

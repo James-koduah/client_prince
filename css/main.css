@@ -15,7 +15,7 @@
     --extreme-text-color: black;
     --about-text-color: #6a666c;
 }
-/* @media (prefers-color-scheme: dark) {
+@media (prefers-color-scheme: dark) {
     :root{
         --main-bg-color:  #000000;
         --soft-bg-color: #212020;
@@ -27,7 +27,7 @@
         --extreme-text-color: white;
         --about-text-color: #bebcbf;
     }
-} */
+}
 
 body{
     width: 100vw;
@@ -48,6 +48,7 @@ input{
     background-color: var(--soft-bg-color);
     color: var(--text-color);
     border-radius: 0.5em;
+    padding-left: 0.5em;
 }
 input::placeholder{
     color: var(--text-color);
@@ -56,6 +57,7 @@ textarea{
     background-color: var(--soft-bg-color);
     color: var(--text-color);
     border-radius: 0.5em;
+    padding-left: 0.5em;
 }
 textarea::placeholder{
     color: var(--text-color);

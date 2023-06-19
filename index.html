@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="css/display_pictures.css">
     <link rel="stylesheet" href="css/welcome.css">
     <link rel="stylesheet" href="css/first_work.css">
+    <link rel="stylesheet" href="css/second_display.css">
     <link rel="stylesheet" href="css/team.css" media="print" onload="this.media='all'">
     <link rel="stylesheet" href="css/about.css" media="print" onload="this.media='all'">
     <link rel="stylesheet" href="css/services.css" media="print" onload="this.media='all'">
@@ -70,7 +71,7 @@
                         <div id="first_pics_title_text">Enjoy YourSelf</div>
                         <div id="first_socials">
                             <div>
-                                <ion-icon name="logo-facebook"></ion-icon>
+                                <a target="_blank" href="https://www.facebook.com/profile.php?id=100091852227204&mibextid=ZbWKwL"><ion-icon name="logo-facebook"></ion-icon></a>
                                 <ion-icon name="logo-instagram"></ion-icon>
                                 <ion-icon name="mail-outline"></ion-icon>
                                 <ion-icon name="logo-twitter"></ion-icon>
@@ -101,13 +102,16 @@
                     <div class="picture_first_work"></div>
                     <div class="picture_first_work"></div>
                     <div class="picture_first_work"></div>
+                    <div class="picture_first_work"></div>
+                    <div class="picture_first_work"></div>
+                    <div class="picture_first_work"></div>
+                    <div class="picture_first_work"></div>
+                    <div class="picture_first_work"></div>
                     <a href="all_pictures/index.html"><button id="see_more">See More ></button> </a>                   
                 </div>
                 <script src="app/populate.js"></script>
                 <div id="first_pitch">
-                    <div id="promotions_pic">
-                        <h3>Hello There</h3>
-                    </div>
+                    <div id="promotions_pic"></div>
                     <h3>Promotions</h3>
                     <div class="first_pitch_promos">
                         <h4>Stone Design</h4> <br>
@@ -688,6 +692,33 @@
                         <div>
                             <label for="message">Your Message</label>
                             <textarea placeholder="Your inquiries, suggestions, proposals..." name="message" id="contact_message" cols="30" rows="10"></textarea>
+                        </div>
+                        <div>
+                            <button id="contact_button" type="submit">Send</button>
+                        </div>
+                        <div style="display: none;">
+                            <input type="text" name="_gotcha" tabindex="-1" autocomplete="off" />
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div id="end_credits">
+                <div id="end_credits_site_stamps">
+                    <a href="#">Home</a>
+                    <a href="#">About</a>
+                    <a href="#">Services</a>
+                    <a href="#">Works</a>
+                    <a href="#">Contact</a>
+                    <a href="#">All Pictures</a>                    
+                    <a href="#">Submit An Inquiry</a>
+                    <a href="#">Make A suggestion</a>
+                </div>
+                <div id="end_credits_socials"></div>
+                <div id="end_credits_developer_rating">
+                    <form class="form_element" action="https://public.herotofu.com/v1/935c6ea0-0eb2-11ee-a6b0-17653bd30bd3" method="post" accept-charset="UTF-8">
+                        <div>
+                            <label for="name">How did you like the Site? <br> Say Something to our developer</label>
+                            <textarea placeholder="Say Something" name="say_to_developer" id="say_to_developer" cols="25" rows="10"></textarea>
                         </div>
                         <div>
                             <button id="contact_button" type="submit">Send</button>
