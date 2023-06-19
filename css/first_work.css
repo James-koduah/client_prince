@@ -95,7 +95,7 @@
 #first_pitch{
     position: relative;
     width: 25vw;
-    height: 90vh;
+    height: fit-content;
     padding-top: 5vh;
     text-align: left;
     background-color: var(--main-bg-color);
