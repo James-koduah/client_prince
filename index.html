@@ -45,6 +45,7 @@
             <a href="#">Works</a>
             <a href="#">Contact</a>
         </div>
+        <ion-icon onclick="nav_toogle()" name="ellipsis-vertical-outline"></ion-icon>
     </nav>
     <main id="main">
         <section id="welcome">
@@ -384,14 +385,6 @@
                             and parsed—both of which incur potential delays.
                             Of course, at least a portion of a sites CSS should be loaded
                         </p>
-                        <p>
-                            One of the most impactful things we can do to improve page performance
-                            and resilience is to load CSS in a way that does not delay page rendering.
-                            Thats because by default, browsers will load external CSS syn
-                            chronously—halting all page rendering while the CSS is downloaded
-                            and parsed—both of which incur potential delays.
-                            Of course, at least a portion of a sites CSS should be loaded
-                        </p>
                     </div>
                 </div>
                 <div class="service_item">
@@ -400,14 +393,6 @@
                     </div>
                     <div class="service_item_description align_text_right">
                         <h6>Celling Design</h6>
-                        <p>
-                            One of the most impactful things we can do to improve page performance
-                            and resilience is to load CSS in a way that does not delay page rendering.
-                            Thats because by default, browsers will load external CSS syn
-                            chronously—halting all page rendering while the CSS is downloaded
-                            and parsed—both of which incur potential delays.
-                            Of course, at least a portion of a sites CSS should be loaded
-                        </p>
                         <p>
                             One of the most impactful things we can do to improve page performance
                             and resilience is to load CSS in a way that does not delay page rendering.
@@ -432,14 +417,6 @@
                             and parsed—both of which incur potential delays.
                             Of course, at least a portion of a sites CSS should be loaded
                         </p>
-                        <p>
-                            One of the most impactful things we can do to improve page performance
-                            and resilience is to load CSS in a way that does not delay page rendering.
-                            Thats because by default, browsers will load external CSS syn
-                            chronously—halting all page rendering while the CSS is downloaded
-                            and parsed—both of which incur potential delays.
-                            Of course, at least a portion of a sites CSS should be loaded
-                        </p>
                     </div>
                 </div>                
                 <div class="service_item">
@@ -456,14 +433,6 @@
                             and parsed—both of which incur potential delays.
                             Of course, at least a portion of a sites CSS should be loaded
                         </p>
-                        <p>
-                            One of the most impactful things we can do to improve page performance
-                            and resilience is to load CSS in a way that does not delay page rendering.
-                            Thats because by default, browsers will load external CSS syn
-                            chronously—halting all page rendering while the CSS is downloaded
-                            and parsed—both of which incur potential delays.
-                            Of course, at least a portion of a sites CSS should be loaded
-                        </p>
                     </div>
                 </div>
                 <div class="service_item">
@@ -472,14 +441,6 @@
                     </div>
                     <div class="service_item_description align_text_left">
                         <h6>Interior Design</h6>
-                        <p>
-                            One of the most impactful things we can do to improve page performance
-                            and resilience is to load CSS in a way that does not delay page rendering.
-                            Thats because by default, browsers will load external CSS syn
-                            chronously—halting all page rendering while the CSS is downloaded
-                            and parsed—both of which incur potential delays.
-                            Of course, at least a portion of a sites CSS should be loaded
-                        </p>
                         <p>
                             One of the most impactful things we can do to improve page performance
                             and resilience is to load CSS in a way that does not delay page rendering.
@@ -747,16 +708,30 @@
                         <div style="display: none;">
                             <input type="text" name="_gotcha" tabindex="-1" autocomplete="off" />
                         </div>
+                        <div id="developer_credit">
+                            <ion-icon onclick="tumble()" name="flash-outline"></ion-icon>
+                            <p id="flicker">Made By Jaskin Tech</p>
+                        </div>
                     </form>
-                </div>
-                <div id="developer_credit">
-                    <ion-icon title="Made by Jaskin.tech" name="flash-outline"></ion-icon>
                 </div>
             </div>
         </section>
 
     </main>
     <sub>
+        <!-- nav.css -->
+        <div id="menu_bar">
+            <div id="close_menu" onclick="nav_toogle()"></div>
+            <div id="main_menu">
+                <div onclick="light_dark()" id="main_menu_light_dark_mode">
+                    <p>Light / Dark Mode</p>
+                    <ion-icon name="moon-outline"></ion-icon>
+                </div>
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+        </div>
         <!-- display_pictures.css -->
         <div id="full_display">
             <div id="full_display_close" onclick="full_display_close(true)">

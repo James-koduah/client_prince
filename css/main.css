@@ -7,27 +7,31 @@
 :root{
     --main-bg-color:  #fff;
     --soft-bg-color: #f4f4f4;
-    --main-bg-color-faded: rgba(249, 246, 240, 0.7);
-    --minor-bg-color: rgb(246, 221, 244);
-    --opposite-bg-color: rgb(84, 84, 86);
-    --text-color: rgb(43, 42, 42);
-    --color-border: rgb(104, 104, 104);
-    --extreme-text-color: black;
-    --about-text-color: rgb(79, 76, 80);
+    --main-bg-color-faded: #f9f6f0b3;
+    --minor-bg-color: #f6ddf4;
+    --opposite-bg-color: #545456;
+    --text-color: #2b2a2a;
+    --color-border: #686868;
+    --extreme-text-color: #000000;
+    --about-text-color: #4f4c50;
+    --main-menu: #c0c0c0;
+    --main-menu-div: #626161;
 }
-/* @media (prefers-color-scheme: dark) {
+@media (prefers-color-scheme: dark) {
     :root{
         --main-bg-color:  #000000;
         --soft-bg-color: #212020;
-        --main-bg-color-faded: rgba(31, 31, 31, 0.7);
-        --minor-bg-color: rgb(51, 49, 51);
-        --opposite-bg-color: rgb(249, 246, 240);
-        --text-color: rgb(202, 198, 198);
-        --color-border: rgb(247, 244, 237);
-        --extreme-text-color: white;
+        --main-bg-color-faded: #1f1f1fb3;
+        --minor-bg-color: #333133;
+        --opposite-bg-color: #f9f6f0;
+        --text-color: #cac6c6;
+        --color-border: #f7f4ed;
+        --extreme-text-color: #ffffff;
         --about-text-color: #bebcbf;
+        --main-menu: #626161;
+        --main-menu-div: #c0c0c0;
     }
-} */
+}
 
 body{
     width: 100vw;
@@ -37,7 +41,25 @@ body{
     overflow-x: hidden;
     font-family:Verdana, Geneva, Tahoma, sans-serif;
     font-size: 5px;
-    
+    z-index: 1;
+}
+.flicker{
+    transition: 0s !important; 
+    animation-name: flicker;
+    animation-duration: 0.5s;
+}
+@keyframes flicker{
+    0%{opacity: 1;}
+    10%{opacity: 0;}
+    20%{opacity: 1;}
+    30%{opacity: 0;}
+    40%{opacity: 1;}
+    50%{opacity: 0;}
+    60%{opacity: 1;}
+    70%{opacity: 0;}
+    80%{opacity: 1;}
+    90%{opacity: 0;}
+    100%{opacity: 1;}
 }
 a{
     text-decoration: none;
@@ -68,7 +90,7 @@ textarea::placeholder{
 }
 
 main{
-    z-index: 1;
+    z-index: 2;
     position: relative;
     background-color: var(--main-bg-color);
     height: fit-content;
