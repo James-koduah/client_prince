@@ -29,10 +29,8 @@
 }
 #message_submission_information_inner{
     position: relative;
-    width: 97%;
-    padding-right: 3%;
+    width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.1);
     padding-top: 25px;
     text-align: right;
 }
@@ -44,12 +42,9 @@
     left: -60%;
 }
 
-#message_submission_information_inner h6{
-    font-size: 4em;
-    margin-bottom: 25px;
-}
+
 #message_submission_information_inner p{
-    font-size: 2.5em;
+    font-size: 3.5em;
     line-height: 2;
     padding-left: 5vw;
 }
@@ -57,7 +52,7 @@
 #contact_form{
     width: 40vw;
     height: fit-content;
-    border: 1px var(--color-border) solid;
+    border: 3px var(--color-border) solid;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -72,6 +67,10 @@
     display: flex;
     flex-direction: column;
     margin-top: 3vh;
+}
+.form_element h6{
+    font-size: 4em;
+    margin-bottom: 25px;
 }
 .form_element label{
     font-size: 2em;
@@ -92,8 +91,8 @@
 }
 #contact_button{
     height: 40px;
-    background-color: var(--soft-bg-color);
-    color: var(--extreme-text-color);
+    background-color: var(--extreme-text-color);
+    color: var(--main-bg-color);
 }
 
 
@@ -101,18 +100,23 @@
 #end_credits{
     width: 100vw;
     min-height: 70vh;
-    padding-bottom: 5vh;
     background-color: #000;
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
 }
-#end_credits div{
-    width: 33vw;
+#end_credits .main_div{
+    width: 30vw;
     height: fit-content;
-    min-height: 40vh;    
+    min-height: 60vh;   
+    border-bottom: 3px #fff solid;
+    padding-top: 2vh;
+    padding-bottom: 2vh;
 }
 #end_credits_site_stamps{
-    text-align: left;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
     display: flex;
     flex-direction: column;
 }
@@ -124,25 +128,74 @@
 }
 
 #end_credits_socials{
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+}
+#end_credits_socials ion-icon{
+    font-size: 3em;
+}
+.end_credits_socials_div{
+    width: 50%;
+    height: 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 3em;
+    color: white;
 
 }
+.end_credits_socials_div:hover{
+    background-color: #fff;
+    color: #000;
+}
+.end_credits_socials_div p{
+    font-size: 3em;
+}
+
 #end_credits_developer_rating{
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-@media (max-width: 550px) {
+
+
+#developer_credit{
+    width: 100vw;
+    height: 20px;
+    display: flex;
+    justify-content: flex-start;
+    font-size: 3em;
+    color: white;
+    padding-left: 1vw;
+
+}
+@media (max-width: 700px) {
     #contact_form{
         width: 100vw;
     }
     
     #message_submission_information{
-        width: 100vw;
+        width: 90vw;
         height: fit-content;
+        margin: 0 auto 0 auto;
     }
-    #end_credits div{
+    #message_submission_information_inner{
+        text-align: left;
+    }
+    #message_submission_information_inner p{
+        margin-bottom: 1em;
+    }
+    #end_credits .main_div{
         width: 90vw;  
+        margin: 0 auto 0 auto;
+        height: fit-content;
+        min-height: 0vh;
+        margin-bottom: 5vh;
     }
 }
 

@@ -74,7 +74,7 @@
                                 <a target="_blank" href="https://www.facebook.com/profile.php?id=100091852227204&mibextid=ZbWKwL"><ion-icon name="logo-facebook"></ion-icon></a>
                                 <ion-icon name="logo-instagram"></ion-icon>
                                 <ion-icon name="mail-outline"></ion-icon>
-                                <ion-icon name="logo-twitter"></ion-icon>
+                                <a href="https://twitter.com/KkdJames" target="_blank"><ion-icon name="logo-twitter"></ion-icon></a>
                                 <ion-icon name="call-outline"></ion-icon>
                             </div>
                         </div>
@@ -662,7 +662,6 @@
             <div id="message_submission">
                 <div id="message_submission_information">
                     <div id="message_submission_information_inner">
-                        <h6>CONTACT US</h6>
                         <p>We look forward to hearing from you</p>
                         <p>Contact us for estimates, inquiries and any other question about our services</p>
                         <p>We assure you a fast response to your inquiries</p>
@@ -679,15 +678,16 @@
                 </div>
                 <div id="contact_form">
                     <form class="form_element" action="https://public.herotofu.com/v1/935c6ea0-0eb2-11ee-a6b0-17653bd30bd3" method="post" accept-charset="UTF-8">
+                        <h6>CONTACT US</h6>
                         <div>
-                            <label for="name">Your Name</label>
+                            <label for="Name">Your Name</label>
                             <input placeholder="Name" name="Name" id="contact_name" type="text" required />
                         </div>
                         <div>
                             <label for="email">Your Email</label>
                             <input placeholder="Email Adress" name="Email" id="contact_email" type="email" />
                             <label style="margin-top: 1vh;" for="phone_number">Or Phone Number (WhatsApp)</label>
-                            <input placeholder="Phone Number (WhatsApp)" type="number" id="phone_number"/>
+                            <input placeholder="Phone Number (WhatsApp)" name="phone_number" type="number" id="phone_number"/>
                         </div>
                         <div>
                             <label for="message">Your Message</label>
@@ -703,7 +703,7 @@
                 </div>
             </div>
             <div id="end_credits">
-                <div id="end_credits_site_stamps">
+                <div class="main_div" id="end_credits_site_stamps">
                     <a href="#">Home</a>
                     <a href="#">About</a>
                     <a href="#">Services</a>
@@ -713,20 +713,44 @@
                     <a href="#">Submit An Inquiry</a>
                     <a href="#">Make A suggestion</a>
                 </div>
-                <div id="end_credits_socials"></div>
-                <div id="end_credits_developer_rating">
+                <div class="main_div" id="end_credits_socials">
+                    <div class="end_credits_socials_div">
+                        <ion-icon name="logo-facebook"></ion-icon>
+                        <p>FaceBook</p>
+                    </div>
+                    <div class="end_credits_socials_div">
+                        <ion-icon name="logo-instagram"></ion-icon>
+                        <p>Instagram</p>
+                    </div>
+                    <div class="end_credits_socials_div">
+                        <ion-icon name="mail-outline"></ion-icon>
+                        <p>Email</p>
+                    </div>
+                    <div class="end_credits_socials_div">
+                        <ion-icon name="logo-twitter"></ion-icon>
+                        <p>Twitter</p>
+                    </div>
+                    <div class="end_credits_socials_div">
+                        <ion-icon name="call-outline"></ion-icon>
+                        <p>Telephone</p>
+                    </div>
+                </div>
+                <div class="main_div" id="end_credits_developer_rating">
                     <form class="form_element" action="https://public.herotofu.com/v1/935c6ea0-0eb2-11ee-a6b0-17653bd30bd3" method="post" accept-charset="UTF-8">
+                        <h6 style="color: #fff;">How did you like the Site? <br> Say Something to our developer</h6>
                         <div>
-                            <label for="name">How did you like the Site? <br> Say Something to our developer</label>
-                            <textarea placeholder="Say Something" name="say_to_developer" id="say_to_developer" cols="25" rows="10"></textarea>
+                            <textarea placeholder="Exprience any bugs, breaks... etc" name="To_Developer" id="say_to_developer" cols="25" rows="10"></textarea>
                         </div>
                         <div>
-                            <button id="contact_button" type="submit">Send</button>
+                            <button style="height: 35px;" type="submit">Submit</button>
                         </div>
                         <div style="display: none;">
                             <input type="text" name="_gotcha" tabindex="-1" autocomplete="off" />
                         </div>
                     </form>
+                </div>
+                <div id="developer_credit">
+                    <ion-icon title="Made by Jaskin.tech" name="flash-outline"></ion-icon>
                 </div>
             </div>
         </section>

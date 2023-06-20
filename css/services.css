@@ -31,7 +31,7 @@
 }
 .service_item_picture{
     width: 30vw;
-    height: 50%;
+    height: 70%;
     border: 1px var(--color-border) solid;
 }
 .service_item_picture:hover{
@@ -39,7 +39,7 @@
 }
 .service_item_picture_reverse{
     width: 30vw;
-    height: 50%;
+    height: 70%;
     border: 1px var(--color-border) solid;
     order: 2;
 }
@@ -60,11 +60,12 @@
     margin-bottom: 5vh;
 }
 .service_item_description p{
+    width: 100%;
+    font-family: Oscine, sans-serif;
     font-size: 3em;
-    font-weight: 300;
-    margin-bottom: 1em;
+    font-weight: 400;
+    line-height: 1.5;
     color: var(--about-text-color);
-    word-wrap: break-word;
 }
 
 @media (min-width: 600px){
@@ -75,9 +76,6 @@
     }
     .service_item_description h6{
         font-size: 9em;
-    }
-    .service_item_description p{
-        font-size: 2.9em;
     }
     .service_item_picture_reverse{
         clip-path: polygon(20% 0%,100% 0%,100% 100%,0% 100%);

@@ -13,9 +13,9 @@
     --text-color: rgb(43, 42, 42);
     --color-border: rgb(104, 104, 104);
     --extreme-text-color: black;
-    --about-text-color: #6a666c;
+    --about-text-color: rgb(79, 76, 80);
 }
-@media (prefers-color-scheme: dark) {
+/* @media (prefers-color-scheme: dark) {
     :root{
         --main-bg-color:  #000000;
         --soft-bg-color: #212020;
@@ -27,7 +27,7 @@
         --extreme-text-color: white;
         --about-text-color: #bebcbf;
     }
-}
+} */
 
 body{
     width: 100vw;
@@ -38,6 +38,10 @@ body{
     font-family:Verdana, Geneva, Tahoma, sans-serif;
     font-size: 5px;
     
+}
+a{
+    text-decoration: none;
+    color: inherit;
 }
 img{
     width: 100%;
