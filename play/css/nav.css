@@ -68,7 +68,6 @@
 #main_menu {
     background-color: var(--minor-bg-color);
     border-left: 1px var(--color-golden) solid;
-    padding-top: 10vh;
     
 }
 #close_menu {

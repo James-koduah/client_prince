@@ -95,9 +95,10 @@ function nav_toogle() {
 /**
  * Light and Dark Mode
  */
-let dark = true
+let dark = getComputedStyle(document.documentElement).getPropertyValue('--light-dark');
+let day_night = document.getElementById('day_night')
 function light_dark(){
-  if (dark == true) {
+  if (dark == true || dark == 'dark') {
     document.documentElement.style.setProperty('--main-bg-color', '#fff')
     document.documentElement.style.setProperty('--soft-bg-color', '#f4f4f4')
     document.documentElement.style.setProperty('--main-bg-color-faded', '#f9f6f0b3')
@@ -107,12 +108,13 @@ function light_dark(){
     document.documentElement.style.setProperty('--color-border', '#686868')
     document.documentElement.style.setProperty('--extreme-text-color', '#000000')
     document.documentElement.style.setProperty('--about-text-color', '#4f4c50')
-    document.documentElement.style.setProperty('--main-menu', '#c0c0c0')
+    document.documentElement.style.setProperty('--main-menu', '#fbfafb')
     document.documentElement.style.setProperty('--main-menu-div', '#626161')
+    day_night.name = 'sunny-outline'
     dark = false
   }
   else
-  if (dark == false){
+  if (dark == false || dark == 'light'){
     document.documentElement.style.setProperty('--main-bg-color', '#000000')
     document.documentElement.style.setProperty('--soft-bg-color', '#212020')
     document.documentElement.style.setProperty('--main-bg-color-faded', '#1f1f1fb3')
@@ -122,9 +124,10 @@ function light_dark(){
     document.documentElement.style.setProperty('--color-border', '#f7f4ed')
     document.documentElement.style.setProperty('--extreme-text-color', '#ffffff')
     document.documentElement.style.setProperty('--about-text-color', '#bebcbf')
-    document.documentElement.style.setProperty('--main-menu', '#626161')
+    document.documentElement.style.setProperty('--main-menu', '#000000')
     document.documentElement.style.setProperty('--main-menu-div', '#c0c0c0')
     dark = true
+    day_night.name = 'moon-outline'
   }
 }
   

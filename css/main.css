@@ -14,8 +14,9 @@
     --color-border: #686868;
     --extreme-text-color: #000000;
     --about-text-color: #4f4c50;
-    --main-menu: #c0c0c0;
-    --main-menu-div: #626161;
+    --main-menu: #fbfafb;
+    --main-menu-div: #312931;
+    --light-dark: light;
 }
 @media (prefers-color-scheme: dark) {
     :root{
@@ -28,8 +29,9 @@
         --color-border: #f7f4ed;
         --extreme-text-color: #ffffff;
         --about-text-color: #bebcbf;
-        --main-menu: #626161;
+        --main-menu: #000000;
         --main-menu-div: #c0c0c0;
+        --light-dark: dark;
     }
 }
 
@@ -42,6 +44,7 @@ body{
     font-family:Verdana, Geneva, Tahoma, sans-serif;
     font-size: 5px;
     z-index: 1;
+    -webkit-overflow-scrolling:touch
 }
 .flicker{
     transition: 0s !important; 
