@@ -18,7 +18,7 @@
     --main-menu-div: #312931;
     --light-dark: light;
 }
-@media (prefers-color-scheme: dark) {
+/* @media (prefers-color-scheme: dark) {
     :root{
         --main-bg-color:  #000000;
         --soft-bg-color: #212020;
@@ -33,7 +33,7 @@
         --main-menu-div: #c0c0c0;
         --light-dark: dark;
     }
-}
+} */
 
 html{
     width: 100vw;

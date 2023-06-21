@@ -95,10 +95,10 @@ function nav_toogle() {
 /**
  * Light and Dark Mode
  */
-let dark = getComputedStyle(document.documentElement).getPropertyValue('--light-dark');
+let dark = true
 let day_night = document.getElementById('day_night')
 function light_dark(){
-  if (dark == true || dark == 'dark') {
+  if (dark == true) {
     document.documentElement.style.setProperty('--main-bg-color', '#fff')
     document.documentElement.style.setProperty('--soft-bg-color', '#f4f4f4')
     document.documentElement.style.setProperty('--main-bg-color-faded', '#f9f6f0b3')
@@ -114,7 +114,7 @@ function light_dark(){
     dark = false
   }
   else
-  if (dark == false || dark == 'light'){
+  if (dark == false){
     document.documentElement.style.setProperty('--main-bg-color', '#000000')
     document.documentElement.style.setProperty('--soft-bg-color', '#212020')
     document.documentElement.style.setProperty('--main-bg-color-faded', '#1f1f1fb3')
