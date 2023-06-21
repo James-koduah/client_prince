@@ -95,7 +95,9 @@ function nav_toogle() {
 /**
  * Light and Dark Mode
  */
-let dark = true
+let darknominal = getComputedStyle(document.documentElement).getPropertyValue('--light-dark');
+dark = true
+if (darknominal == 'light') dark = false;
 let day_night = document.getElementById('day_night')
 function light_dark(){
   if (dark == true) {
