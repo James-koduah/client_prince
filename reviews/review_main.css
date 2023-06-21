@@ -1,0 +1,55 @@
+*{
+    padding: 0 0 0 0;
+    margin: 0 0 0 0;
+}
+
+
+:root{
+    --main-bg-color:  #fff;
+    --soft-bg-color: #f4f4f4;
+    --main-bg-color-faded: #f9f6f0b3;
+    --minor-bg-color: #f6ddf4;
+    --opposite-bg-color: #545456;
+    --text-color: #2b2a2a;
+    --color-border: #686868;
+    --extreme-text-color: #000000;
+    --about-text-color: #4f4c50;
+    --main-menu: #fbfafb;
+    --main-menu-div: #312931;
+    --light-dark: light;
+}
+@media (prefers-color-scheme: dark) {
+    :root{
+        --main-bg-color:  #000000;
+        --soft-bg-color: #212020;
+        --main-bg-color-faded: #1f1f1fb3;
+        --minor-bg-color: #333133;
+        --opposite-bg-color: #f9f6f0;
+        --text-color: #cac6c6;
+        --color-border: #f7f4ed;
+        --extreme-text-color: #ffffff;
+        --about-text-color: #bebcbf;
+        --main-menu: #000000;
+        --main-menu-div: #c0c0c0;
+        --light-dark: dark;
+    }
+}
+button{
+    width: 100vw;
+    height: 40px;
+    color: #fff;
+    background-color: #000;
+    border: none;
+}
+
+body{
+    width: 100vw;
+    min-height: 100vh;
+    background-color: var(--main-bg-color);
+    color: var(--text-color);
+    overflow-x: hidden;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 5px;
+    z-index: 1;
+    -webkit-overflow-scrolling:touch
+}
