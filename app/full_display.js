@@ -13,6 +13,7 @@ let all_image_elements = document.querySelectorAll('img');
 let full_display_running = false;
 let full_display_section = document.getElementById('full_display')
 let full_display_img = document.getElementById('full_display_img')
+var current_image;
 /**
  * Close the Full Display
  * @go_back: This should be true if the custom close button is pressed
@@ -38,6 +39,21 @@ function full_display(image){
     full_display_section.style.zIndex = 40
     full_display_running = true
     window.history.pushState('forward', null, 'picture'); // We add to the browsers history so that we can go back to the main-page if we close this div
+    current_image = image_source;
+}
+
+/**
+ * Full_display_change
+ * @direction: Next or Previous Picture
+ */
+
+function full_display_change(direction){
+    let split_name = current_image.split('_')
+    let split_name_second = split_name[1]
+    
+    if (direction == '>'){
+
+    }
 }
 
 
