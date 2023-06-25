@@ -1,6 +1,7 @@
 var main = document.getElementById('main')
 let group1 = document.getElementById('group1')
 let main_divs = document.getElementsByClassName('main_div')
+let loading = document.getElementById('loading')
 let current_divs = main_divs.length;
 let current_div_number = 0
 let pic_num = 0;
@@ -17,8 +18,11 @@ for (let i = 0; i < 32; i++){
 let picture_number = 1;
 let groupNumber = 2
 function populate(){
+    loading.style.display = 'flex'
+    window.scrollBy(0,200)
     let section_identifier = `group${groupNumber}`
     let grouping = document.createElement('div')
+    grouping.style.display = 'none'
     grouping.className = 'group'
     grouping.setAttribute('id', section_identifier)
     for (let i = 0; i < 8; i++){
@@ -51,4 +55,8 @@ function populate(){
 
     add_full_display_to_images()
     groupNumber++
+    setTimeout(()=>{
+        loading.style.display = 'none'
+        grouping.style.display = 'flex'
+    },4000)
 }

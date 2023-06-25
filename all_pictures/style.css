@@ -6,6 +6,7 @@ body{
     width: 100vw;
     background-color: #000;
     height: 100vh;
+    z-index: 1;
 }
 
 .group{
@@ -16,12 +17,16 @@ body{
     justify-content: space-evenly;
     background-color: black;
 }
+#main{
+    background-color: #000;
+}
 .main_div{
     width: 49vw;
     height: fit-content;
     display: flex;
     flex-direction: column;
     border: 1px white solid;
+    background-color: #000;
 }
 
 img{
