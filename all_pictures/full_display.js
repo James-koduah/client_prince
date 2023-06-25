@@ -4,11 +4,13 @@
 /**
  * Add the full display functionality to all <img> elements
  */
-let all_image_elements = document.querySelectorAll('img');
-  for (let i = 0; i < all_image_elements.length; i++){
-    all_image_elements[i].setAttribute('onclick', 'full_display(this)')
-  }
-
+function add_full_display_to_images(){
+    let all_image_elements = document.querySelectorAll('img');
+    for (let i = 0; i < all_image_elements.length; i++){
+        all_image_elements[i].setAttribute('onclick', 'full_display(this)')
+    }
+}
+add_full_display_to_images()
 
 /**
  * Full Display section
@@ -26,7 +28,7 @@ var current_image;
  */
 function full_display_close(go_back=false){
     full_display_section.style.zIndex = -40;
-    full_display_running = false;
+    full_display_running = false;    
 }
 
 
@@ -36,7 +38,7 @@ function full_display_close(go_back=false){
  *         This means that each image that is clicked returns itself as an argument
  */
 function full_display(image){
-    window.location = "#picture"
+    window.location='#picture'
     let image_source = image.src
     full_display_img.src = image_source
     full_display_section.style.zIndex = 40

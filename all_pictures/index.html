@@ -4,26 +4,47 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="display_pictures.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
     <title>CHPAWC - More Pictures</title>
 </head>
 <body id="body">
     <main id="main">
-        <div class="main_div"></div>
-        <div class="main_div"></div>
-        <div class="main_div"></div>
-        <div class="main_div"></div>
-        <div class="main_div"></div>
-        <div class="main_div"></div>
-        <div class="main_div"></div>
-        <div class="main_div"></div>
+        <div class="group" id="group1">
+            <div class="main_div group1"></div>
+            <div class="main_div group1"></div>
+            <div class="main_div group1"></div>
+            <div class="main_div group1"></div>
+            <div class="main_div group1"></div>
+            <div class="main_div group1"></div>
+            <div class="main_div group1"></div>
+            <div class="main_div group1"></div>
+        </div>
     </main>
     <footer>
-        <button>See More ></button>
+        <button id="seemore" onclick="populate()">See More ></button>
     </footer>
+    <sub>
+        <!-- display_pictures.css -->
+        <div id="full_display">
+            <div id="full_display_close" onclick="full_display_close(true)">
+                <ion-icon id="close_button" name="close-outline" color="light"></ion-icon>
+            </div>
+            <div id="full_display_previous" onclick="full_display_change('<')">
+                <ion-icon name="caret-back-outline" id="full_display_previous_button"></ion-icon>
+            </div>
+            <div id="full_display_next" onclick="full_display_change('>')">
+                <ion-icon name="caret-forward-outline" id="full_display_next_button"></ion-icon>
+            </div>
+            <div id="full_display_pic">
+                <img src="" id="full_display_img">
+            </div>
+        </div>
+    </sub>
 
     <script src="populate.js"></script>
-    <script src="https://james-koduah.github.io/full_display_images/full_display.js"></script>
-    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="full_display.js"></script>
 </body>
 </html>

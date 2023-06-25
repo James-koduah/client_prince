@@ -11,55 +11,45 @@ function tumble(){
  */
 let welcome_slides = document.getElementsByClassName('slide')
 let welcome = document.getElementById('welcome')
-
-
 welcome_slides[0].style.display = "block"
 welcome_slides[0].className += ' fade_up'
 let movements = [" fade_up", " fade_right", " fade_left"]
-let wallpaper = true
-function change_slide(current){
-    if (wallpaper == true){
+let welcome_Wallpaper = 1
+function change_slide(current_slide){
+    if (welcome_Wallpaper == 1){
         welcome.style.background = "url(resources/image_resources/team_small.webp) no-repeat";
-        welcome.style.backgroundSize = '100% 100%'
-        welcome.style.backgroundAttachment = "fixed"
-        wallpaper = false
+        welcome.style.backgroundSize = '100% 100%';
+        welcome.style.backgroundAttachment = "fixed";
+        welcome_Wallpaper = 2;
     }
     else{
         welcome.style.background = "url(resources/image_resources/about.webp) no-repeat";
-        welcome.style.backgroundSize = '120% 100%'
-        welcome.style.backgroundAttachment = "fixed"
-        wallpaper = true
+        welcome.style.backgroundSize = '120% 100%';
+        welcome.style.backgroundAttachment = "fixed";
+        welcome_Wallpaper = 1;
     }
-    let next = current + 1
-    if (next > 2) next = 0
-    welcome_slides[current].style.display = 'none'
-    welcome_slides[current].className = 'slide'
-    welcome_slides[next].style.display = 'block'
-    welcome_slides[next].className += movements[next]
+    let nextSlide = current_slide + 1;
+    if (nextSlide > 2) nextSlide = 0;
+    welcome_slides[current_slide].style.display = 'none';
+    welcome_slides[current_slide].className = 'slide';
+    welcome_slides[nextSlide].style.display = 'block';
+    welcome_slides[nextSlide].className += movements[nextSlide];
 }
-
-let run = true
-cleared = false
 let n = 0;
-let welcome_slide_show = setInterval(slides, 10000)
 function slides(){
-    if (n > 2) n = 0
-    change_slide(n)
-    n++
-    if (run == false) clearInterval(welcome_slide_show)
+    if (n > 2) n = 0;
+    change_slide(n);
+    n++;
 }
+let welcome_slide_show = setInterval(slides, 10000);
 
-let nav = document.querySelector('nav')
+
+
+
+
+let nav = document.querySelector('nav');
 let yScroll = 100;
 window.onscroll = function (e) {
-    //Stop the hompage background change animations
-    if (window.scrollY > 800 && window.scrollY < 1000) {run = false, cleared = true;  clearInterval(welcome_slide_show)}
-    if (window.scrollY < 750) {
-        run = true;
-        if (cleared == true) {welcome_slide_show = setInterval(slides, 10000);}
-        cleared = false;
-    }
-
     // Control the navbar disappearing and appearing during scroll
     if (window.scrollY > yScroll){
         nav.style.top = '-20vh' 
@@ -72,14 +62,12 @@ window.onscroll = function (e) {
   };
 
 /**
-   * On Mobile devices or smaller screen widths
    * nav_toogle - To toogle the navigation bar with a click of the menu button
    * @nav_toggle_on: The switch to tell if the navigation bar is hidden or displayed
    * Return: Nothing
 */
 let menu_bar = document.getElementById("menu_bar");
 let nav_menu_button = document.getElementById("nav_menu_button");
-
 let nav_toggle_on = false;
 function nav_toogle() {
   if (nav_toggle_on == false) {
@@ -95,9 +83,9 @@ function nav_toogle() {
 /**
  * Light and Dark Mode
  */
-let darknominal = getComputedStyle(document.documentElement).getPropertyValue('--light-dark');
+let initial_mode = getComputedStyle(document.documentElement).getPropertyValue('--light-dark');
 dark = true
-if (darknominal == 'light') dark = false;
+if (initial_mode == 'light') dark = false;
 let day_night = document.getElementById('day_night')
 function light_dark(){
   if (dark == true) {
