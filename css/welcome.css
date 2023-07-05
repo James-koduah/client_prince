@@ -38,7 +38,8 @@
     line-height: 160%;
     font-family: sans-serif, "Helvetica Neue", "Lucida Grande", Arial;
     font-stretch:extra-expanded;
-    -webkit-text-stroke: 1px #000;
+    color: #000;
+    -webkit-text-stroke: 1px rgb(79, 62, 79);
 }
 
 .fade_left {
