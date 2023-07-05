@@ -52,11 +52,8 @@
     display: flex;
     align-items: center;
     justify-content: flex-start;
+    opacity: 0;
 }
-    #full_display_previous_button{
-        width: 7vh;
-        height: 7vh;
-    }
 #full_display_next {
     position: absolute;
     width: 30vw;
@@ -67,11 +64,19 @@
     display: flex;
     align-items: center;
     justify-content: flex-end;
+    opacity: 0;
 }
-    #full_display_next_button{
-        width: 7vh;
-        height: 7vh;
-    }
+
+.full_display_change{
+    width: 7vh;
+    height: 7vh;
+}
+#full_display_next:hover{
+    opacity: 1;
+}
+#full_display_previous:hover{
+    opacity: 1;
+}
 
 
    

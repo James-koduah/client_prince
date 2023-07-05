@@ -144,7 +144,30 @@
                 </div>
             </div>
         </section>
-        <section id="second_display"></section>
+        <section id="second_display">
+            <div id="second_display_container">
+                <div class="second_display_item">
+                    <img src="/all_pictures/all/all(115).webp" alt="">
+                    <div class="second_display_dex"></div>
+                </div>
+                <div class="second_display_item">
+                    <img src="all_pictures/all/all(131).webp" alt="">
+                    <div class="second_display_dex"></div>
+                </div>
+                <div class="second_display_item">
+                    <img src="all_pictures/all/all(139).webp" alt="">
+                    <div class="second_display_dex"></div>
+                </div>
+                <div class="second_display_item">
+                    <img src="all_pictures/all/all(154).webp" alt="">
+                    <div class="second_display_dex"></div>
+                </div>
+                <!-- <div class="second_display_item rouge">
+                    <img src="all_pictures/all/all(64).webp" alt="">
+                    <div class="second_display_dex"></div>
+                </div> -->
+            </div>
+        </section>
         <section id="about">       
             <div id="about_main">
                 <div class="title">
@@ -741,11 +764,11 @@
             <div id="full_display_close" onclick="full_display_close(true)">
                 <ion-icon id="close_button" name="close-outline" color="light"></ion-icon>
             </div>
-            <div id="full_display_previous" onclick="full_display_change('<')">
-                <ion-icon name="caret-back-outline" id="full_display_previous_button"></ion-icon>
+            <div  id="full_display_previous" onclick="full_display_change('<')">
+                <ion-icon class="full_display_change" name="caret-back-outline" id="full_display_previous_button"></ion-icon>
             </div>
-            <div id="full_display_next" onclick="full_display_change('>')">
-                <ion-icon name="caret-forward-outline" id="full_display_next_button"></ion-icon>
+            <div class="full_display_change" id="full_display_next" onclick="full_display_change('>')">
+                <ion-icon class="full_display_change" name="caret-forward-outline" id="full_display_next_button"></ion-icon>
             </div>
             <div id="full_display_pic">
                 <img src="" id="full_display_img">
