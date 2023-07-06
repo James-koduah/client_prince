@@ -47,19 +47,19 @@ let welcome_slide_show = setInterval(slides, 10000);
 
 
 
-let nav = document.querySelector('nav');
-let yScroll = 100;
-window.onscroll = function (e) {
-    // Control the navbar disappearing and appearing during scroll
-    if (window.scrollY > yScroll){
-        nav.style.top = '-20vh' 
-        yScroll = window.scrollY       
-    }
-    else{
-        nav.style.top = '0'
-        yScroll = window.scrollY
-    }
-  };
+// let nav = document.querySelector('nav');
+// let yScroll = 100;
+// window.onscroll = function (e) {
+//     // Control the navbar disappearing and appearing during scroll
+//     if (window.scrollY > yScroll){
+//         nav.style.top = '-20vh' 
+//         yScroll = window.scrollY       
+//     }
+//     else{
+//         nav.style.top = '0'
+//         yScroll = window.scrollY
+//     }
+//   };
 
 /**
    * nav_toogle - To toogle the navigation bar with a click of the menu button

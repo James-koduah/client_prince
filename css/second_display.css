@@ -1,12 +1,17 @@
 #second_display{
     width: 100vw;
-    min-height: 100vh;
+    min-height: 150vh;
+    height: fit-content;
     margin-bottom: 15vh;
     font-family: 'Times New Roman', Times, serif;
+    background: url(../resources/image_resources/yazio.webp) no-repeat;
+    background-size: 100% 100%;
+    padding-top: 5vh;
 }
 #second_display_container{
-    width: 85vw;
-    height: 90vh;
+    position: relative;
+    width: 75vw;
+    min-height: 90vh;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
@@ -14,38 +19,28 @@
 }
 .second_display_cover{
     position: relative;
-    width: 45%;
-    height: 45%;
+    width: 35vw;
+    height: 40vh;
+    height: fit-content;
     display: flex;
     flex-wrap: wrap;
+    margin-top: 3vh;
 }
 .second_display_cover h5{
     color: var(--extreme-text-color);
     font-size: 4em;
+    margin-bottom: 1em;
 }
 .second_display_item{
     position: relative;
     width: 100%;
-    height: 90%;
+    height: 36vh;
     border: 1px var(--main-bg-color) solid;
     border-radius: 2em;
     overflow: hidden;
     z-index: 3;
 }
 
-.rouge{
-    position: absolute;
-    width: 70%;
-    height: 70vh;
-    max-height: 600px;
-    background-color: black;
-    border-color: var(--extreme-text-color);
-    margin-top: 5%;
-    z-index: 2;
-}
-.rouge:hover{
-    z-index: 4;
-}
 
 .second_display_dex{
     position: absolute;
@@ -62,6 +57,9 @@
     color: #fff;
     padding-bottom: 10%;
 }
+.second_display_dex:target{
+    bottom: 100%;
+}
 .second_display_dex p{
     font-size: 4em;
     width: 70%;
@@ -71,21 +69,21 @@
     font-size: 2.5em;
 }
 
-.second_display_dex:hover{
-    height: 70%;
-    opacity: 0;
-}
 
-@media (max-width: 550px) {
+
+
+@media (max-width: 700px) {
     #second_display_container{
-        width: 95vw;
-        height: 120vh;
+        width: 100vw;
     }
     .second_display_cover{
-        width: 100%;
-        height: 25%;
+        width: 95vw;
     }
     .second_display_cover h5{
         display: none;
+    }
+    .second_display_dex:hover{
+        height: 70%;
+        bottom: 100%;
     }
 }
