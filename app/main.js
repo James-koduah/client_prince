@@ -7,7 +7,7 @@ function tumble(){
 
 /**
  * This block of code is for the slide_show on the welcome page
- * I am using a setInterval to display different divs
+ * Using a setInterval to display different divs
  */
 let welcome_slides = document.getElementsByClassName('slide')
 let welcome = document.getElementById('welcome')

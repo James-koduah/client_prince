@@ -74,6 +74,7 @@
 }
 #first_socials div ion-icon{
     font-size: 5em;
+    color: var(--extreme-text-color) !important;
 }
 
 .picture_first_work{
@@ -210,6 +211,9 @@
         width: 25vw;
         height: 20vw;
         margin: 2vh 1vw 2vh 1vw;
+    }
+    #first_pitch{
+        display: none;
     }
 }
 

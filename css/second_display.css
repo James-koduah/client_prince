@@ -41,12 +41,16 @@
     z-index: 3;
 }
 
+.second_display_item:hover .second_display_dex{
+    bottom: 100%;
+}
+
 
 .second_display_dex{
     position: absolute;
     width: 100%;
     bottom: 0vh;
-    height: 80%;
+    height: 100%;
     background: linear-gradient(0deg, purple, transparent);
     opacity: 1;
     transition: 0.5s;
@@ -57,9 +61,7 @@
     color: #fff;
     padding-bottom: 10%;
 }
-.second_display_dex:target{
-    bottom: 100%;
-}
+
 .second_display_dex p{
     font-size: 4em;
     width: 70%;
@@ -82,8 +84,5 @@
     .second_display_cover h5{
         display: none;
     }
-    .second_display_dex:hover{
-        height: 70%;
-        bottom: 100%;
-    }
 }
+
