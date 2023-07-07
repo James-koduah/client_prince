@@ -180,6 +180,8 @@
     }
     
     #first_pitch{
+        display: none;
+        /*It none for now. Could still be used in the future*/
         width: 82vw;
         height: fit-content;
         top: -15vh;
@@ -212,9 +214,7 @@
         height: 20vw;
         margin: 2vh 1vw 2vh 1vw;
     }
-    #first_pitch{
-        display: none;
-    }
+    
 }
 
 @media (min-width: 800px) {

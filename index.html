@@ -31,11 +31,20 @@
             align-items: center;
             justify-content: center;
         }
+        #precover img{
+            width: 20vw;
+            height: auto;
+        }
+        @media (min-width: 1000px) {
+            #precover img{
+                width: 10vw;
+            }
+        }
     </style>
 </head>
 <body id="body">
     <div id="precover">
-        <img style="width: 20vw; height: auto;" src="resources/image_resources/logo_transparent1.webp" alt="">
+        <img src="resources/image_resources/logo_transparent1.webp" alt="">
     </div>
     <nav class="nav" id="nav1">
         <div class="logo" onClick="window.location.reload(true)"></div>
