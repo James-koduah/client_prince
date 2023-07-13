@@ -1,8 +1,7 @@
 #about{
     width: 100vw;
     min-height: 100vh;
-    background: url('../resources/image_resources/about.webp') no-repeat;
-    background-size: 100% 100%;
+    background: var(--soft-bg-color);
     font-family: Oscine, sans-serif;
 }
 
@@ -82,10 +81,10 @@
     .about_item :last-child{
         width: 35vw;
         display: flex;
-        align-items: center;
         justify-content: center;
         flex-direction: column;
         justify-self: center;
+        text-align: left;
     }
     #about_description h5{
         font-size: 9em;
