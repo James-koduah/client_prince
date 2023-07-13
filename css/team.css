@@ -54,7 +54,7 @@
     min-height: 150px;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    margin-top: 15vh;
+    margin-top: 25vh;
     z-index: 44;
     
 }
@@ -149,7 +149,7 @@
 
 @media (min-width: 1000px) {
     .team_member{
-        margin-top: 25vh;
+        margin-top: 35vh;
     }
     .team_member_left{
         margin-left: -35vw;

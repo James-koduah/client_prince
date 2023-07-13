@@ -177,6 +177,7 @@
         height: 20vw;
         margin: 2vh 1vw 2vh 1vw;
         border: 1px black solid;
+        box-shadow: none;
     }
     
     #first_pitch{
