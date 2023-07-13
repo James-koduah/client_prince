@@ -3,6 +3,7 @@
     min-height: 100vh;
     background-color: var(--main-bg-color);
     padding-bottom: 10vh;
+    font-family: Oscine, sans-serif;    
 }
 
 #review_intro{
@@ -103,7 +104,7 @@
     width: 95%;
     min-height: 150px;
     padding: 10px 10px 10px 5px;
-    font-size: 2.7em;
+    font-size: 2.3em;
 }
 #see_more_reviews{
     width: 100vw;
