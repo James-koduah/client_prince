@@ -53,7 +53,7 @@
 #about_description p{
     width: 95%;
     font-family: Oscine, sans-serif;
-    font-size: 3em;
+    font-size: 2.7em;
     font-weight: 400;
     line-height: 1.5;
     color: var(--about-text-color);
@@ -94,10 +94,6 @@
     }
     #about_description p{
         width: 100%;
-        font-family: Oscine, sans-serif;
-        font-size: 3em;
-        font-weight: 400;
-        line-height: 1.5;
     }
     .about_description_pic{
         width: 45vw;
