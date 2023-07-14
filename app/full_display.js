@@ -26,6 +26,7 @@ var current_image;
  */
 function full_display_close(go_back=false){
     full_display_section.style.zIndex = -40;
+    full_display_img.src = 'image_placeholder.webp'
     full_display_running = false;
 }
 
