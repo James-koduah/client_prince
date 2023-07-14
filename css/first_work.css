@@ -159,9 +159,9 @@
         flex-direction: column;
     }
     #first_pics{
-        width: 95vw;
+        width: 90vw;
         height: fit-content;
-        min-height: 450px;
+        min-height: 500px;
         padding: 2vh 0 0 0;
         margin: 0 auto 0 auto;
         gap: 0;
@@ -176,8 +176,6 @@
     .picture_first_work{
         width: 20vw;
         height: 20vw;
-        min-width: 120px;
-        min-height: 150px;
         margin: 2vh 1vw 2vh 1vw;
         border: 1px gray solid;
         box-shadow: none;
@@ -215,8 +213,12 @@
 @media (max-width: 550px) {
     .picture_first_work{
         width: 25vw;
-        height: 20vw;
+        height: 30vh;
+        max-width: 100px;
+        max-height: 150px;
         margin: 2vh 1vw 2vh 1vw;
+        border-radius: 1em;
+        overflow: hidden;
     }
     
 }
