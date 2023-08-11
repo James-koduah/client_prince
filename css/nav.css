@@ -55,6 +55,7 @@ nav ion-icon:hover{
 }
 #main_menu {
     width: 70vw;
+    min-width: 150px;
     height: 100vh;
     background-color: var(--main-menu);
     border-left: 3px var(--extreme-text-color) solid;
