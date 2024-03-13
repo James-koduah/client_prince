@@ -1,0 +1,84 @@
+#hero{
+    width: 100vw;
+    padding-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+}
+
+#hero img{
+    height: 300px;
+}
+
+#hero h1{
+    width: 90%;
+    padding: 20px 5% 0 5%;
+    font-size: 9em;
+    color: transparent;
+    -webkit-text-stroke: 1px #000;
+    text-decoration: underline;
+    text-underline-offset: 10px;
+    margin-bottom: 15px;
+}
+#hero p{
+    width: 90%;
+    padding: 0 5%;
+    font-size: 3.5em;
+    line-height: 140%;
+}
+
+
+
+#team{
+    width: 90%;
+    padding: 10px 5%;
+    background-color: #fefefe;
+}
+
+#team h2{
+    font-size: 5em;
+    margin-bottom: 70px;
+    text-align: center;
+    padding-bottom: 10px;
+    text-decoration: underline;
+    text-underline-offset: 20px;
+}
+
+#team_boxes{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.team{
+    width: 27%;
+    min-height: 240px;
+    padding: 0px 2%;
+    /* box-shadow: 0px 0px 1px 1px #d4d4d6; */
+    margin-bottom: 50px;
+    border-radius: 2px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.team img{
+    width: 170px;
+    height: 170px;
+    border-radius: 50%;
+}
+.team header{
+    margin-top: 20px;
+    font-size: 3em;
+}
+.team p{
+    margin-top: 15px;
+    font-size: 2.5em;
+    line-height: 160%;
+    text-align: center;
+}
+
+@media (max-width: 600px) {
+    .team{
+        width: 100%;
+    }
+}

@@ -1,0 +1,149 @@
+#top_nav{
+    background-color: #000;
+    color: #eee;
+    border: none;
+}
+#hero{
+    width: 100vw;
+    padding: 100px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #000;
+    margin-bottom: 80px;
+}
+#hero h1{
+    font-size: 14em;
+    -webkit-text-stroke: 1px #eee;
+    color: transparent;
+}
+
+
+@media (max-width: 600px) {
+    #hero h1{
+        font-size: 7em;
+    }
+}
+
+
+#text{
+    display: flex;
+    width: 90%;
+    padding: 0 5% 100px 5%;
+    justify-content: space-between;
+}
+
+#text1{
+    width: 55%;
+    padding-right: 5%;
+}
+#text1 h2{
+    font-size: 4em;
+    margin-bottom: 20px;
+}
+#text1 p{
+    font-size: 3.2em;
+    line-height: 160%;
+}
+
+#text2 header{
+    width: 100%;
+    margin: 10px 0;
+    font-size: 3em;
+    text-align: end;
+}
+
+#socials{
+    display: flex;
+
+}
+
+.social{
+    width: 40px;
+    height: 40px;
+    border: 1px #ddd solid;
+    border-radius: 5px;
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+form{
+    width: 90%;
+    padding: 20px 5%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.sm{
+    width: 32%;
+}
+form div{
+    width: 100%;
+    margin-bottom: 30px;
+}
+form div p{
+    font-size: 2.7em;
+    margin-bottom: 5px;
+}
+
+form div input{
+    height: 45px;
+    width: 96%;
+    padding: 0 2%;
+    border: 1px #ddd solid;
+    border-radius: 3px;
+}
+
+
+form div textarea{
+    width: 96%;
+    height: 80px;
+    padding: 10px 2%;
+    border: 1px #ddd solid;
+}
+
+form div button{
+    width: 100%;
+    height: 50px;
+    background-color: var(--ma-bg);
+    border: 1px #000 solid;
+    transition: 0.4s;
+    cursor: pointer;
+}
+form div button:hover{
+    background-color: #000;
+    color: #fff;
+}
+
+
+
+@media (max-width: 600px) {
+    #text{
+        flex-direction: column;
+    }
+    #text1{
+        width: 100%;
+        padding: 0;
+        margin-bottom: 30px;
+    }
+
+    #text2 header{
+        display: none;
+    }
+    #socials{
+        width: 100%;
+        justify-content: center;
+    }
+
+
+    .sm{
+        width: 100%;
+    }
+}

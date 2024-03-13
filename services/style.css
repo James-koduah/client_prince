@@ -1,0 +1,74 @@
+#hero{
+    width: 90vw;
+    padding: 70px 5vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#hero h1{
+    font-size: 9em;
+    margin-bottom: 15px;
+}
+
+#hero p{
+    font-size: 3.8em;
+    line-height: 160%;
+    margin-bottom: 10px;
+}
+
+
+
+#services{
+    width: 90%;
+    padding: 10px 5%;
+    background-color: #fefefe;
+}
+
+#services h2{
+    font-size: 5em;
+    margin-bottom: 70px;
+    text-align: center;
+    padding-bottom: 10px;
+    text-underline-offset: 20px;
+}
+
+#services_boxes{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.service{
+    width: 27%;
+    min-height: 240px;
+    padding: 30px 2%;
+    box-shadow: 0px 0px 1px 1px #d4d4d6;
+    margin-bottom: 50px;
+    border-radius: 2px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.service img{
+    width: 170px;
+    height: 130px;
+    border-radius: 3px;
+}
+.service header{
+    margin-top: 20px;
+    font-size: 3em;
+}
+.service p{
+    margin-top: 15px;
+    font-size: 2.5em;
+    line-height: 160%;
+    text-align: center;
+}
+
+@media (max-width: 600px) {
+    .service{
+        width: 100%;
+    }
+}

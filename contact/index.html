@@ -1,0 +1,58 @@
+---
+title: About | Clean Hands Painting
+---
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% include head.html %}
+    <link rel="stylesheet" href="style.css">
+    <script src="app.js"></script>
+</head>
+<body>
+    {% include nav.html %}
+    <main>
+        <section id="hero">
+            <h1>Contact Us</h1>
+        </section>
+        <section id="text">
+            <div id="text1">
+                <h2>We would love to hear from you</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque perferendis earum tempore, facilis praesentium debitis eaque blanditiis explicabo illo rem? Officiis, fugit rerum perspiciatis recusandae tempora modi sunt quidem incidunt?</p>
+            </div>
+            <div id="text2">
+                <header>Our Socials</header>
+                <div id="socials">
+                    <div class="social"></div>
+                    <div class="social"></div>
+                    <div class="social"></div>
+                    <div class="social"></div>
+                    <div class="social"></div>
+                </div>
+            </div>
+        </section>
+        <form id="form">
+            <div id="name" class="sm">
+                <p>Name</p>
+                <input type="text" placeholder="Your Name" required>
+            </div>
+            <div id="email" class="sm">
+                <p>Email</p>
+                <input type="email" placeholder="Your Email" required>
+            </div>
+            <div id="phone" class="sm">
+                <p>Phone Number</p>
+                <input type="text" placeholder="Your Phone Number (optional)">
+            </div>
+            <div id="message_box">
+                <p>Your Message</p>
+                <textarea id="message" placeholder="Enter your message"></textarea>
+            </div>
+            <div>
+                <button>Submit</button>
+            </div>
+        </form>
+
+    </main>
+    {% include footer.html %}
+</body>
+</html>

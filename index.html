@@ -1,819 +1,133 @@
+---
+title: Clean Hands Painting
+<!-- cta: Contact Us
+cta_link: /contact/ -->
+---
 <!DOCTYPE html>
 <html lang="en">
-<head id="head">
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Website For Clean Hands Painting And ArtWork Company">
-    <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="css/nav.css">
-    <link rel="stylesheet" href="css/display_pictures.css">
-    <link rel="stylesheet" href="css/welcome.css">
-    <link rel="stylesheet" href="css/first_work.css">
-    <link rel="stylesheet" href="css/second_display.css">
-    <link rel="stylesheet" href="css/team.css" media="print" onload="this.media='all'">
-    <link rel="stylesheet" href="css/about.css" media="print" onload="this.media='all'">
-    <link rel="stylesheet" href="css/services.css" media="print" onload="this.media='all'">
-    <link rel="stylesheet" href="css/review.css" media="print" onload="this.media='all'">
-    <link rel="stylesheet" href="css/contact.css" media="print" onload="this.media='all'">
-    <link rel="icon" href="resources/image_resources/logo_transparent1.ico">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" media="print" onload="this.media='all'">
-    <title>Clean Hands Painting And ArtWork Company - CHPAWC</title>
-    <style>
-        #precover{
-            position: fixed;
-            width: 100vw;
-            height: 100vh;
-            background-color: black;
-            z-index: 100;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-        #precover img{
-            width: 20vw;
-            height: auto;
-        }
-        @media (min-width: 1000px) {
-            #precover img{
-                width: 10vw;
-            }
-        }
-    </style>
+<head>
+    {% include head.html %}
+    <link rel="stylesheet" href="home/style.css">
 </head>
-<body id="body">
-    <div id="precover">
-        <img src="resources/image_resources/logo_transparent1.webp" alt="">
-    </div>
-    <nav class="nav" id="nav1">
-        <div class="logo" onClick="window.location.reload(true)"></div>
-        <div>
-            <a href="#">Home</a>
-            <a href="#">About</a>
-            <a href="#">Services</a>
-            <a href="#">Works</a>
-            <a href="#">Contact</a>
-        </div>
-        <ion-icon onclick="nav_toogle()" name="ellipsis-vertical-outline"></ion-icon>
-    </nav>
-    <main id="main">
-        <section id="welcome">
-            <div id="welcome_slides">
-                <div class="slide">
-                    <h1>Welcome</h1>
-                    <h2>Clean Hands Painting And ArtWork Company</h2>
-                </div>
-                <div class="slide">
-                    <h1>We Add Color</h1>
-                    <h2>And Beauty To Your World</h2>
-                </div>
-                <div class="slide">
-                    <h1>Customer Satisfaction</h1>
-                    <h2>Is Our Motto</h2>
-                </div>
-            </div>
-        </section>
-        <section id="first_works">
-            <div id="work_display">
-                <div id="first_pics">
-                    <div id="first_pics_title">
-                        <div id="first_pics_title_pic"></div>
-                        <div id="first_pics_title_text">Enjoy YourSelf</div>
-                        <div id="first_socials">
-                            <div>
-                                <a target="_blank" href="https://www.facebook.com/profile.php?id=100091852227204&mibextid=ZbWKwL"><ion-icon name="logo-facebook"></ion-icon></a>
-                                <ion-icon name="logo-instagram"></ion-icon>
-                                <ion-icon name="mail-outline"></ion-icon>
-                                <a href="https://twitter.com/KkdJames" target="_blank"><ion-icon name="logo-twitter"></ion-icon></a>
-                                <ion-icon name="call-outline"></ion-icon>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="picture_first_work"></div>
-                    <div class="picture_first_work"></div>
-                    <div class="picture_first_work"></div>
-                    <div class="picture_first_work"></div>
-                    <div class="picture_first_work"></div>
-                    <div class="picture_first_work"></div>
-                    <div class="picture_first_work"></div>
-                    <div class="picture_first_work"></div>
-                    <div class="picture_first_work"></div>
-                    <div class="picture_first_work"></div>
-                    <div class="picture_first_work"></div>
-                    <div class="picture_first_work"></div>
-                    <div class="picture_first_work"></div>
-                    <div class="picture_first_work"></div>
-                    <div class="picture_first_work"></div>
-                    <div style="background: url(resources/image_resources/team_small.webp);" class="picture_first_work"></div>
-                    <div style="background: url(resources/image_resources/about.webp);" class="picture_first_work"></div>
-                    <div class="picture_first_work"></div>
-                    <div class="picture_first_work"></div>
-                    <div class="picture_first_work"></div>
-                    <div class="picture_first_work"></div>
-                    <div class="picture_first_work"></div>
-                    <div class="picture_first_work"></div>
-                    <div class="picture_first_work"></div>
-                    <div class="picture_first_work"></div>
-                    <div class="picture_first_work"></div>
-                    <div class="picture_first_work"></div>
-                    <div class="picture_first_work"></div>
-                    <a href="all_pictures/index.html"><button id="see_more">See More ></button> </a>                   
-                </div>
-                <script src="app/populate.js"></script>
-                <div id="first_pitch">
-                    <div class="first_pitch_promos">
-                        <div id="promotions_pic"></div>
-                        <h3>Promotions</h3>
-                    </div>
-                    <div class="first_pitch_promos">
-                        <h4>Stone Design</h4> <br>
-                        <p>From 1/10/2023 to 31/12/2023</p>
-                        <p>
-                            <strong>14%</strong> off on all Stone Design Jobs on any job estimate from
-                            GHC 1000 to GHC 2000. Save up to GHC 200 with us.
-                        </p>
-                    </div>
-                    <div class="first_pitch_promos">
-                        <h4>Swahili Design</h4> <br>
-                        <p>From 1/10/2023 to 31/12/2023</p>
-                        <p>
-                            <strong>14%</strong> off on all Stone Design Jobs on any job estimate from
-                            GHC 1000 to GHC 2000. Save up to GHC 200 with us.
-                        </p>
-                    </div>
-                    <div class="first_pitch_promos">
-                        <h4>Interior Design</h4> <br>
-                        <p>From 1/10/2023 to 31/12/2023</p>
-                        <p>
-                            <strong>14%</strong> off on all Stone Design Jobs on any job estimate from
-                            GHC 1000 to GHC 2000. Save up to GHC 200 with us.
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section id="second_display">
-            <div id="second_display_container">
-                <div class="second_display_cover">
-                    <h5>Recent Work</h5>
-                    <div class="second_display_item">
-                        <img src="/all_pictures/all/all(115).webp" alt="">
-                        <div class="second_display_dex">
-                            <p>A Building in ACHIMOTA</p>
-                            <p>Color: Golden Brown and Gray</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="second_display_cover">
-                    <h5>.</h5>
-                    <div class="second_display_item">
-                        <img src="all_pictures/all/all(131).webp" alt="">
-                        <div class="second_display_dex">
-                            <p>A Building at ASHIMAN, Mataheco</p>
-                            <p>Color: White</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="second_display_cover">
-                    <h5>Featured Work</h5>
-                    <div class="second_display_item">
-                        <img src="all_pictures/all/all(139).webp" alt="">
-                        <div class="second_display_dex">
-                            <p>A Beautiful House at AFIENYA</p>
-                            <p>Color: Off Gray, Gold, Reddish Wine</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="second_display_cover">
-                    <h5>.</h5>
-                    <div class="second_display_item">
-                        <img src="all_pictures/all/all(154).webp" alt="">
-                        <div class="second_display_dex">
-                            <p>A Stunning Complex at Juapong</p>
-                            <p>Color: Golden Brown and Gray</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="second_display_cover">
-                    <h5>Creative</h5>
-                    <div class="second_display_item">
-                        <img src="all_pictures/all/all(73).webp" alt="">
-                        <div class="second_display_dex">
-                            <p>A Building at Dorwenya</p>
-                            <p>Color: Gray, Oat</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="second_display_cover">
-                    <h5>.</h5>
-                    <div class="second_display_item">
-                        <img src="all_pictures/all/all(64).webp" alt="">
-                        <div class="second_display_dex">
-                            <p>A Building at Dorwenya</p>
-                            <p>Color: White, Coffe</p>
-                        </div>
-                    </div>
-                </div>
-                
-            </div>
-        </section>
-        <section id="about">       
-            <div id="about_main">
-                <div class="title">
-                    <div id="about_title_pic" class="title_pic"></div>
-                    <div class="title_text">About Us</div>
-                </div>
-                <div id="about_description">
-                    <div class="about_item">
-                        <div 
-                            style="
-                            background: url(resources/image_resources/about_background1.webp) no-repeat;
-                            background-size: 100% 100%;" 
-                            class="about_description_pic">
-                        </div>
-                        <div>
-                            <h5>Who Are We?</h5>
-                            <p><strong>We are Clean Hands Painting And ArtWork Company</strong></p>
-                            <p>
-                                We are a business that has a focus on providing beauty in the Housing Industry.
-                                We are run by a dedicated team that has brought praise with each job completed.
-                                We have a base of operations in the Greater Accra Region which extends all througout
-                                the Volta, Eastern and Central Region.
-                            </p>
-                            <p>
-                                Our Company was founded by our current CEO Prince Vigbedor to provide painting services to people,
-                                our services include the beautification of entire buildings, apartments, or just the need to add some colors to a place.
-                                We were founded in the year 2005 and have since been adding color to the world building after building.
-                            </p>
-                        </div>
-                    </div>
-
-                    <div class="about_item">
-                        <div 
-                            style="
-                            background: url(resources/image_resources/about_background2.webp) no-repeat;
-                            background-size: 100% 100%;" 
-                            class="about_description_pic reverse_about_pic">
-                        </div>
-                        <div>
-                            <h5>What We Offer</h5>
-                            <p>
-                                We offer Exprienced and professional hands that will help you bring out the best in your project.
-                                From advice on picking your colors to the design that will be the most appealling, we will be with you every step of the way
-                                We ensure only the best of everything is used. We do not cut coners when it comes to the quality of our work. Throughout our dealings
-                                together, we assure you of quality. We provide estimates for every work that is to be done in respects to price and have gained
-                                the reputation of being an affordable service provider.
-                            </p>
-                            <p>
-                                Our products and services include, Wall Treatment, Swahili Design, Interior And Exterior Design, 
-                                Grafiato Design, Pop Design, Wall Skimming, Metallic Flooring, 
-                                3D Epoxy Floor Coating, CCTV Camera Installation, Wallpaper Installation
-                                Plastic Wallpaper.
-                            </p>
-                            <p>
-                                We have worked for notable establishments like the  
-                            </p>
-                            <p>Bridge Veiw Hotel</p>
-                            <p>You can read our customers Satisfaction with the<a style="color: #5918df;" href="#reviews">reveiws they gave us</a></p>
-                        </div>
-                    </div>
-                    <div class="about_item">
-                        <div 
-                            style="
-                            background: url(resources/image_resources/about_background3.webp) no-repeat;
-                            background-size: 100% 100%;" 
-                            class="about_description_pic">
-                        </div>
-                        <div>
-                            <h5>Our Mission</h5>
-                            <p>
-                                We aim to become a household name for painting services and to be known for our quality.
-                                The dream is to expand our business opertions from the current geographic area we serve to
-                                all 16 regions of Ghana and in the long term expand internationally.
-                                We also aim to provide employment through our services to young and talented individuals that
-                                need an avenue to grow and develop their skills.
-                            </p>
-                            <p>
-                                We also aim to add more departments to our slew of services. 
-                                Our most current consideration is producing our own brand of paint and
-                                moving into the construction Industry by producing some building materials like blocks.                            
-                            </p>
-                        </div>
-                    </div>
-                    <div class="about_item">
-                        <div 
-                            style="
-                            background: url(resources/image_resources/about_background4.webp) no-repeat;
-                            background-size: 100% 100%;" 
-                            class="about_description_pic reverse_about_pic">
-                        </div>
-                        <div>
-                            <h5>Do Business With Us</h5>
-                            <p>
-                                We are available 24/7 to respond to your needs whatsoever.
-                                whether you are a:
-                            </p>
-                            <p>Individual</p>
-                            <p>Construction Firm</p>
-                            <p>Venture Capital</p>
-                            <p>Looking to make an enquiry</p>
-                            <p>
-                                You can <a style="color: #5918df;" href="#contact">contact us here on this site</a> or any of our <a style="color: #5918df;" href="#end_credits_socials">social media pages</a>.
-                                We assure a fast response time to your messages and proposals.                                
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section id="team_cover">
-            <div id="team">
-                <div class="title">
-                    <div id="team_title_pic" class="title_pic"></div>
-                    <div  class="title_text">Meet The Team</div>
-                </div>
-
-                <div class="teamline">
-                    <div class="littleCircle"></div>
-                </div>
-
-                <div style="margin-top: 5vh;" class="team_member team_member_left">
-                    <div class="team_member_pic">
-                        <img src="resources/image_resources/prince35.webp" alt="">
-                    </div>
-                    <div class="team_member_description">
-                        <p>Prince Vigbedor</p>
-                        <p>- Master Artist</p>
-                        <p style="font-size: 80%;">Our Company's <br>Master In Charge</p>
-                        <ul class="team_member_skills">
-                            <li>More than 8 years exprience in the feild</li>
-                            <li>Over 40 Jobs Completed</li>
-                            <li>Known for high Quality work</li>
-                        </ul>
-                        <div class="team_member_socials">
-                            <ion-icon name="logo-facebook"></ion-icon>
-                            <ion-icon name="logo-instagram"></ion-icon>
-                            <ion-icon name="mail-outline"></ion-icon>
-                            <ion-icon name="logo-twitter"></ion-icon>
-                            <ion-icon name="call-outline"></ion-icon>
-                        </div>
-                        <div class="end_description_line"></div>
-                    </div>
-                </div>
-                <div class="team_member team_member_right">
-                    <div class="team_member_pic">
-                        <img src="resources/image_resources/james_c.webp" alt="">
-                    </div>
-                    <div class="team_member_description">
-                        <p>James Koduah</p>
-                        <p style="font-size: 80%;">IT <br>SPECIALIST</p>
-                        <ul class="team_member_skills">
-                            <li>Firm Grasp on our Software Needs</li>
-                            <li>Excellent in Web Technologies</li>
-                            <li>Quick Development Cycles</li>
-                        </ul>
-                        <div class="team_member_socials">
-                            <ion-icon name="logo-facebook"></ion-icon>
-                            <ion-icon name="logo-instagram"></ion-icon>
-                            <ion-icon name="mail-outline"></ion-icon>
-                            <ion-icon name="logo-twitter"></ion-icon>
-                            <ion-icon name="call-outline"></ion-icon>
-                        </div>
-                        <div class="end_description_line"></div>
-                    </div>
-                </div>
-
-                <div class="team_member team_member_left">
-                    <div class="team_member_pic">
-                        <img src="resources/image_resources/prince4.jpg" alt="">
-                    </div>
-                    <div class="team_member_description">
-                        <p>Master Kinton</p>
-                        <p>- Master Artist</p>
-                        <p style="font-size: 80%;">Our Company's <br>In House Mixer</p>
-                        <ul class="team_member_skills">
-                            <li>2017 Best Designer Awards</li>
-                            <li>Phd in Visual Effects</li>
-                            <li>Subtle yet Elegant in every way</li>
-                        </ul>
-                        <div class="team_member_socials">
-                            <ion-icon name="logo-facebook"></ion-icon>
-                            <ion-icon name="logo-instagram"></ion-icon>
-                            <ion-icon name="mail-outline"></ion-icon>
-                            <ion-icon name="logo-twitter"></ion-icon>
-                            <ion-icon name="call-outline"></ion-icon>
-                        </div>
-                        <div class="end_description_line"></div>
-                    </div>
-                </div>
-
-                <div class="team_member team_member_right">
-                    <div class="team_member_pic">
-                        <img src="resources/image_resources/prince2.jpeg" alt="">
-                    </div>
-                    <div class="team_member_description">
-                        <p>Madam Gifa</p>
-                        <p>- Crafts Woman</p>
-                        <p style="font-size: 80%;">Our Company's <br>Craft Maker</p>
-                        <ul class="team_member_skills">
-                            <li>2017 Best Designer Awards</li>
-                            <li>Phd in Visual Effects</li>
-                            <li>A special Eye for detail</li>
-                        </ul>
-                        <div class="team_member_socials">
-                            <ion-icon name="logo-facebook"></ion-icon>
-                            <ion-icon name="logo-instagram"></ion-icon>
-                            <ion-icon name="mail-outline"></ion-icon>
-                            <ion-icon name="logo-twitter"></ion-icon>
-                            <ion-icon name="call-outline"></ion-icon>
-                        </div>
-                        <div class="end_description_line"></div>
-                    </div>
+<body>
+    {% include nav.html %}
+    <main>
+        <section id="hero">
+            <div id="hero_text">
+                <h1>Clean Hands Painting</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem, atque similique quibusdam amet animi quod.</p>
+                <ul id="hero_list">
+                    <li>Quality Work</li>
+                    <li>Best Customer Service</li>
+                    <li>On time project delivery</li>
+                </ul>
+                <div id="hero_text_action">
+                    <a href="" class="action_button">Contact Us</a>
+                    <p>Call us on +233 20 219 1728</p>
                 </div>
             </div>
         </section>
         <section id="services">
-
-            <div id="services_intro_picture" class="section_intro">
-                <div class="section_intro_inner">
-                    <h5>Our Services</h5>
+            <h2><u>Work we do</u></h2>
+            <div id="services_boxes">
+                <div class="service">
+                    <img src="/images/stonedesign_23.webp" alt="">
+                    <header>House Painting</header>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae nesciunt quasi in, praesentium eaque a suscipit quaerat mollitia aperiam.</p>
+                </div>
+                <div class="service">
+                    <img src="/images/stonedesign_7.webp" alt="">
+                    <header>Light Fixtures</header>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae nesciunt quasi in, praesentium eaque a suscipit quaerat mollitia aperiam.</p>
+                </div>
+                <div class="service">
+                    <img src="/images/stonedesign_13.webp" alt="">
+                    <header>Ceiling Design</header>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae nesciunt quasi in, praesentium eaque a suscipit quaerat mollitia aperiam.</p>
+                </div>
+                <div class="service">
+                    <img src="/images/stonedesign_19.webp" alt="">
+                    <header>Stone Design</header>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae nesciunt quasi in, praesentium eaque a suscipit quaerat mollitia aperiam.</p>
+                </div>
+                <div class="service">
+                    <img src="/images/stonedesign_22.webp" alt="">
+                    <header>Craft Work</header>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae nesciunt quasi in, praesentium eaque a suscipit quaerat mollitia aperiam.</p>
+                </div>
+                <div class="service">
+                    <img src="/images/all(2).webp" alt="">
+                    <header>Interior Design</header>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae nesciunt quasi in, praesentium eaque a suscipit quaerat mollitia aperiam.</p>
                 </div>
             </div>
-            
-            <div class="title">
-                <div id="services_title_pic" class="title_pic"></div>
-                <div class="title_text">What We Do</div>
-            </div>
-
-            <div id="services_content">
-                <div class="service_item">
-                    <div class="service_item_picture">
-                        <img src="resources/stonedesign/stonedesign_19.webp" alt="">
-                    </div>
-                    <div class="service_item_description align_text_left">
-                        <h6>Stone Design</h6>
-                        <p>
-                            One of the most impactful things we can do to improve page performance
-                            and resilience is to load CSS in a way that does not delay page rendering.
-                            Thats because by default, browsers will load external CSS syn
-                            chronously—halting all page rendering while the CSS is downloaded
-                            and parsed—both of which incur potential delays.
-                            Of course, at least a portion of a sites CSS should be loaded
-                        </p>
-                    </div>
-                </div>
-                <div class="service_item">
-                    <div class="service_item_picture_reverse">
-                        <img src="resources/stonedesign/stonedesign_13.webp" alt="">
-                    </div>
-                    <div class="service_item_description align_text_right">
-                        <h6>Celling Design</h6>
-                        <p>
-                            One of the most impactful things we can do to improve page performance
-                            and resilience is to load CSS in a way that does not delay page rendering.
-                            Thats because by default, browsers will load external CSS syn
-                            chronously—halting all page rendering while the CSS is downloaded
-                            and parsed—both of which incur potential delays.
-                            Of course, at least a portion of a sites CSS should be loaded
-                        </p>
-                    </div>
-                </div>
-                <div class="service_item">
-                    <div class="service_item_picture">
-                        <img src="resources/stonedesign/stonedesign_16.webp" alt="">
-                    </div>
-                    <div class="service_item_description align_text_left">
-                        <h6>Light Fixtures</h6>
-                        <p>
-                            One of the most impactful things we can do to improve page performance
-                            and resilience is to load CSS in a way that does not delay page rendering.
-                            Thats because by default, browsers will load external CSS syn
-                            chronously—halting all page rendering while the CSS is downloaded
-                            and parsed—both of which incur potential delays.
-                            Of course, at least a portion of a sites CSS should be loaded
-                        </p>
-                    </div>
-                </div>                
-                <div class="service_item">
-                    <div class="service_item_picture_reverse">
-                        <img src="resources/stonedesign/stonedesign_22.webp" alt="">
-                    </div>
-                    <div class="service_item_description align_text_right">
-                        <h6>Craft Work</h6>
-                        <p>
-                            One of the most impactful things we can do to improve page performance
-                            and resilience is to load CSS in a way that does not delay page rendering.
-                            Thats because by default, browsers will load external CSS syn
-                            chronously—halting all page rendering while the CSS is downloaded
-                            and parsed—both of which incur potential delays.
-                            Of course, at least a portion of a sites CSS should be loaded
-                        </p>
-                    </div>
-                </div>
-                <div class="service_item">
-                    <div class="service_item_picture">
-                        <img src="resources/stonedesign/stonedesign_32.webp" alt="">
-                    </div>
-                    <div class="service_item_description align_text_left">
-                        <h6>Interior Design</h6>
-                        <p>
-                            One of the most impactful things we can do to improve page performance
-                            and resilience is to load CSS in a way that does not delay page rendering.
-                            Thats because by default, browsers will load external CSS syn
-                            chronously—halting all page rendering while the CSS is downloaded
-                            and parsed—both of which incur potential delays.
-                            Of course, at least a portion of a sites CSS should be loaded
-                        </p>
-                    </div>
-                </div>
-            </div>
-
+            <a href="/services/" class="action_button">See all</a>
         </section>
-        
+        <section id="location">
+            <div id="location_text">
+                <h2>Locations We Serve</h2>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aut nostrum natus tempora expedita ducimus, impedit sed beatae exercitationem sunt aspernatur vitae porro pariatur qui illo! Eveniet quidem quam voluptatibus magni?</p>
+                <ul>
+                    <li>Greater Accra Region</li>
+                    <li>Volta Region</li>
+                    <li>Eastern Region</li>
+                    <li>Oti Region</li>
+                    <li>Ashanti Region</li>
+                </ul>
+            </div>
+            <div id="about_img"><img src="/images/map.png" alt=""></div>
+        </section>
         <section id="reviews">
-            <div id="review_intro" class="section_intro">
-                <div class="section_intro_inner">
-                    <h5>Our Reviews</h5>
-                </div>
+            <div class="review">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis debitis repudiandae, earum in ipsa eos autem ratione delectus aliquam deserunt distinctio rerum incidunt quas rem voluptatum amet inventore, assumenda quod.</p>
+                <header>- James Koduah</header>
             </div>
-            <div id="review_header">
-                <h5>What Are Our Customers Saying?</h5>
+            <div class="review">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis debitis repudiandae, earum in ipsa eos autem ratione delectus aliquam deserunt distinctio rerum incidunt quas rem voluptatum amet inventore, assumenda quod.</p>
+                <header>- James Koduah</header>
             </div>
-            <div id="review_cover">
-                <div class="review">
-                    <div class="review_details">
-                        <div class="review_details_picture"></div>
-                        <div class="review_details_particulars">James Koduah</div>
-                        <div class="review_details_social"><ion-icon name="logo-facebook"></ion-icon></div>
-                    </div>
-                    <div class="review_stars">
-                        <span class="fa fa-star checked"></span>
-                        <span class="fa fa-star checked"></span>
-                        <span class="fa fa-star checked"></span>
-                        <span class="fa fa-star checked"></span>
-                        <span class="fa fa-star checked"></span>
-                    </div>
-                    <div class="review_content">
-                        <p>
-                            One of the most impactful things we can do to improve page performance
-                            and resilience is to load CSS in a way that does not delay page rendering.
-                            Thats because by default, browsers will load external CS
-                        </p>
-                    </div>
-                </div>
-                <div class="review">
-                    <div class="review_details">
-                        <div class="review_details_picture"></div>
-                        <div class="review_details_particulars">Kotope Willams</div>
-                        <div class="review_details_social"><ion-icon name="logo-twitter"></ion-icon></div>
-                    </div>
-                    <div class="review_stars">
-                        <span class="fa fa-star checked"></span>
-                        <span class="fa fa-star checked"></span>
-                        <span class="fa fa-star checked"></span>
-                        <span class="fa fa-star checked"></span>
-                        <span class="fa fa-star"></span>
-                    </div>
-                    <div class="review_content">
-                        <p>
-                            One of the most impactful things we can do to improve page performance
-                            and resilience is to load CSS in a way that does not delay page rendering.
-                            Thats because by default, browsers will load external CS
-                        </p>
-                   </div>
-                </div>
-                <div class="review">
-                    <div class="review_details">
-                        <div class="review_details_picture"></div>
-                        <div class="review_details_particulars">Prince Vigbedor</div>
-                        <div class="review_details_social"><ion-icon name="logo-facebook"></ion-icon></div>
-                    </div>
-                    <div class="review_stars">
-                        <span class="fa fa-star checked"></span>
-                        <span class="fa fa-star checked"></span>
-                        <span class="fa fa-star checked"></span>
-                        <span class="fa fa-star"></span>
-                        <span class="fa fa-star"></span>
-                    </div>
-                    <div class="review_content">
-                        <p>
-                            One of the most impactful things we can do to improve page performance
-                            and resilience is to load CSS in a way that does not delay page rendering.
-                            Thats because by default, browsers will load external CS
-                        </p>
-                   </div>
-                </div>
-                <div class="review">
-                    <div class="review_details">
-                        <div class="review_details_picture"></div>
-                        <div class="review_details_particulars">Nelson Mandela</div>
-                        <div class="review_details_social"><ion-icon name="logo-facebook"></ion-icon></div>
-                    </div>
-                    <div class="review_stars">
-                        <span class="fa fa-star checked"></span>
-                        <span class="fa fa-star checked"></span>
-                        <span class="fa fa-star checked"></span>
-                        <span class="fa fa-star checked"></span>
-                        <span class="fa fa-star"></span>
-                    </div>
-                    <div class="review_content">
-                        <p>
-                            One of the most impactful things we can do to improve page performance
-                            and resilience is to load CSS in a way that does not delay page rendering.
-                            Thats because by default, browsers will load external CS
-                        </p>
-                   </div>
-                </div>
-                <div class="review">
-                    <div class="review_details">
-                        <div class="review_details_picture"></div>
-                        <div class="review_details_particulars">Brack Obama</div>
-                        <div class="review_details_social"><ion-icon name="logo-facebook"></ion-icon></div>
-                    </div>
-                    <div class="review_stars">
-                        <span class="fa fa-star checked"></span>
-                        <span class="fa fa-star checked"></span>
-                        <span class="fa fa-star checked"></span>
-                        <span class="fa fa-star checked"></span>
-                        <span class="fa fa-star checked"></span>
-                    </div>
-                    <div class="review_content">
-                        <p>
-                            One of the most impactful things we can do to improve page performance
-                            and resilience is to load CSS in a way that does not delay page rendering.
-                            Thats because by default, browsers will load external CS
-                        </p>
-                   </div>
-                </div>
-                <div class="review">
-                    <div class="review_details">
-                        <div class="review_details_picture"></div>
-                        <div class="review_details_particulars">John Kwaku</div>
-                        <div class="review_details_social"><ion-icon name="logo-twitter"></ion-icon></div>
-                    </div>
-                    <div class="review_stars">
-                        <span class="fa fa-star checked"></span>
-                        <span class="fa fa-star checked"></span>
-                        <span class="fa fa-star checked"></span>
-                        <span class="fa fa-star checked"></span>
-                        <span class="fa fa-star"></span>
-                    </div>
-                    <div class="review_content">
-                        <p>
-                            One of the most impactful things we can do to improve page performance
-                            and resilience is to load CSS in a way that does not delay page rendering.
-                            Thats because by default, browsers will load external CS
-                        </p>
-                   </div>
-                </div>
+            <div class="review">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis debitis repudiandae, earum in ipsa eos autem ratione delectus aliquam deserunt distinctio rerum incidunt quas rem voluptatum amet inventore, assumenda quod.</p>
+                <header>- James Koduah</header>
             </div>
-            <a href="reviews/index.html"><button id="see_more_reviews">Veiw More Reviews ></button></a>
         </section>
-
         <section id="contact">
-            <div id="contact_intro" class="section_intro">
-                <div class="section_intro_inner">
-                    <h5>Talk To Us</h5>
-                </div>
-            </div>
-
-            <div id="message_submission">
-                <div id="message_submission_information">
-                    <div id="message_submission_information_inner">
-                        <p>We look forward to hearing from you</p>
-                        <p>Contact us for estimates, inquiries and any other question about our services</p>
-                        <p>We assure you a fast response to your inquiries</p>
-                        <p>
-                            blah blah blah blah blah blah blah blah blah
-                            blah blah blah blah blah blah blah blah blah
-                            blah blah blah blah blah blah blah blah blah
-                            blah blah blah blah blah blah blah blah blah
-                            blah blah blah blah blah blah blah blah blah
-                            blah blah blah blah blah blah blah blah blah
-                        </p>
-                        <img src="resources/image_resources/contact_clipboard_transparent.png" alt="">
+            <div id="contact_content">
+                <div id="contact_media">
+                    <div id="contact_media_text">
+                    </div>
+                    <div id="contact_media_links">
+                        <a class="item"><ion-icon name="logo-linkedin"></ion-icon></a>
+                        <a class="item"><ion-icon name="logo-facebook"></ion-icon></a>
+                        <a class="item"><ion-icon name="logo-whatsapp"></ion-icon></a>
+                        <a class="item"><ion-icon name="logo-twitter"></ion-icon></a>
+                        <a class="item"><ion-icon name="call-outline"></ion-icon></a>
+                        <a class="item"><ion-icon name="mail-outline"></ion-icon></a>
                     </div>
                 </div>
-                <div id="contact_form">
-                    <form class="form_element" action="https://public.herotofu.com/v1/935c6ea0-0eb2-11ee-a6b0-17653bd30bd3" method="post" accept-charset="UTF-8">
-                        <h6>CONTACT US</h6>
+                <div id="contact_email">
+                    <div id="email_box" class="box">
+                        <header>Contact Via Email</header>
                         <div>
-                            <label for="Name">Your Name</label>
-                            <input placeholder="Name" name="Name" id="contact_name" type="text" required />
-                        </div>
-                        <div>
-                            <label for="email">Your Email</label>
-                            <input placeholder="Email Adress" name="Email" id="contact_email" type="email" required/>
-                            <label style="margin-top: 1vh;" for="phone_number">Or Phone Number (WhatsApp)</label>
-                            <input placeholder="Phone Number (WhatsApp)" name="phone_number" type="number" id="phone_number"/>
+                            <p>Your Name</p>
+                            <input type="text">
                         </div>
                         <div>
-                            <label for="message">Your Message</label>
-                            <textarea placeholder="Your inquiries, suggestions, proposals..." name="message" id="contact_message" cols="30" rows="10" required></textarea>
+                            <p>Your Email</p>
+                            <input type="email">
                         </div>
                         <div>
-                            <button id="contact_button" type="submit">Send</button>
+                            <p>Your Message</p>
+                            <textarea></textarea>
                         </div>
-                        <div style="display: none;">
-                            <input type="text" name="_gotcha" tabindex="-1" autocomplete="off" />
+                        <div>
+                            <button>Send</button>
                         </div>
-                    </form>
-                </div>
-            </div>
-            <div id="end_credits">
-                <div class="main_div" id="end_credits_site_stamps">
-                    <a href="#">Home</a>
-                    <a href="#">About</a>
-                    <a href="#">Services</a>
-                    <a href="#">Works</a>
-                    <a href="#">Contact</a>
-                    <a href="#">All Pictures</a>                    
-                    <a href="#">Submit An Inquiry</a>
-                    <a href="#">Make A suggestion</a>
-                </div>
-                <div class="main_div" id="end_credits_socials">
-                    <div class="end_credits_socials_div">
-                        <ion-icon name="logo-facebook"></ion-icon>
-                        <p>FaceBook</p>
                     </div>
-                    <div class="end_credits_socials_div">
-                        <ion-icon name="logo-instagram"></ion-icon>
-                        <p>Instagram</p>
-                    </div>
-                    <div class="end_credits_socials_div">
-                        <ion-icon name="mail-outline"></ion-icon>
-                        <p>Email</p>
-                    </div>
-                    <div class="end_credits_socials_div">
-                        <ion-icon name="logo-twitter"></ion-icon>
-                        <p>Twitter</p>
-                    </div>
-                    <div class="end_credits_socials_div">
-                        <ion-icon name="call-outline"></ion-icon>
-                        <p>Telephone</p>
-                    </div>
-                </div>
-                <div class="main_div" id="end_credits_developer_rating">
-                    <form class="form_element" action="https://public.herotofu.com/v1/935c6ea0-0eb2-11ee-a6b0-17653bd30bd3" method="post" accept-charset="UTF-8">
-                        <h6 style="color: #fff;">How did you like the Site? <br> Say Something to our developer</h6>
-                        <div>
-                            <textarea placeholder="Exprience any bugs, breaks... etc" name="To_Developer" id="say_to_developer" cols="25" rows="10" required></textarea>
-                        </div>
-                        <div>
-                            <button style="height: 35px;" type="submit">Submit</button>
-                        </div>
-                        <div style="display: none;">
-                            <input type="text" name="_gotcha" tabindex="-1" autocomplete="off" />
-                        </div>
-                        <div id="developer_credit">
-                            <ion-icon onclick="tumble()" name="flash-outline"></ion-icon>
-                            <p id="flicker">Made By Jaskin Tech</p>
-                        </div>
-                    </form>
                 </div>
             </div>
         </section>
-
     </main>
-    <sub>
-        <!-- nav.css -->
-        <div id="menu_bar">
-            <div id="close_menu" onclick="nav_toogle()"></div>
-            <div id="main_menu">
-                <button onclick="light_dark()" id="main_menu_light_dark_mode">
-                    <p>Light / Dark Mode</p>
-                    <ion-icon id="day_night" name="moon-outline"></ion-icon>
-                </button>
-                <a href="#welcome"><button>Home</button></a>
-                <a href="#about"><button>About</button></a>
-                <a href="#team_cover"><button>Our Team</button></a>
-                <a href="#services"><button>Our Services</button></a>
-                <a href="#reviews"><button>Reviews</button></a>
-                <a href="#contact"><button>Contact us</button></a>
-            </div>
-        </div>
-        <!-- display_pictures.css -->
-        <div id="full_display">
-            <div id="full_display_close" onclick="full_display_close(true)">
-                <ion-icon id="close_button" name="close-outline" color="light"></ion-icon>
-            </div>
-            <div  id="full_display_previous" onclick="full_display_change('<')">
-                <ion-icon class="full_display_change" name="caret-back-outline" id="full_display_previous_button"></ion-icon>
-            </div>
-            <div class="full_display_change" id="full_display_next" onclick="full_display_change('>')">
-                <ion-icon class="full_display_change" name="caret-forward-outline" id="full_display_next_button"></ion-icon>
-            </div>
-            <div id="full_display_pic">
-                <img src="" id="full_display_img">
-            </div>
-        </div>
-    </sub>
-    
-    
-    <script src="app/main.js"></script>
-    <script src="app/full_display.js"></script>
-    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
-    
+    {% include footer.html %}
 </body>
+</html>

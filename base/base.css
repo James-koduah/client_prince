@@ -1,0 +1,186 @@
+@import url('https://fonts.googleapis.com/css?family=Cabin');
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@100&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+:root{
+    --ma-bg: #ffffff;
+    --su-bg: #222831;
+    --sans: Oscine, sans-serif;
+    --cam: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    --verdana: Verdana, Geneva, Tahoma, sans-serif;
+    --cabin-ver: "Cabin", Verdana, Geneva, Tahoma, sans-serif;
+    --cabin-sans: "Cabin", Oscine, sans-serif;
+    --work-sans: "Work Sans", Oscine, sans-serif;
+    --work-ver: "Work Sans", Verdana, Geneva, Tahoma, sans-serif;
+    --work-cabin-ver: "Work Sans", "Cabin", Verdana, Geneva, Tahoma, sans-serif;
+    --mons: "Montserrat", Arial, Tahoma, sans-serif;
+    --museo: "Museo Sans Rounded",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;
+    --open-sans: open sans,Arial,Verdana,Sans-Serif;
+    --apercu: 'Apercu',Helvetica,Arial,sans-serif;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--ma-bg);
+    font-size: 5px;
+    font-family: var(--cabin-sans);
+    overflow-x: hidden;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.action_button{
+    padding: 10px 15px;
+    border: 1px var(--su-bg) solid;
+    border-radius: 3px;
+    font-size: 11px;
+    transition: 0.4s;
+    position: relative;
+    display: block;
+    width: fit-content;
+    flex-shrink: 0;
+}
+
+.action_button:hover{
+    background: #000;
+    color: #fff;
+}
+
+
+
+
+
+
+
+
+
+#top_nav{
+    position: fixed;
+    top: 0;
+    width: calc(100vw - 10px);
+    height: 40px;
+    padding: 10px 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px #eee solid;
+    background: var(--ma-bg);
+    z-index: 100;
+}
+
+#top_nav_logo{
+    margin-left: 2%;
+}
+#top_nav_logo img{
+    height: 50px;
+    width: auto;
+}
+#top_nav_logo p{
+    font-size: 3.6em;
+    font-weight: 600;
+}
+
+
+#top_nav_links{
+    height: 100%;
+    display: flex;
+    margin-right: 3%;
+}
+#top_nav_links li{
+    list-style: none;
+    margin-left: 10px;
+}
+#top_nav_links li a{
+    display: block;
+    padding: 0 15px;
+    font-size: 2.6em;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+@media (max-width: 600px) {
+    #top_nav_links li{
+        display: none;
+    }
+}
+
+
+
+
+main{
+    padding-top: 50px;
+    width: 100%;
+    height: fit-content;
+}
+
+
+
+footer{
+    width: 100%;
+    padding: 20px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 5px;
+    background-color: #000;
+    color: #eee;
+}
+
+#footer_socials{
+    display: flex;
+    margin-bottom: 30px;
+}
+
+#footer_socials p{
+    width: 30px;
+    height: 30px;
+    background: #fff;
+    margin: 0 15px;
+}
+
+#footer_logo{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+#footer_logo img{
+    height: 40px;
+    width: auto;
+}
+
+#footer_header{
+    width: 100%;
+    text-align: center;
+    font-size: 2.4em;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+#footer_links{
+    display: flex;
+    margin-top: 5px;
+}
+
+#footer_links a{
+    padding: 0px 15px;
+    font-size: 2.5em;
+    text-decoration: underline;
+}

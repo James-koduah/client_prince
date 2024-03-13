@@ -1,0 +1,13 @@
+<nav id="top_nav">
+    <div id="top_nav_logo"><img src="/images/logo.webp" alt=""></div>
+    <ul id="top_nav_links">
+        {% for item in site.data.nav %}
+        {% if item.link != page.url %}
+        <li><a href="{{item.link}}">{{item.name}}</a></li>
+        {% endif %}
+        {% endfor %}
+        {% if page.cta %}
+        <li><a href="{{page.cta_link}}" class="action_button">{{page.cta}}</a></li>
+        {% endif %}
+    </ul>
+</nav>

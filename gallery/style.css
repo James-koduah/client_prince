@@ -1,0 +1,44 @@
+*{
+    padding: 0 0 0 0;
+    margin: 0 0 0 0;
+}
+body{
+    width: 100vw;
+    background-color: #000;
+    height: 100vh;
+    z-index: 1;
+}
+
+main{
+    margin-top: 30px;
+}
+
+img{
+    width: 49vw;
+    height: 120px;
+    object-fit: cover;
+    border: 1px black solid;
+}
+button{
+    width: 100vw;
+    height: 40px;
+    background-color: #000;
+    color: #ddd;
+    cursor: pointer;
+    border: 1px #222 solid;
+    margin-top: 10px;
+}
+
+@media (min-width: 600px) {
+    img{
+        height: 250px;
+        width: 32vw;
+    }
+}
+
+@media (min-width: 750px) {
+    img{
+        width: 24.6vw;
+        height: 300px;
+    }
+}
