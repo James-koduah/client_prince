@@ -4,20 +4,22 @@
 }
 body{
     width: 100vw;
-    background-color: #000;
     height: 100vh;
     z-index: 1;
 }
 
 main{
     margin-top: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
 }
 
-img{
+main img{
     width: 49vw;
     height: 120px;
     object-fit: cover;
-    border: 1px black solid;
+    margin-bottom: 3px;
 }
 button{
     width: 100vw;
@@ -30,15 +32,19 @@ button{
 }
 
 @media (min-width: 600px) {
-    img{
+    main img{
         height: 250px;
         width: 32vw;
+        margin-bottom: 6px;
     }
 }
 
 @media (min-width: 750px) {
-    img{
-        width: 24.6vw;
+    main img{
+        padding: 1vw;
+        border: 1px #ccc solid;
+        width: 22vw;
         height: 300px;
+        margin-bottom: 12px;
     }
 }
