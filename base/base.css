@@ -184,3 +184,48 @@ footer{
     font-size: 2.5em;
     text-decoration: underline;
 }
+
+
+
+#mobile_nav{
+    position: relative;
+    display: none;
+}
+@media (max-width: 800px) {
+    #mobile_nav{
+        display: block;
+    }
+}
+#mobile_nav #main_button{
+    font-size: 30px;
+}
+#mobile_nav_cover{
+    position: fixed;
+    height: 100vh;
+    width: 100vw;
+    top: 0;
+    left: 0;
+    background-color: transparent;
+    z-index: 500;
+}
+#mobile_nav_content{
+    position: absolute;
+    top: 100%;
+    right: -5px;
+    height: calc(95vh - 20px);
+    padding: 10px 3vw;
+    width: 60vw;
+    background-color: var(--ma-bg);
+    border: #aaa;
+    z-index: 1000;
+    display: none;
+}
+
+#mobile_nav_content a{
+    display: block;
+    width: 100%;
+    padding: 15px 0;
+    color: #333;
+    border-bottom: 1px #ddd solid;
+    font-size: 3em;
+}
