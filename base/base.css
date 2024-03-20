@@ -214,7 +214,7 @@ footer{
     right: -5px;
     height: calc(95vh - 20px);
     padding: 10px 3vw;
-    width: 40vw;
+    width: 50vw;
     background-color: var(--ma-bg);
     border: #aaa;
     z-index: 1000;
