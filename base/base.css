@@ -116,7 +116,7 @@ img{
 }
 
 
-@media (max-width: 600px) {
+@media (max-width: 800px) {
     #top_nav_links li{
         display: none;
     }
@@ -214,7 +214,7 @@ footer{
     right: -5px;
     height: calc(95vh - 20px);
     padding: 10px 3vw;
-    width: 60vw;
+    width: 40vw;
     background-color: var(--ma-bg);
     border: #aaa;
     z-index: 1000;
