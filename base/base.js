@@ -19,7 +19,7 @@ function mobile_nav(){
         startTime
 
         function handleswipe(isrightswipe){
-            if (isrightswipe){
+            if (!isrightswipe){
                 mobile_nav()
             }
         }
